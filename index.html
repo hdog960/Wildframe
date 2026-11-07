@@ -6661,6 +6661,37 @@ Element.prototype.setAttribute=function(key,value){if(key==='src'&&value&&assetM
   });
   observer.observe(root,{childList:true,subtree:true,attributes:true,attributeFilter:['src','style']});
   fixTree(root);
+  // The 4x3 Haven terrain exists as separate 512px painted tiles, but the
+  // published overview PNG does not. Assemble a compact 1024x768 preview
+  // from the same art so the title, small map and map panel remain coherent.
+  (async()=>{
+    const tiles=[];
+    for(let y=0;y<3;y++){
+      for(let x=0;x<4;x++){
+        const src=assetMap['assets/v2/terrain-haven-'+x+'-'+y+'.png'];
+        if(!src)return;
+        const tile=new Image();
+        await new Promise((resolve,reject)=>{
+          tile.onload=resolve;
+          tile.onerror=reject;
+          tile.src=src;
+        });
+        tiles.push({x,y,tile});
+      }
+    }
+    const canvas=document.createElement('canvas');
+    canvas.width=1024;canvas.height=768;
+    const ctx=canvas.getContext('2d');
+    if(!ctx)return;
+    ctx.imageSmoothingEnabled=true;
+    for(const {x,y,tile} of tiles)ctx.drawImage(tile,x*256,y*256,256,256);
+    assetMap['assets/v2/terrain-haven-overview.png']=canvas.toDataURL('image/png');
+    for(const style of document.head.querySelectorAll('style')){
+      const old=style.textContent||'',fixed=inlineUrls(old);
+      if(old!==fixed)style.textContent=fixed;
+    }
+    fixTree(root);
+  })().catch(()=>{/* Preserve the existing playable scene if overview decoding fails. */});
 })();
 </script><script>const factories={"audio":function(require,module,exports){"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });

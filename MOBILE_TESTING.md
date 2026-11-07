@@ -4,6 +4,7 @@ This repository serves a self-contained Phaser preview from `index.html` on GitH
 
 ## Changes from Alpha 0.1.1
 - Resolved missing title/HTML/CSS artwork paths to the already embedded PNG data, including images created dynamically by interface redraws.
+- Reconstructed the formerly missing Haven overview from the twelve bundled terrain tiles for the title background, minimap and map panel.
 - Added iPhone viewport fit, dynamic viewport sizing, Home Screen presentation metadata, and portrait safe-area controls for the notch and home indicator.
 - Unregistered scene resize listeners on shutdown to avoid duplicate callbacks after repeated scene transitions.
 - Kept the existing bundled gameplay, sprites, items, save schema, import/export, and simulation code.
