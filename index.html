@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><style>/* Wildframe 0.1.1 — a quiet field interface. */
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"><meta name="theme-color" content="#0b2026"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Wildframe"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style>/* Wildframe 0.1.2 — mobile visual integration. */
 :root{color-scheme:dark;--ink:#0b242b;--pane:rgba(12,37,42,.88);--paper:#eee9d8;--soft:#b8c8bd;--muted:#8ea89f;--gold:#d5ba7d;--line:rgba(218,211,177,.18)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body,#game,#ui{width:100%;height:100%;margin:0;overflow:hidden}
@@ -229,6 +229,20 @@ progress{accent-color:#c9b47d;width:100%}
 }
 
 @media(max-width:650px) and (orientation:portrait){.location{display:none}}
+
+/* 0.1.2 — dynamic iPhone viewport and notch/home-indicator insets */
+@supports(height:100dvh){html,body,#game,#ui{height:100dvh}}
+@media(pointer:coarse){button,[data-action]{touch-action:manipulation;-webkit-tap-highlight-color:transparent}}
+@media(max-width:650px) and (orientation:portrait){
+.topbar{top:max(12px,env(safe-area-inset-top));left:max(12px,env(safe-area-inset-left));right:max(12px,env(safe-area-inset-right))}
+.quest,.minimap{top:max(127px,calc(112px + env(safe-area-inset-top)))}
+.toolbar{bottom:max(134px,calc(109px + env(safe-area-inset-bottom)))}
+.context{bottom:max(187px,calc(162px + env(safe-area-inset-bottom)))}
+.joystick{left:max(22px,env(safe-area-inset-left));bottom:max(23px,env(safe-area-inset-bottom))}
+.rightactions{right:max(15px,env(safe-area-inset-right));bottom:max(21px,env(safe-area-inset-bottom))}
+.lefthanded .joystick{left:auto;right:max(22px,env(safe-area-inset-right))}
+.lefthanded .rightactions{right:auto;left:max(15px,env(safe-area-inset-left))}
+}
 </style></head><body><div id="game"></div><div id="ui"></div><div id="toast"></div><script>var si=Object.defineProperty;var ni=(W,$,z)=>$ in W?si(W,$,{enumerable:!0,configurable:!0,writable:!0,value:z}):W[$]=z;var ft=(W,$,z)=>ni(W,typeof $!="symbol"?$+"":$,z);(function(){const $=document.createElement("link").relList;if($&&$.supports&&$.supports("modulepreload"))return;for(const K of document.querySelectorAll('link[rel="modulepreload"]'))X(K);new MutationObserver(K=>{for(const J of K)if(J.type==="childList")for(const p of J.addedNodes)p.tagName==="LINK"&&p.rel==="modulepreload"&&X(p)}).observe(document,{childList:!0,subtree:!0});function z(K){const J={};return K.integrity&&(J.integrity=K.integrity),K.referrerPolicy&&(J.referrerPolicy=K.referrerPolicy),K.crossOrigin==="use-credentials"?J.credentials="include":K.crossOrigin==="anonymous"?J.credentials="omit":J.credentials="same-origin",J}function X(K){if(K.ep)return;K.ep=!0;const J=z(K);fetch(K.href,J)}})();function ri(W){return W&&W.__esModule&&Object.prototype.hasOwnProperty.call(W,"default")?W.default:W}var ve={exports:{}},ai=ve.exports,Ue;function oi(){return Ue||(Ue=1,(function(W,$){(function(X,K){W.exports=K()})(ai,()=>(()=>{var z={50792:(p=>{var S=Object.prototype.hasOwnProperty,t="~";function d(){}Object.create&&(d.prototype=Object.create(null),new d().__proto__||(t=!1));function c(e,s,o){this.fn=e,this.context=s,this.once=o||!1}function h(e,s,o,i,a){if(typeof o!="function")throw new TypeError("The listener must be a function");var l=new c(o,i||e,a),f=t?t+s:s;return e._events[f]?e._events[f].fn?e._events[f]=[e._events[f],l]:e._events[f].push(l):(e._events[f]=l,e._eventsCount++),e}function r(e,s){--e._eventsCount===0?e._events=new d:delete e._events[s]}function n(){this._events=new d,this._eventsCount=0}n.prototype.eventNames=function(){var s=[],o,i;if(this._eventsCount===0)return s;for(i in o=this._events)S.call(o,i)&&s.push(t?i.slice(1):i);return Object.getOwnPropertySymbols?s.concat(Object.getOwnPropertySymbols(o)):s},n.prototype.listeners=function(s){var o=t?t+s:s,i=this._events[o];if(!i)return[];if(i.fn)return[i.fn];for(var a=0,l=i.length,f=new Array(l);a<l;a++)f[a]=i[a].fn;return f},n.prototype.listenerCount=function(s){var o=t?t+s:s,i=this._events[o];return i?i.fn?1:i.length:0},n.prototype.emit=function(s,o,i,a,l,f){var u=t?t+s:s;if(!this._events[u])return!1;var v=this._events[u],m=arguments.length,x,g;if(v.fn){switch(v.once&&this.removeListener(s,v.fn,void 0,!0),m){case 1:return v.fn.call(v.context),!0;case 2:return v.fn.call(v.context,o),!0;case 3:return v.fn.call(v.context,o,i),!0;case 4:return v.fn.call(v.context,o,i,a),!0;case 5:return v.fn.call(v.context,o,i,a,l),!0;case 6:return v.fn.call(v.context,o,i,a,l,f),!0}for(g=1,x=new Array(m-1);g<m;g++)x[g-1]=arguments[g];v.fn.apply(v.context,x)}else{var y=v.length,T;for(g=0;g<y;g++)switch(v[g].once&&this.removeListener(s,v[g].fn,void 0,!0),m){case 1:v[g].fn.call(v[g].context);break;case 2:v[g].fn.call(v[g].context,o);break;case 3:v[g].fn.call(v[g].context,o,i);break;case 4:v[g].fn.call(v[g].context,o,i,a);break;default:if(!x)for(T=1,x=new Array(m-1);T<m;T++)x[T-1]=arguments[T];v[g].fn.apply(v[g].context,x)}}return!0},n.prototype.on=function(s,o,i){return h(this,s,o,i,!1)},n.prototype.once=function(s,o,i){return h(this,s,o,i,!0)},n.prototype.removeListener=function(s,o,i,a){var l=t?t+s:s;if(!this._events[l])return this;if(!o)return r(this,l),this;var f=this._events[l];if(f.fn)f.fn===o&&(!a||f.once)&&(!i||f.context===i)&&r(this,l);else{for(var u=0,v=[],m=f.length;u<m;u++)(f[u].fn!==o||a&&!f[u].once||i&&f[u].context!==i)&&v.push(f[u]);v.length?this._events[l]=v.length===1?v[0]:v:r(this,l)}return this},n.prototype.removeAllListeners=function(s){var o;return s?(o=t?t+s:s,this._events[o]&&r(this,o)):(this._events=new d,this._eventsCount=0),this},n.prototype.off=n.prototype.removeListener,n.prototype.addListener=n.prototype.on,n.prefixed=t,n.EventEmitter=n,p.exports=n}),11517:((p,S,t)=>{/**
  * @author       samme
  * @copyright    2013-2025 Phaser Studio Inc.
@@ -6604,6 +6618,50 @@ Phaser.Loader.LoaderPlugin.prototype.addFile=function(file){for(const f of Array
 // DOM images use equivalent data URIs during test, without network permissions.
 const origSet=Element.prototype.setAttribute;
 Element.prototype.setAttribute=function(key,value){if(key==='src'&&value&&assetMap[value.replace(/^\.\//,'')])value=assetMap[value.replace(/^\.\//,'')];return origSet.call(this,key,value);};
+
+/* 0.1.2 — resolve DOM and CSS image paths into inlined bundle art.
+   Phaser loader assets are already resolved above. */
+(function(){
+  const assetUrl = raw => typeof raw==='string' && !raw.startsWith('data:')
+    ? assetMap[raw.replace(/^\.\//,'')] || null : null;
+  const inlineUrls = css => css.replace(
+    /url\(\s*(['"]?)(\.?\/?assets\/[^)"']+)\1\s*\)/g,
+    (whole,quote,path)=>{const uri=assetUrl(path);return uri ? 'url("'+uri+'")':whole;}
+  );
+  for(const style of document.head.querySelectorAll('style')){
+    const source=style.textContent||'';
+    const fixed=inlineUrls(source);
+    if(fixed!==source)style.textContent=fixed;
+  }
+  const fixElement=el=>{
+    if(!(el instanceof Element))return;
+    if(el.tagName==='IMG'){
+      const raw=el.getAttribute('src'), uri=assetUrl(raw);
+      if(uri)el.setAttribute('src',uri);
+    }
+    const rawStyle=el.getAttribute('style');
+    if(rawStyle && rawStyle.includes('assets/')){
+      const fixed=inlineUrls(rawStyle);
+      if(fixed!==rawStyle)el.setAttribute('style',fixed);
+    }
+  };
+  const fixTree=root=>{
+    if(!(root instanceof Element))return;
+    fixElement(root);
+    root.querySelectorAll('img[src],[style]').forEach(fixElement);
+  };
+  const root=document.getElementById('ui');
+  if(!root)return;
+  const observer=new MutationObserver(records=>{
+    for(const record of records){
+      if(record.type==='childList'){
+        for(const node of record.addedNodes)fixTree(node);
+      } else fixElement(record.target);
+    }
+  });
+  observer.observe(root,{childList:true,subtree:true,attributes:true,attributeFilter:['src','style']});
+  fixTree(root);
+})();
 </script><script>const factories={"audio":function(require,module,exports){"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sound = exports.Soundscape = void 0;
@@ -6907,7 +6965,7 @@ const tool = (name, label, type) => btn(`${icon(name)}<span class="tool-label">$
 const touchAction = (name, label, type, cls = '') => btn(`${icon(name)}<span>${label}</span>`, type, '', cls);
 function notify(message) { const t = document.getElementById('toast'); t.textContent = message; t.classList.add('visible'); clearTimeout(toastTimer); toastTimer = window.setTimeout(() => t.classList.remove('visible'), 4200); }
 runtime_1.runtime.notify = notify;
-function title() { document.body.classList.toggle('reduced', runtime_1.runtime.state.settings.reducedMotion); pendingNew = false; runtime_1.runtime.panel = ''; runtime_1.runtime.playing = false; ui.innerHTML = `<div class="title title-v2"><div class="title-vignette"></div><img alt="" class="title-sprite title-cabin" src="./assets/v2/cabin.png"><img alt="" class="title-sprite title-portal" src="./assets/v2/portal.png"><img alt="" class="title-sprite title-moss" src="./assets/v2/portrait-mossmunch.png"><div class="title-content"><div class="eyebrow">A place for the extraordinary</div><h1 class="logo">WILDFRAME</h1><div class="ornament"><span></span></div><p>The world came apart. Something wonderful grew in the cracks.</p><div class="choices">${btn('Begin your story ' + icon('arrow'), 'new', '', 'primary')}${btn('Return to your Haven', 'continue', '', '', !saved)}${btn('Settings & save backups', 'settings')}</div></div><footer><span>The First Haven</span><span>Visual integration preview · 0.1.1</span></footer></div>`; }
+function title() { document.body.classList.toggle('reduced', runtime_1.runtime.state.settings.reducedMotion); pendingNew = false; runtime_1.runtime.panel = ''; runtime_1.runtime.playing = false; ui.innerHTML = `<div class="title title-v2"><div class="title-vignette"></div><img alt="" class="title-sprite title-cabin" src="./assets/v2/cabin.png"><img alt="" class="title-sprite title-portal" src="./assets/v2/portal.png"><img alt="" class="title-sprite title-moss" src="./assets/v2/portrait-mossmunch.png"><div class="title-content"><div class="eyebrow">A place for the extraordinary</div><h1 class="logo">WILDFRAME</h1><div class="ornament"><span></span></div><p>The world came apart. Something wonderful grew in the cracks.</p><div class="choices">${btn('Begin your story ' + icon('arrow'), 'new', '', 'primary')}${btn('Return to your Haven', 'continue', '', '', !saved)}${btn('Settings & save backups', 'settings')}</div></div><footer><span>The First Haven</span><span>Mobile art integration · 0.1.2</span></footer></div>`; }
 function objective() { const s = runtime_1.runtime.state; if (!s.archive.length)
     return ['A pulse in the overgrowth', 'Find the mossy creature south of the cabin. Move close, then SCAN [F].', 'WASD / arrows to move · Touch: left thumbstick']; if (!s.stats.captures)
     return ['Bring a little wonder home', 'Switch the Digitizer to DOWNLOAD and press F near Mossmunch.', 'The mode button cycles Scan → Download → Project']; if (!s.buildings.some(b => b.kind === 'habitat'))
@@ -8064,7 +8122,7 @@ class WorldScene extends phaser_1.default.Scene {
         this.hero.setCollideWorldBounds(true);
         this.cameras.main.setBounds(0, 0, 2048, 1536).setFollowOffset(0, 32).startFollow(this.hero, true, .12, .12);
         this.cameras.main.setBackgroundColor('#193f35');
-        this.scale.on('resize', () => this.frameCamera());
+        this.onScaleResize = () => this.frameCamera(); this.scale.on('resize', this.onScaleResize); this.events.once('shutdown', () => this.scale.off('resize', this.onScaleResize));
         this.frameCamera();
         const kb = this.input.keyboard;
         this.keys = kb.addKeys('W,A,S,D,UP,DOWN,LEFT,RIGHT,E,F,Q,R,SPACE,SHIFT,ESC,B,I,M,J,TAB,ONE,TWO,THREE');
