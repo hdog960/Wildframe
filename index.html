@@ -8729,15 +8729,22 @@ class WorldScene extends phaser_1.default.Scene {
             return;
         }
         audio_1.sound.update(dt, runtime_1.runtime.state, this.region === 'underdeep');
+        // Keyboard directions replace the touch stick while keys are held,
+        // instead of stacking with it (which caused erratic facing and gait).
         let mx = runtime_1.runtime.move.x, my = runtime_1.runtime.move.y;
-        if (this.keys.A.isDown || this.keys.LEFT.isDown)
-            mx--;
-        if (this.keys.D.isDown || this.keys.RIGHT.isDown)
-            mx++;
-        if (this.keys.W.isDown || this.keys.UP.isDown)
-            my--;
-        if (this.keys.S.isDown || this.keys.DOWN.isDown)
-            my++;
+        const keyX = Number(this.keys.D.isDown || this.keys.RIGHT.isDown) - Number(this.keys.A.isDown || this.keys.LEFT.isDown);
+        const keyY = Number(this.keys.S.isDown || this.keys.DOWN.isDown) - Number(this.keys.W.isDown || this.keys.UP.isDown);
+        if (keyX !== 0 || keyY !== 0) {
+            mx = keyX;
+            my = keyY;
+        }
+        // Normalize before velocity AND animation playback, so diagonal gait
+        // stays as steady as cardinal gait on a full-strength joystick.
+        const inputLength = Math.hypot(mx, my);
+        if (inputLength > 1) {
+            mx /= inputLength;
+            my /= inputLength;
+        }
         if (this.elapsed > this.invincibleUntil) {
             const v = new phaser_1.default.Math.Vector2(mx, my);
             if (v.length() > 1)
