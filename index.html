@@ -8332,7 +8332,9 @@ class WorldScene extends phaser_1.default.Scene {
             const footShadow = this.add.ellipse(npc.x, npc.y + 1, 24, 6, 0x10291e, .20).setDepth(npc.depth - .1);
             this.buildings.push(footShadow);
             const n = catalog_1.NPCS.find(n => n.id === id);
-            const t = this.add.text(npc.x, npc.y + 7, n?.name ?? id, { fontSize: 9, color: '#f0dfb1', stroke: '#18372e', strokeThickness: 3 }).setOrigin(.5).setDepth(npc.depth + 1);
+            // Place resident names above their painted heads rather than over the feet and ground shadow.
+            // The resident atlas is roughly 96px tall at .86 scale; 84px clears the silhouette.
+            const t = this.add.text(npc.x, npc.y - 84, n?.name ?? id, { fontSize: 9, color: '#f0dfb1', stroke: '#18372e', strokeThickness: 3 }).setOrigin(.5).setDepth(npc.depth + 1);
             this.buildings.push(t);
             if (!runtime_1.runtime.state.settings.reducedMotion)
                 this.tweens.add({ targets: [npc, t, footShadow], x: '+=30', duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut', onYoyo: () => npc.setFlipX(true), onRepeat: () => npc.setFlipX(false) });
