@@ -8342,7 +8342,7 @@ class WorldScene extends phaser_1.default.Scene {
         }
     }
     spawnWild(speciesId, x, y, id) { const shadowWidths = { mossmunch: 34, puddlewink: 29, thornroller: 31, fungloam: 36, glimmergut: 27, hushwing: 23 }; const shadowWidth = shadowWidths[speciesId] || 30; const shadow = this.add.ellipse(x, y + 1, shadowWidth, speciesId === 'hushwing' ? 7 : 10, 0x10291e, speciesId === 'hushwing' ? .16 : .24).setDepth(y - .1); const sprite = this.add.sprite(x, y, 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y); if (this.anims.exists('v2-' + speciesId + '-idle'))
-        sprite.play('v2-' + speciesId + '-idle'); this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, shadow, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
+        sprite.play('v2-' + speciesId + '-idle'); this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, shadow, facingAnchorX: x, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
     nearest() { let min = 160; this.target = null; for (const w of this.wild) {
         const d = phaser_1.default.Math.Distance.Between(this.hero.x, this.hero.y, w.x, w.y);
         if (d < min) {
@@ -8845,11 +8845,14 @@ class WorldScene extends phaser_1.default.Scene {
                 c.x = nx;
                 c.y = ny;
             }
-            // Only turn on meaningful horizontal travel; near-zero wander deltas
-            // previously flipped creatures back and forth between adjacent frames.
-            const dx = nx - w.x;
-            if (Math.abs(dx) > .12)
-                w.sprite.setFlipX(dx < 0);
+            // Accumulate travel in world pixels rather than using a frame-dependent
+            // threshold: a slow wander should eventually face its destination at
+            // 30, 60 or 120 FPS, without jittering on subpixel motion.
+            const facingTravel = nx - w.facingAnchorX;
+            if (Math.abs(facingTravel) >= 2) {
+                w.sprite.setFlipX(facingTravel < 0);
+                w.facingAnchorX = nx;
+            }
             w.x = nx;
             w.y = ny;
             w.sprite.setPosition(nx, ny + hover).setDepth(ny);
