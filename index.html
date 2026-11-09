@@ -8828,12 +8828,12 @@ class WorldScene extends phaser_1.default.Scene {
             w.naturalStable = motion.stabilized;
             w.behavior = motion.state;
             const still = runtime_1.runtime.state.settings.reducedMotion;
-            const time = this.elapsed + i * .73, breath = still ? 0 : Math.sin(time * 2.2), steps = still ? 0 : Math.sin(time * 10);
-            // Genuine in-engine squash/stretch, hover, body lean and swaying. The imported
-            // four-frame creature files repeat a still: do not mistake them for walk poses.
-            const sx = .78 * (still ? 1 : motion.scaleX) * (1 + breath * .018);
-            const sy = .78 * (still ? 1 : motion.scaleY) * (1 - breath * .023 + (motion.moving ? Math.abs(steps) * .017 : 0));
-            w.sprite.setScale(sx, sy).setAngle(still ? 0 : Math.sin(time * (w.speciesId === 'hushwing' ? 5 : 2.7)) * (w.speciesId === 'thornroller' ? 6 : 2.3));
+            // Keep the painted creature silhouette proportional. The current four-frame
+            // atlas repeats a still pose: artificial squash, tilt and gait pulses distort
+            // the artwork rather than supply real animation. Preserve the motion path,
+            // and allow only a small vertical hover for the winged species.
+            w.sprite.setScale(.78).setAngle(0);
+            const hover = !still && w.speciesId === 'hushwing' ? Math.sin(this.elapsed * 3 + i * .73) * 2 : 0;
             w.sprite.play('v2-' + w.speciesId + (motion.moving ? '-move' : '-idle'), true);
             if (c) {
                 const b = runtime_1.runtime.state.buildings.find(b => b.id === c.habitatId);
@@ -8845,10 +8845,14 @@ class WorldScene extends phaser_1.default.Scene {
                 c.x = nx;
                 c.y = ny;
             }
-            const left = nx < w.x;
+            // Only turn on meaningful horizontal travel; near-zero wander deltas
+            // previously flipped creatures back and forth between adjacent frames.
+            const dx = nx - w.x;
+            if (Math.abs(dx) > .12)
+                w.sprite.setFlipX(dx < 0);
             w.x = nx;
             w.y = ny;
-            w.sprite.setPosition(nx, ny).setDepth(ny).setFlipX(left);
+            w.sprite.setPosition(nx, ny + hover).setDepth(ny);
         }
         this.ambience.clear();
         if (this.region === 'underdeep') {
