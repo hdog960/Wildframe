@@ -20,3 +20,9 @@ The live game is currently distributed as one generated, self-contained `index.h
 
 ## Existing architecture and design constraints
 The 4.1 MB page includes substantial embedded art/animation/application code; the game is not blank. Preserve the working game, all save data and the original detailed roadmap. Focus on real art and animation polish, correct diagonal player/creature sprite motion, original cohesive environments, distinct houses and mobile rendering. Do not replace actual playable artwork with mockups or invented screenshot evidence.
+
+## 2026-11-08 — Hero atlas fidelity / diagonal input stabilization
+- Gameplay commit `aaa7ecffff9ca33f6ad8df8fde064f375d5b2faf` modified only `index.html` using complete 4,092,203-character source fetched via Git blob API; new blob `167476dd1ae631d697fa5c6f506b24673925a07b` (4,092,940 characters).
+- Removed nonuniform scale pulsing that deformed the painted hero during walking. Preserved the 64x96 atlas, stable .82 scale and foot origin; added an 18% directional decision deadband to reduce diagonal cardinal-frame flicker; animation playback follows stick magnitude, and reduced-motion uses a static pose.
+- Verified exact-anchor source edit, Git commit diff, main branch head and index blob SHA. No automated gameplay/browser tests or actual iPhone tests performed. GitHub Pages build was queued when checked; publication not yet verified.
+- Visual checkpoint remains OPEN: these are motion fidelity fixes, NOT genuine 8-way painted hero sheets. Next: browser capture and visual assessment of hero animation, then original diagonal sprite artwork and creature animation continuity. No visual signoff.
