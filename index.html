@@ -8744,20 +8744,36 @@ class WorldScene extends phaser_1.default.Scene {
                 v.normalize();
             this.hero.setVelocity(v.x * (runtime_1.runtime.state.upgrades.includes('boots') ? 147.5 : 125), v.y * (runtime_1.runtime.state.upgrades.includes('boots') ? 147.5 : 125));
         }
-        if (mx || my) {
+        // Preserve a stable foot anchor and actual atlas proportions in every direction.
+        // Use a small directional deadband so diagonal stick input does not flicker
+        // between the two cardinal sheets on adjacent frames.
+        const walking = Math.hypot(mx, my) > .08;
+        const reducedMotion = runtime_1.runtime.state.settings.reducedMotion;
+        if (walking) {
             this.lastMove = this.elapsed;
-            this.facing = Math.abs(mx) > Math.abs(my) ? (mx > 0 ? 'right' : 'left') : (my > 0 ? 'down' : 'up');
-            if (this.anims.exists('v2-hero-' + this.facing))
+            const ax = Math.abs(mx), ay = Math.abs(my);
+            if (ax > ay * 1.18)
+                this.facing = mx > 0 ? 'right' : 'left';
+            else if (ay > ax * 1.18)
+                this.facing = my > 0 ? 'down' : 'up';
+            // In the diagonal band retain the existing orientation until the
+            // input clearly chooses a new one; do not invent diagonal art.
+            if (!reducedMotion && this.anims.exists('v2-hero-' + this.facing)) {
                 this.hero.play('v2-hero-' + this.facing, true);
+                this.hero.anims.timeScale = Math.max(.55, Math.min(1.25, Math.hypot(mx, my)));
+            }
+            else {
+                this.hero.anims.stop();
+                this.hero.setFrame(({ down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0) * 3);
+            }
         }
         else {
             this.hero.anims.stop();
             const row = { down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0;
             this.hero.setFrame(row * 3);
         }
-        // Foot placement is stable while the sprite breathes and leans as it walks.
-        const stride = runtime_1.runtime.state.settings.reducedMotion ? 0 : Math.sin(this.elapsed * 17);
-        this.hero.setScale(.82 * (mx || my ? 1 + stride * .013 : 1), .82 * (mx || my ? 1 - Math.abs(stride) * .012 : 1));
+        // Never deform a painted 64x96 character to fake a walk cycle.
+        this.hero.setScale(.82);
         this.hero.setDepth(this.hero.y);
         this.hero.setAlpha(this.elapsed < this.invincibleUntil ? .5 : 1);
         // Tall canopies softly step aside only when they would hide the player.
