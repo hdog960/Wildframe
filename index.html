@@ -8409,6 +8409,39 @@ class WorldScene extends phaser_1.default.Scene {
                     porch.lineBetween(doorX + slat, awningY - 12, doorX + slat + 5, awningY + 4);
             }
             this.buildings.push(porch);
+            // Five resident-specific facade treatments break up the repeated cabin face.
+            // All strokes are scenery only and stay inside the original house footprint.
+            const facade = this.add.graphics().setDepth(b.y + 134.55);
+            const windowY = b.y + 82;
+            const windowX = [b.x + 23, b.x + 105];
+            for (const wx of windowX) {
+                facade.fillStyle(0x263f43, .95).fillRoundedRect(wx - 12, windowY - 16, 24, 30, 3);
+                facade.lineStyle(3, palette.trim, .95).strokeRoundedRect(wx - 12, windowY - 16, 24, 30, 3);
+                facade.fillStyle(0xa7d4cb, .45).fillRect(wx - 8, windowY - 12, 16, 21);
+                if (porchStyle === 0 || porchStyle === 3) {
+                    // Cottage and lodge: warm mullions, divided panes.
+                    facade.lineStyle(2, 0xe6c99c, .9);
+                    facade.lineBetween(wx, windowY - 12, wx, windowY + 9);
+                    facade.lineBetween(wx - 8, windowY - 2, wx + 8, windowY - 2);
+                } else if (porchStyle === 1) {
+                    // Market: fabric valance above each window.
+                    facade.fillStyle(palette.cloth, 1).fillTriangle(wx - 16, windowY - 17, wx, windowY - 26, wx + 16, windowY - 17);
+                    facade.lineStyle(2, palette.trim, .85).lineBetween(wx - 16, windowY - 17, wx + 16, windowY - 17);
+                } else if (porchStyle === 2) {
+                    // Conservatory: narrow glazed divisions and a bright sill.
+                    facade.lineStyle(1, 0xd9f2df, .9);
+                    for (const dx of [-4, 4]) facade.lineBetween(wx + dx, windowY - 12, wx + dx, windowY + 9);
+                    facade.fillStyle(0xe3efcf, .9).fillRect(wx - 14, windowY + 13, 28, 3);
+                } else {
+                    // Garden: flowering window boxes and a leafy edge.
+                    facade.fillStyle(0x77563b, 1).fillRoundedRect(wx - 16, windowY + 12, 32, 7, 2);
+                    for (const dx of [-10, 0, 10]) {
+                        facade.fillStyle(0x5b995a, 1).fillEllipse(wx + dx, windowY + 10, 12, 7);
+                        facade.fillStyle(palette.bloom, 1).fillCircle(wx + dx, windowY + 8, 3);
+                    }
+                }
+            }
+            this.buildings.push(facade);
             // Painted timber grain, joints and vine accents give each porch its own
             // material language, without changing any building or collision geometry.
             const detailing = this.add.graphics().setDepth(b.y + 134.6);
