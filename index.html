@@ -8145,6 +8145,9 @@ class WorldScene extends phaser_1.default.Scene {
         this.ghost = this.add.graphics().setDepth(8000);
         this.ambience = this.add.graphics().setDepth(7000);
         this.hero = this.physics.add.sprite(1024, 800, 'v2-hero', 0).setOrigin(.5, .9).setScale(.82).setDepth(800);
+        // A quiet foot-contact shadow anchors the tall painted hero to the ground.
+        // Graphics are scene-owned and automatically cleaned up on shutdown.
+        this.heroContact = this.add.graphics().setDepth(799);
         // This is the old player's foot collision, not a 64x96 torso-sized obstacle.
         this.hero.body.setSize(20, 13);
         this.hero.body.setOffset(22, 77);
@@ -8791,6 +8794,13 @@ class WorldScene extends phaser_1.default.Scene {
         // Never deform a painted 64x96 character to fake a walk cycle.
         this.hero.setScale(.82);
         this.hero.setDepth(this.hero.y);
+        // Keep the shadow under the feet, not beneath the torso or above foreground props.
+        // Unlike a fake sprite squash, this never alters the authored character atlas.
+        this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
+        if (this.hero.visible) {
+            this.heroContact.fillStyle(0x081c1b, .19).fillEllipse(this.hero.x, this.hero.y + 1, 25, 7);
+            this.heroContact.fillStyle(0x071714, .10).fillEllipse(this.hero.x, this.hero.y + 1, 14, 4);
+        }
         this.hero.setAlpha(this.elapsed < this.invincibleUntil ? .5 : 1);
         // Tall canopies softly step aside only when they would hide the player.
         for (const tree of this.canopies) {
