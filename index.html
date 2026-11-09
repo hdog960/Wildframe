@@ -8945,8 +8945,24 @@ class WorldScene extends phaser_1.default.Scene {
                 this.facing = mx > 0 ? 'right' : 'left';
             else if (ay > ax * 1.18)
                 this.facing = my > 0 ? 'down' : 'up';
-            // In the diagonal band retain the existing orientation until the
-            // input clearly chooses a new one; do not invent diagonal art.
+            // Keep the painted cardinal atlas while steering diagonally, but
+            // never show a character facing *against* the direction of travel.
+            // A diagonal starting from rest or reversing direction previously
+            // retained an unrelated pose indefinitely (e.g. facing down while
+            // walking north-east). Choose the nearer cardinal only when the
+            // current facing is incompatible; otherwise keep it for stability.
+            else {
+                const compatible = (this.facing === 'right' && mx > 0) ||
+                    (this.facing === 'left' && mx < 0) ||
+                    (this.facing === 'down' && my > 0) ||
+                    (this.facing === 'up' && my < 0);
+                if (!compatible)
+                    this.facing = ax >= ay
+                        ? (mx > 0 ? 'right' : 'left')
+                        : (my > 0 ? 'down' : 'up');
+            }
+            // Do not synthesize diagonal sprite frames: retain the original
+            // proportional artwork until genuine eight-direction art exists.
             if (!reducedMotion && this.anims.exists('v2-hero-' + this.facing)) {
                 const nextAnimation = 'v2-hero-' + this.facing;
                 // Keep the actual painted walk-cycle phase when changing cardinal
