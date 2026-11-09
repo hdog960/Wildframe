@@ -8383,6 +8383,31 @@ class WorldScene extends phaser_1.default.Scene {
                 porch.lineStyle(3, palette.trim, 1).lineBetween(doorX - 42, awningY + 10, doorX + 42, awningY + 10);
                 porch.fillStyle(palette.trim, 1).fillCircle(doorX, awningY - 15, 5);
             }
+            // Layered eave edges, roof seams and architectural ornaments make the
+            // five porch profiles readable at the Haven camera's gameplay scale.
+            // All strokes are world-space decoration: no collisions or save changes.
+            porch.lineStyle(2, 0x263d33, .65);
+            if (porchStyle === 0 || porchStyle === 3) {
+                porch.lineBetween(doorX - 43, awningY + 9, doorX + 43, awningY + 9);
+                porch.lineStyle(1, palette.trim, .7);
+                for (const seam of [-24, -12, 12, 24])
+                    porch.lineBetween(doorX + seam, awningY + 3, doorX + seam * .55, awningY - (porchStyle === 3 ? 18 : 11));
+                porch.fillStyle(palette.trim, .9).fillCircle(doorX, awningY - (porchStyle === 3 ? 28 : 18), 3);
+            } else if (porchStyle === 1) {
+                porch.lineBetween(doorX - 42, awningY + 10, doorX + 42, awningY + 10);
+                porch.lineStyle(1, 0xffffff, .28);
+                for (const seam of [-30, -10, 10, 30])
+                    porch.lineBetween(doorX + seam, awningY - 7, doorX + seam, awningY + 8);
+            } else if (porchStyle === 2) {
+                porch.lineStyle(2, palette.trim, .8);
+                for (const pane of [-25, 0, 25])
+                    porch.lineBetween(doorX + pane, awningY - 11, doorX + pane * .8, awningY + 8);
+                porch.fillStyle(0xe5f6db, .22).fillEllipse(doorX - 12, awningY - 6, 21, 5);
+            } else {
+                porch.lineStyle(1, 0xd6e9ba, .7);
+                for (const slat of [-30, -18, -6, 6, 18, 30])
+                    porch.lineBetween(doorX + slat, awningY - 12, doorX + slat + 5, awningY + 4);
+            }
             this.buildings.push(porch);
             // Painted timber grain, joints and vine accents give each porch its own
             // material language, without changing any building or collision geometry.
