@@ -8347,12 +8347,12 @@ class WorldScene extends phaser_1.default.Scene {
             porch.lineBetween(doorX - 34, awningY + 8, doorX - 34, doorY - 14);
             porch.lineBetween(doorX + 34, awningY + 8, doorX + 34, doorY - 14);
             porch.fillStyle(0x213a32, .4).fillEllipse(doorX, awningY + 11, 80, 12);
-            if (porchStyle === 0 || porchStyle === 3) {
+            if (porchStyle === 0) {
                 // Cottage gable with a contrasting ridge and broad eaves.
                 porch.fillStyle(palette.cloth, 1).fillTriangle(doorX - 43, awningY + 8, doorX, awningY - 18, doorX + 43, awningY + 8);
                 porch.lineStyle(3, palette.trim, 1).lineBetween(doorX - 43, awningY + 8, doorX, awningY - 18);
                 porch.lineBetween(doorX, awningY - 18, doorX + 43, awningY + 8);
-            } else if (porchStyle === 1 || porchStyle === 4) {
+            } else if (porchStyle === 1) {
                 // Market-style striped canvas canopy with a scalloped hem.
                 porch.fillStyle(palette.cloth, 1).fillRoundedRect(doorX - 42, awningY - 9, 84, 21, 5);
                 porch.fillStyle(palette.trim, 1);
@@ -8360,6 +8360,22 @@ class WorldScene extends phaser_1.default.Scene {
                     porch.fillRect(doorX + stripe * 10 - 5, awningY - 7, 10, 17);
                 for (let scallop = -3; scallop <= 3; scallop++)
                     porch.fillCircle(doorX + scallop * 12, awningY + 11, 6);
+            } else if (porchStyle === 3) {
+                // Timber-framed lodge portico: a raised beam and exposed rafter ends.
+                porch.fillStyle(0x314b3e, 1).fillRoundedRect(doorX - 48, awningY - 9, 96, 17, 3);
+                porch.fillStyle(palette.cloth, 1).fillTriangle(doorX - 46, awningY - 9, doorX, awningY - 28, doorX + 46, awningY - 9);
+                porch.lineStyle(4, palette.trim, 1).lineBetween(doorX - 46, awningY - 9, doorX, awningY - 28);
+                porch.lineBetween(doorX, awningY - 28, doorX + 46, awningY - 9);
+                for (const rafterX of [-35, -18, 18, 35])
+                    porch.fillStyle(0x314b3e, 1).fillRect(doorX + rafterX - 3, awningY + 7, 6, 7);
+            } else if (porchStyle === 4) {
+                // Garden trellis: open slatted roof with foliage rather than fabric.
+                porch.fillStyle(0x465d42, 1).fillRoundedRect(doorX - 46, awningY - 10, 92, 8, 2);
+                for (let slat = -3; slat <= 3; slat++) {
+                    porch.fillStyle(palette.trim, 1).fillRect(doorX + slat * 12 - 3, awningY - 14, 6, 20);
+                    porch.fillStyle(0x4d8a58, 1).fillEllipse(doorX + slat * 12, awningY - 15 - (slat % 2) * 3, 13, 8);
+                }
+                porch.lineStyle(3, 0x345b3e, 1).lineBetween(doorX - 45, awningY + 7, doorX + 45, awningY + 7);
             } else {
                 // Curved conservatory canopy with a raised central crown.
                 porch.fillStyle(palette.cloth, 1).fillEllipse(doorX, awningY, 88, 31);
