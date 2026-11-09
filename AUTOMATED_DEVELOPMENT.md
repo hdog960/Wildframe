@@ -121,3 +121,9 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 - Gameplay commit `e0d6d2876ec2c41ca624524d817f09abba1d7192` updates only `index.html` (new full-file blob `6652583d59d1d744ff1691b4c5bd3a201a93bbbc`, 4,107,808 UTF-8 bytes). Lodge windows now have heavy timber side shutters with cross-bracing, while cottage windows gain colored sills; the previous shared mullion-only appearance remains under the new distinguishing trim.
 - Full 4.1 MB blob retrieved and edited with exact unique-anchor, length-delta, prefix/suffix integrity assertions; safe fast-forward commit and Git diff verified (13 additions, 1 deletion). No gameplay browser run, screenshots, or physical iPhone test. Pages run `42698240629` was queued at check; deployment not yet confirmed.
 - Save data, creature economy, collisions and directional sprite code unchanged. Artwork gate OPEN: still need true eight-direction hero/creature sprite sheets, distinct full-house shapes, and real browser visual QA. Do not unlock next phase.
+
+
+## 2026-11-09 — Hero directional walk-cycle continuity
+- Gameplay commit `40175779848dc4ecddf5e854c2185fd98f3e924f` changes only `index.html` (new blob `b008898eed99e3727cbd57e709ac23deb6a15844`, 4,108,734 bytes). Turning between cardinal animations now carries over the painted three-frame walk-cycle phase instead of restarting the gait at frame zero. No fake diagonal frames or save/gameplay changes.
+- Verified unique anchor, full 4.1 MB source, safe fast-forward commit, exact diff and new main tree blob. Browser/runtime/iPhone tests NOT performed. Pages workflow `42707930401` queued when inspected; publication not yet confirmed.
+- Visual gate OPEN: authentic eight-direction hero and creature artwork, original creature motion, full-house silhouettes and real-browser visual QA remain required. Next run: prioritize substantive sprite art and verify animation transitions in browser.
