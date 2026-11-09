@@ -8335,7 +8335,16 @@ class WorldScene extends phaser_1.default.Scene {
         for (const c of runtime_1.runtime.state.creatures) {
             const existing = this.wild.find(w => w.id === c.id);
             if (existing) {
-                existing.sprite.setPosition(c.x, c.y);
+                // Habitat refresh can relocate an existing creature. Keep its ground
+                // contact, depth, facing anchor and motion center in sync immediately,
+                // rather than leaving a detached shadow until the next update tick.
+                existing.x = c.x;
+                existing.y = c.y;
+                existing.homeX = c.x;
+                existing.homeY = c.y;
+                existing.facingAnchorX = c.x;
+                existing.sprite.setPosition(c.x, c.y).setDepth(c.y);
+                existing.shadow.setPosition(c.x, c.y + 1).setDepth(c.y - .1);
                 continue;
             }
             this.spawnWild(c.speciesId, c.x, c.y, c.id);
