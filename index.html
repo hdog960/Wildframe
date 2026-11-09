@@ -8327,6 +8327,31 @@ class WorldScene extends phaser_1.default.Scene {
                 return;
             const npc = this.add.sprite(b.x + 64, b.y + 135, 'v2-npc-' + id).setOrigin(.5, 1).setScale(.86).setDepth(b.y + 135).play('v2-npc-' + id + '-idle');
             this.buildings.push(npc);
+            // Each settled resident personalizes their doorway with a distinct painted
+            // pennant and paired flower pots. These are scenery only: no collision or saves.
+            const homePalette = [
+                { cloth: 0xc87355, trim: 0xf4d58a, bloom: 0xffb58c },
+                { cloth: 0x7196bd, trim: 0xf4e4ba, bloom: 0x9cc7f2 },
+                { cloth: 0x9874ad, trim: 0xe8c8a0, bloom: 0xe9a9dc },
+                { cloth: 0x6f9c74, trim: 0xf5d58d, bloom: 0xffd77c },
+                { cloth: 0xb98a58, trim: 0xe7e0b8, bloom: 0xe9b6a0 }
+            ];
+            const palette = homePalette[i % homePalette.length];
+            const doorX = b.x + 64, doorY = b.y + 128;
+            const pennant = this.add.graphics().setDepth(b.y + 135.5);
+            pennant.fillStyle(0x263c32, .55).fillRoundedRect(doorX + 27, doorY - 79, 3, 58, 1);
+            pennant.fillStyle(palette.trim, 1).fillTriangle(doorX + 30, doorY - 79, doorX + 53, doorY - 69, doorX + 30, doorY - 57);
+            pennant.fillStyle(palette.cloth, 1).fillTriangle(doorX + 32, doorY - 76, doorX + 49, doorY - 69, doorX + 32, doorY - 61);
+            this.buildings.push(pennant);
+            for (const side of [-1, 1]) {
+                const potX = doorX + side * 46, potY = doorY + 8;
+                const planter = this.add.graphics().setDepth(potY);
+                planter.fillStyle(0x3e5640, .35).fillEllipse(potX, potY + 2, 18, 5);
+                planter.fillStyle(0x97664b, 1).fillRoundedRect(potX - 7, potY - 11, 14, 11, 3);
+                planter.fillStyle(0x5b855a, 1).fillEllipse(potX - 3, potY - 15, 9, 11).fillEllipse(potX + 3, potY - 16, 9, 11);
+                planter.fillStyle(palette.bloom, 1).fillCircle(potX - 3, potY - 19, 3).fillCircle(potX + 4, potY - 21, 3);
+                this.buildings.push(planter);
+            }
             // A restrained foot-contact oval moves with the resident, but remains
             // behind the painted feet. The name stays above foreground terrain.
             const footShadow = this.add.ellipse(npc.x, npc.y + 1, 24, 6, 0x10291e, .20).setDepth(npc.depth - .1);
