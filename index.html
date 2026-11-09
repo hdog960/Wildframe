@@ -8202,7 +8202,7 @@ class WorldScene extends phaser_1.default.Scene {
         (0, domain_1.collect)(runtime_1.runtime.state, d.item, d.quantity);
         d.sprite.destroy();
     } this.drops = []; }
-    clearWorld() { this.bankDrops(); this.wild.forEach(w => w.sprite.destroy()); this.wild = []; this.nodes = []; this.foes.forEach(f => f.sprite.destroy()); this.foes = []; this.decors.forEach(o => o.destroy()); this.decors = []; this.canopies = []; this.buildings.forEach(o => o.destroy()); this.buildings = []; this.solids.clear(true, true); this.beam.clear(); this.ghost.clear(); this.puzzle = false; this.target = null; this.scanTarget = null; this.scanUntil = 0; }
+    clearWorld() { this.bankDrops(); this.wild.forEach(w => { w.sprite.destroy(); w.shadow?.destroy(); }); this.wild = []; this.nodes = []; this.foes.forEach(f => f.sprite.destroy()); this.foes = []; this.decors.forEach(o => o.destroy()); this.decors = []; this.canopies = []; this.buildings.forEach(o => o.destroy()); this.buildings = []; this.solids.clear(true, true); this.beam.clear(); this.ghost.clear(); this.puzzle = false; this.target = null; this.scanTarget = null; this.scanUntil = 0; }
     renderHaven() {
         this.clearWorld();
         this.region = 'haven';
@@ -8341,8 +8341,8 @@ class WorldScene extends phaser_1.default.Scene {
             this.spawnWild(c.speciesId, c.x, c.y, c.id);
         }
     }
-    spawnWild(speciesId, x, y, id) { const sprite = this.add.sprite(x, y, 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y); if (this.anims.exists('v2-' + speciesId + '-idle'))
-        sprite.play('v2-' + speciesId + '-idle'); this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
+    spawnWild(speciesId, x, y, id) { const shadow = this.add.ellipse(x, y + 1, 33, 11, 0x10291e, .24).setDepth(y - .1); const sprite = this.add.sprite(x, y, 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y); if (this.anims.exists('v2-' + speciesId + '-idle'))
+        sprite.play('v2-' + speciesId + '-idle'); this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, shadow, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
     nearest() { let min = 160; this.target = null; for (const w of this.wild) {
         const d = phaser_1.default.Math.Distance.Between(this.hero.x, this.hero.y, w.x, w.y);
         if (d < min) {
@@ -8475,7 +8475,7 @@ class WorldScene extends phaser_1.default.Scene {
                 this.capturedWild.add(w.id);
             this.burst(w.x, w.y, 0xb5ecda, 22);
             audio_1.sound.play('capture');
-            this.tweens.add({ targets: w.sprite, scaleX: 0, scaleY: 0, alpha: 0, duration: 500, onComplete: () => w.sprite.destroy() });
+            this.tweens.add({ targets: [w.sprite, w.shadow], alpha: 0, duration: 500, onComplete: () => { w.sprite.destroy(); w.shadow.destroy(); } });
             this.wild = this.wild.filter(a => a !== w);
             this.target = null;
             void (0, runtime_1.persist)();
@@ -8853,6 +8853,8 @@ class WorldScene extends phaser_1.default.Scene {
             w.x = nx;
             w.y = ny;
             w.sprite.setPosition(nx, ny + hover).setDepth(ny);
+            // Ground contact remains at the actual world coordinate while winged creatures hover.
+            w.shadow.setPosition(nx, ny + 1).setDepth(ny - .1).setAlpha(w.speciesId === 'hushwing' ? .16 : .24);
         }
         this.ambience.clear();
         if (this.region === 'underdeep') {
