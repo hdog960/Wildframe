@@ -50,3 +50,9 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 - Tailored creature contact-shadow widths to individual species instead of one generic 33px oval; Hushwing's hovering shadow is narrower, thinner and lighter. Ground position and Y-depth tracking remain intact; no sprite texture or saved data changes. Removed redundant per-frame shadow-alpha assignment, retaining creation-time alpha.
 - Verified anchored edits, full source length, Git diff, commit and branch tree. GitHub Pages workflow `42570793762` was queued when inspected; publication, browser visual quality and physical iPhone testing not yet verified.
 - Visual gate OPEN: authentic eight-direction hero/creature sprite artwork and actual gameplay visual review remain necessary; do not advance next phase before creator approval.
+
+
+## 2026-11-09 — Frame-rate-independent creature facing
+- Gameplay commit `67064eb73fcafa8f625aae9b241ad3dcd5291227` changed only `index.html`, using the complete 4.1 MB Git blob, with exact-anchor source assertions and safe fast-forward update. New blob `8e5229edb4a32e815060bb6cbedd376de3d69dd2`.
+- Replaced a frame-dependent 0.12-pixel-per-frame facing threshold with 2 world pixels of accumulated horizontal travel. Slow creatures now eventually turn correctly regardless of frame rate while minor wander does not cause flip jitter. Facing anchor is initialized at spawn; silhouette, habitat, economy and save data remain unchanged.
+- Verified full source preservation, branch update and committed blob. Source-level checks are NOT browser/runtime or iPhone tests. GitHub Pages publication and actual visual quality still require verification. The locked artwork approval gate remains OPEN; genuine eight-direction painted creature and hero frames are outstanding.
