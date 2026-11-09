@@ -8419,10 +8419,22 @@ class WorldScene extends phaser_1.default.Scene {
                 facade.lineStyle(3, palette.trim, .95).strokeRoundedRect(wx - 12, windowY - 16, 24, 30, 3);
                 facade.fillStyle(0xa7d4cb, .45).fillRect(wx - 8, windowY - 12, 16, 21);
                 if (porchStyle === 0 || porchStyle === 3) {
-                    // Cottage and lodge: warm mullions, divided panes.
+                    // Cottage mullions versus lodge's heavy timber shutters and braces.
                     facade.lineStyle(2, 0xe6c99c, .9);
                     facade.lineBetween(wx, windowY - 12, wx, windowY + 9);
                     facade.lineBetween(wx - 8, windowY - 2, wx + 8, windowY - 2);
+                    if (porchStyle === 3) {
+                        for (const side of [-1, 1]) {
+                            const shutterX = wx + side * 19;
+                            facade.fillStyle(0x594b38, 1).fillRoundedRect(shutterX - 6, windowY - 16, 12, 30, 2);
+                            facade.lineStyle(2, palette.trim, .9).strokeRoundedRect(shutterX - 6, windowY - 16, 12, 30, 2);
+                            facade.lineStyle(1, 0xd5b78a, .75);
+                            facade.lineBetween(shutterX - 3, windowY - 12, shutterX + 3, windowY + 10);
+                            facade.lineBetween(shutterX + 3, windowY - 12, shutterX - 3, windowY + 10);
+                        }
+                    } else {
+                        facade.fillStyle(palette.cloth, .95).fillRoundedRect(wx - 14, windowY + 13, 28, 5, 2);
+                    }
                 } else if (porchStyle === 1) {
                     // Market: fabric valance above each window.
                     facade.fillStyle(palette.cloth, 1).fillTriangle(wx - 16, windowY - 17, wx, windowY - 26, wx + 16, windowY - 17);
