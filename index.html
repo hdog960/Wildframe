@@ -8948,7 +8948,20 @@ class WorldScene extends phaser_1.default.Scene {
             // In the diagonal band retain the existing orientation until the
             // input clearly chooses a new one; do not invent diagonal art.
             if (!reducedMotion && this.anims.exists('v2-hero-' + this.facing)) {
-                this.hero.play('v2-hero-' + this.facing, true);
+                const nextAnimation = 'v2-hero-' + this.facing;
+                // Keep the actual painted walk-cycle phase when changing cardinal
+                // directions. Resetting to frame zero on every turn makes feet
+                // visibly snap, especially while steering diagonally on touch.
+                const previousAnimation = this.hero.anims.currentAnim;
+                const previousFrame = this.hero.anims.currentFrame;
+                const turning = this.hero.anims.isPlaying && previousAnimation &&
+                    previousAnimation.key !== nextAnimation;
+                const phase = turning && previousFrame
+                    ? Math.max(0, previousFrame.index - 1) : 0;
+                this.hero.play(nextAnimation, true);
+                if (turning && this.hero.anims.currentAnim &&
+                    this.hero.anims.currentAnim.frames.length > phase)
+                    this.hero.anims.setCurrentFrame(this.hero.anims.currentAnim.frames[phase]);
                 this.hero.anims.timeScale = Math.max(.55, Math.min(1.25, Math.hypot(mx, my)));
             }
             else {
