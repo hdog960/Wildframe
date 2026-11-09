@@ -8384,6 +8384,29 @@ class WorldScene extends phaser_1.default.Scene {
                 porch.fillStyle(palette.trim, 1).fillCircle(doorX, awningY - 15, 5);
             }
             this.buildings.push(porch);
+            // Painted timber grain, joints and vine accents give each porch its own
+            // material language, without changing any building or collision geometry.
+            const detailing = this.add.graphics().setDepth(b.y + 134.6);
+            for (const side of [-1, 1]) {
+                const postX = doorX + side * 34;
+                detailing.lineStyle(2, porchStyle === 3 ? 0xd8b17b : 0x9a7958, .9);
+                detailing.lineBetween(postX - 2, awningY + 13, postX - 2, doorY - 18);
+                detailing.lineStyle(1, 0x3a4a35, .7);
+                detailing.lineBetween(postX + 3, awningY + 16, postX + 3, doorY - 18);
+                detailing.fillStyle(palette.trim, .85).fillCircle(postX, awningY + 14, 3);
+                if (porchStyle === 4 || porchStyle === 2) {
+                    detailing.lineStyle(2, 0x416c43, .9);
+                    detailing.lineBetween(postX, doorY - 20, postX - side * 5, doorY - 41);
+                    for (const leafY of [doorY - 27, doorY - 37]) {
+                        detailing.fillStyle(0x74a469, .95).fillEllipse(postX - side * 7, leafY, 10, 5);
+                    }
+                }
+            }
+            if (porchStyle === 1) {
+                detailing.lineStyle(2, palette.trim, .8);
+                detailing.lineBetween(doorX - 39, awningY + 15, doorX + 39, awningY + 15);
+            }
+            this.buildings.push(detailing);
             const pennant = this.add.graphics().setDepth(b.y + 135.5);
             pennant.fillStyle(0x263c32, .55).fillRoundedRect(doorX + 27, doorY - 79, 3, 58, 1);
             pennant.fillStyle(palette.trim, 1).fillTriangle(doorX + 30, doorY - 79, doorX + 53, doorY - 69, doorX + 30, doorY - 57);
