@@ -8338,6 +8338,36 @@ class WorldScene extends phaser_1.default.Scene {
             ];
             const palette = homePalette[i % homePalette.length];
             const doorX = b.x + 64, doorY = b.y + 128;
+            // Resident-specific porch canopies alter the home's visible silhouette.
+            // Painted above the existing house but behind residents; purely decorative.
+            const porch = this.add.graphics().setDepth(b.y + 134.5);
+            const awningY = doorY - 68;
+            const porchStyle = i % 5;
+            porch.lineStyle(2, 0x35483a, .85);
+            porch.lineBetween(doorX - 34, awningY + 8, doorX - 34, doorY - 14);
+            porch.lineBetween(doorX + 34, awningY + 8, doorX + 34, doorY - 14);
+            porch.fillStyle(0x213a32, .4).fillEllipse(doorX, awningY + 11, 80, 12);
+            if (porchStyle === 0 || porchStyle === 3) {
+                // Cottage gable with a contrasting ridge and broad eaves.
+                porch.fillStyle(palette.cloth, 1).fillTriangle(doorX - 43, awningY + 8, doorX, awningY - 18, doorX + 43, awningY + 8);
+                porch.lineStyle(3, palette.trim, 1).lineBetween(doorX - 43, awningY + 8, doorX, awningY - 18);
+                porch.lineBetween(doorX, awningY - 18, doorX + 43, awningY + 8);
+            } else if (porchStyle === 1 || porchStyle === 4) {
+                // Market-style striped canvas canopy with a scalloped hem.
+                porch.fillStyle(palette.cloth, 1).fillRoundedRect(doorX - 42, awningY - 9, 84, 21, 5);
+                porch.fillStyle(palette.trim, 1);
+                for (let stripe = -3; stripe <= 3; stripe += 2)
+                    porch.fillRect(doorX + stripe * 10 - 5, awningY - 7, 10, 17);
+                for (let scallop = -3; scallop <= 3; scallop++)
+                    porch.fillCircle(doorX + scallop * 12, awningY + 11, 6);
+            } else {
+                // Curved conservatory canopy with a raised central crown.
+                porch.fillStyle(palette.cloth, 1).fillEllipse(doorX, awningY, 88, 31);
+                porch.fillStyle(0x314c3f, 1).fillRect(doorX - 44, awningY + 1, 88, 10);
+                porch.lineStyle(3, palette.trim, 1).lineBetween(doorX - 42, awningY + 10, doorX + 42, awningY + 10);
+                porch.fillStyle(palette.trim, 1).fillCircle(doorX, awningY - 15, 5);
+            }
+            this.buildings.push(porch);
             const pennant = this.add.graphics().setDepth(b.y + 135.5);
             pennant.fillStyle(0x263c32, .55).fillRoundedRect(doorX + 27, doorY - 79, 3, 58, 1);
             pennant.fillStyle(palette.trim, 1).fillTriangle(doorX + 30, doorY - 79, doorX + 53, doorY - 69, doorX + 30, doorY - 57);
