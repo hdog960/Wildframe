@@ -185,3 +185,7 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-10 — Paused hero pose and contact-shadow continuity
 - On pause or modal panel, freeze the actual hero atlas on the current facing's painted idle frame and restore a stationary contact shadow, rather than allowing the walk animation to keep playing while velocity is zero. No synthetic frames, altered sprite dimensions, gameplay, or save changes.
 - Exact unique anchor and full 4.1MB prefix/suffix integrity asserted. Source-level checks only; browser/iPhone visual QA remains necessary. Locked artwork gate OPEN: eight-direction authored hero and creature atlases remain the primary unmet requirement.
+
+## 2026-11-10 — Creature atlas pause continuity
+- Creature sprites now pause their actual authored animation frame while a panel/pause is active, and resume on the first active simulation tick without restarting the gait. This aligns creature presentation with the previously corrected hero pause pose; no fake frames, scaling, gameplay rules, save schema or economy changes.
+- Full 4.1 MB source preserved and exact two-anchor substitution verified in-memory. Browser/iPhone visual testing still required. Visual approval gate OPEN: genuine eight-direction authored hero and creature art remains unfinished.

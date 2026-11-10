@@ -9025,6 +9025,13 @@ class WorldScene extends phaser_1.default.Scene {
             // animations otherwise keep advancing even after physics stops.
             this.hero.setVelocity(0);
             this.hero.anims.stop();
+            // Phaser advances creature atlases even while gameplay update is paused.
+            // Hold each creature on its current painted frame, then resume its
+            // original idle/move strip on the first active gameplay tick.
+            for (const creature of this.wild) {
+                if (creature.sprite.anims.isPlaying)
+                    creature.sprite.anims.pause();
+            }
             const pausedRow = { down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0;
             this.hero.setFrame(pausedRow * 3);
             this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
@@ -9195,6 +9202,10 @@ class WorldScene extends phaser_1.default.Scene {
                 w.sprite.setFrame(0);
             }
             else if (this.anims.exists(creatureAnimation)) {
+                // Resume the exact authored frame held by a pause/menu rather
+                // than restarting the gait or leaving the animation suspended.
+                if (w.sprite.anims.isPaused)
+                    w.sprite.anims.resume();
                 const previous = w.sprite.anims.currentAnim;
                 const previousFrame = w.sprite.anims.currentFrame;
                 const switching = w.sprite.anims.isPlaying && previous && previous.key !== creatureAnimation;
