@@ -180,3 +180,8 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-10 — Garden pergola botanical art
 - Added original climbing stems, alternating foliage and small flower clusters to the garden roof in the playable scene; no intended gameplay/save/collision changes.
 - Complete oversized HTML preserved by exact prefix/suffix checks. Browser/iPhone rendering untested. Visual gate OPEN; authentic eight-direction sprite art and runtime capture remain next priorities.
+
+
+## 2026-11-10 — Paused hero pose and contact-shadow continuity
+- On pause or modal panel, freeze the actual hero atlas on the current facing's painted idle frame and restore a stationary contact shadow, rather than allowing the walk animation to keep playing while velocity is zero. No synthetic frames, altered sprite dimensions, gameplay, or save changes.
+- Exact unique anchor and full 4.1MB prefix/suffix integrity asserted. Source-level checks only; browser/iPhone visual QA remains necessary. Locked artwork gate OPEN: eight-direction authored hero and creature atlases remain the primary unmet requirement.

@@ -9021,7 +9021,17 @@ class WorldScene extends phaser_1.default.Scene {
             return;
         }
         if (runtime_1.runtime.paused || runtime_1.runtime.panel) {
+            // A frozen game must also freeze the painted walking pose. Phaser
+            // animations otherwise keep advancing even after physics stops.
             this.hero.setVelocity(0);
+            this.hero.anims.stop();
+            const pausedRow = { down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0;
+            this.hero.setFrame(pausedRow * 3);
+            this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
+            if (this.hero.visible) {
+                this.heroContact.fillStyle(0x081c1b, .19).fillEllipse(this.hero.x, this.hero.y + 1, 25, 7);
+                this.heroContact.fillStyle(0x071714, .10).fillEllipse(this.hero.x, this.hero.y + 1, 14, 4);
+            }
             return;
         }
         audio_1.sound.update(dt, runtime_1.runtime.state, this.region === 'underdeep');
