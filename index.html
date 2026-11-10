@@ -9098,10 +9098,13 @@ class WorldScene extends phaser_1.default.Scene {
             w.calm = Math.max(0, w.calm - dt);
             const c = runtime_1.runtime.state.creatures.find(c => c.id === w.id);
             const motion = (0, creature_motion_1.creatureMotion)(w.speciesId, this.elapsed, i, w.homeX, w.homeY, !!c, c?.comfort ?? 74);
-            let nx = motion.x, ny = motion.y;
-            w.naturalStable = motion.stabilized;
-            w.behavior = motion.state;
             const still = runtime_1.runtime.state.settings.reducedMotion;
+            // Static poses should not slide through the scenery in reduced-motion mode.
+            // Hold each creature at its last world position, including habitat bounds,
+            // while its contact shadow remains aligned. Do not change save structure.
+            let nx = still ? w.x : motion.x, ny = still ? w.y : motion.y;
+            w.naturalStable = motion.stabilized;
+            w.behavior = still ? 'rest' : motion.state;
             // Keep the painted creature silhouette proportional. The current four-frame
             // atlas repeats a still pose: artificial squash, tilt and gait pulses distort
             // the artwork rather than supply real animation. Preserve the motion path,
