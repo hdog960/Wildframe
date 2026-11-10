@@ -8404,6 +8404,19 @@ class WorldScene extends phaser_1.default.Scene {
                 roofline.lineStyle(6, 0x9e7856, 1);
                 roofline.lineBetween(roofX - 69, roofY + 23, roofX, roofY - 49);
                 roofline.lineBetween(roofX, roofY - 49, roofX + 69, roofY + 23);
+                // Short, staggered cedar-shake courses follow the lodge's
+                // steep triangular roof, with a few sunlit end-grain edges.
+                for (let course = 0; course < 5; course++) {
+                    const y = roofY - 35 + course * 11;
+                    const half = 9 + course * 11;
+                    roofline.lineStyle(2, 0x92735b, .75);
+                    roofline.lineBetween(roofX - half, y, roofX + half, y);
+                    for (let tile = -half + 7 + (course % 2) * 6; tile < half - 3; tile += 14) {
+                        roofline.lineStyle(1, 0x292f2b, .65);
+                        roofline.lineBetween(roofX + tile, y - 7, roofX + tile - 2, y);
+                    }
+                }
+                // The raised ridge beam remains above the shingles.
                 roofline.lineStyle(3, 0xc6a77d, .8).lineBetween(roofX, roofY - 43, roofX, roofY + 23);
             } else {
                 // Open garden pergola roof with planted, asymmetrical greenery.
