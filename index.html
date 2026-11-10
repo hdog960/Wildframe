@@ -8354,6 +8354,15 @@ class WorldScene extends phaser_1.default.Scene {
                 roofline.lineBetween(roofX, roofY - 37, roofX + 63, roofY + 20);
                 for (let j = -2; j <= 2; j++)
                     roofline.lineStyle(1, 0x572f33, .65).lineBetween(roofX + j * 18, roofY + 15, roofX + j * 9, roofY - 15);
+                // Hand-laid slate courses follow the two pitched planes rather
+                // than a rectangular overlay; the roof silhouette stays intact.
+                for (let course = 0; course < 4; course++) {
+                    const y = roofY - 25 + course * 11;
+                    const halfWidth = 12 + course * 12;
+                    roofline.lineStyle(1, 0xf1c6a0, .29).lineBetween(roofX - halfWidth, y, roofX + halfWidth, y);
+                    for (let tile = -halfWidth + 9 + (course % 2) * 5; tile < halfWidth - 4; tile += 13)
+                        roofline.lineStyle(1, 0x542f37, .4).lineBetween(roofX + tile, y - 6, roofX + tile - 2, y);
+                }
             } else if (roofStyle === 1) {
                 // Low market roof with broad striped fabric upper canopy.
                 roofline.fillStyle(0x496b72, 1).fillRoundedRect(roofX - 66, roofY - 11, 132, 34, 6);
