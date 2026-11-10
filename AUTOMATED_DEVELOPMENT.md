@@ -162,3 +162,8 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 - Gameplay commit `e99d126437c3b33a71fabca4e8cb40929b77dfb1` updated only `index.html` using full Git blob (old `bcdee375ccc641eb2ffd35d2abb38d876ea24c00`, new `8bb05489f4142a9b5454e47913c36bf4a24b1a48`).
 - Hero's ground-contact ellipse now responds subtly to the actual planted foot frame (27px/.23 opacity versus 25px/.19), while the painted 64x96 atlas and .82 scale remain untouched. Reduced motion and standing use the static shadow. No gameplay/save changes.
 - Exact anchor and 4MB full-file length checks passed; verified main tree blob and commit. Browser rendering/iPhone playback not tested. Eight-direction original art still unfinished; visual gate OPEN. Next: authentic diagonal hero and creature sprite art and real browser visual QA.
+
+## 2026-11-10 — Cottage pitched slate roof art pass
+- Gameplay commit `d0b1e20e16dd837f806fa85508ab68c49565fc64` changes `index.html`: four hand-laid slate courses and staggered seam lines now follow the triangular cottage roof silhouette rather than being rectangular ornaments. Existing roof style selection, collisions, NPCs, saves and gameplay remain unchanged.
+- Full 4.1 MB HTML read by current Git blob, exact single-anchor assertion and complete-source length guard; committed blob `bb2baf589fbf9fa6a25e9f23ed776d6635f9e8ca` via fast-forward lease. This is procedural roof artwork, not new hero/creature directional sprite art.
+- Source-level checks only; browser visual review and iPhone testing not performed. Artwork approval remains OPEN; prioritize genuine eight-direction sprite artwork and runtime visual testing.
