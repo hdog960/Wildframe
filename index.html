@@ -8338,6 +8338,58 @@ class WorldScene extends phaser_1.default.Scene {
             ];
             const palette = homePalette[i % homePalette.length];
             const doorX = b.x + 64, doorY = b.y + 128;
+            // Five full roofline silhouettes, not just different porch ornaments.
+            // Drawn in world coordinates above the existing cabin roof, below NPCs.
+            // This is scene-only art: no changes to house collision, saves or residents.
+            const roofline = this.add.graphics().setDepth(b.y + 133.9);
+            const roofX = b.x + 64, roofY = b.y + 12;
+            const roofStyle = i % 5;
+            roofline.fillStyle(0x1d302b, .9);
+            roofline.fillRoundedRect(roofX - 56, roofY + 10, 112, 53, 4);
+            if (roofStyle === 0) {
+                // Steep cottage gable, with projecting weatherboards.
+                roofline.fillStyle(0x8e5047, 1).fillTriangle(roofX - 63, roofY + 20, roofX, roofY - 37, roofX + 63, roofY + 20);
+                roofline.lineStyle(4, 0xe0b987, 1);
+                roofline.lineBetween(roofX - 63, roofY + 20, roofX, roofY - 37);
+                roofline.lineBetween(roofX, roofY - 37, roofX + 63, roofY + 20);
+                for (let j = -2; j <= 2; j++)
+                    roofline.lineStyle(1, 0x572f33, .65).lineBetween(roofX + j * 18, roofY + 15, roofX + j * 9, roofY - 15);
+            } else if (roofStyle === 1) {
+                // Low market roof with broad striped fabric upper canopy.
+                roofline.fillStyle(0x496b72, 1).fillRoundedRect(roofX - 66, roofY - 11, 132, 34, 6);
+                for (let j = -5; j <= 5; j += 2)
+                    roofline.fillStyle(0xe0c78d, .95).fillRect(roofX + j * 11 - 5, roofY - 8, 11, 29);
+                roofline.fillStyle(0x26434a, 1).fillRect(roofX - 69, roofY + 20, 138, 7);
+                for (let j = -5; j <= 5; j++)
+                    roofline.fillStyle(j % 2 ? 0x496b72 : 0xe0c78d, 1).fillCircle(roofX + j * 12, roofY + 26, 6);
+            } else if (roofStyle === 2) {
+                // Glasshouse arch, framed by visible structural ribs.
+                roofline.fillStyle(0x3f7773, 1).fillEllipse(roofX, roofY + 19, 130, 91);
+                roofline.fillStyle(0x86b9ad, .75).fillEllipse(roofX, roofY + 19, 114, 75);
+                roofline.fillStyle(0x224a46, 1).fillRect(roofX - 65, roofY + 18, 130, 12);
+                roofline.lineStyle(3, 0xd5d6a5, .95);
+                for (const j of [-38, 0, 38])
+                    roofline.lineBetween(roofX + j, roofY - 17, roofX + j, roofY + 28);
+                roofline.lineBetween(roofX - 60, roofY + 4, roofX + 60, roofY + 4);
+            } else if (roofStyle === 3) {
+                // Tall lodge roof, twin beams and a small masonry chimney.
+                roofline.fillStyle(0x655047, 1).fillRect(roofX + 29, roofY - 45, 19, 44);
+                roofline.fillStyle(0xb08c75, 1).fillRect(roofX + 26, roofY - 46, 25, 7);
+                roofline.fillStyle(0x4d493b, 1).fillTriangle(roofX - 69, roofY + 23, roofX, roofY - 49, roofX + 69, roofY + 23);
+                roofline.lineStyle(6, 0x9e7856, 1);
+                roofline.lineBetween(roofX - 69, roofY + 23, roofX, roofY - 49);
+                roofline.lineBetween(roofX, roofY - 49, roofX + 69, roofY + 23);
+                roofline.lineStyle(3, 0xc6a77d, .8).lineBetween(roofX, roofY - 43, roofX, roofY + 23);
+            } else {
+                // Open garden pergola roof with planted, asymmetrical greenery.
+                roofline.fillStyle(0x725a3f, 1).fillRoundedRect(roofX - 68, roofY - 11, 136, 12, 3);
+                for (let j = -5; j <= 5; j++) {
+                    roofline.fillStyle(0xc6a779, 1).fillRect(roofX + j * 12 - 3, roofY - 19, 6, 27);
+                    roofline.fillStyle(j % 2 ? 0x4f8a58 : 0x76a85e, 1).fillEllipse(roofX + j * 12, roofY - 22 - Math.abs(j % 3) * 3, 20, 16);
+                }
+                roofline.lineStyle(3, 0x405f3b, 1).lineBetween(roofX - 66, roofY + 5, roofX + 66, roofY + 5);
+            }
+            this.buildings.push(roofline);
             // Resident-specific porch canopies alter the home's visible silhouette.
             // Painted above the existing house but behind residents; purely decorative.
             const porch = this.add.graphics().setDepth(b.y + 134.5);
