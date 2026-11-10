@@ -157,3 +157,8 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-10 — Handheld HUD legibility pass
 - Raised quest descriptions from 10px to 12px, toolbar labels from 8px to 10px, and location subtitle from 8px to 10px with stronger contrast and subtle shadow. Three bounded edits in bundled CSS; unchanged layout coordinates, hit areas, gameplay, saves and all assets. Real iPhone landscape QA still required to validate no clipping.
 - Exact unique anchors, complete 4.1 MB source and untouched trailing 4 MB asserted. Source checks are not runtime tests. Authentic eight-direction sprite art and gameplay visual review remain outstanding; visual approval gate OPEN.
+
+## 2026-11-10 — Hero atlas-synchronized ground contact
+- Gameplay commit `e99d126437c3b33a71fabca4e8cb40929b77dfb1` updated only `index.html` using full Git blob (old `bcdee375ccc641eb2ffd35d2abb38d876ea24c00`, new `8bb05489f4142a9b5454e47913c36bf4a24b1a48`).
+- Hero's ground-contact ellipse now responds subtly to the actual planted foot frame (27px/.23 opacity versus 25px/.19), while the painted 64x96 atlas and .82 scale remain untouched. Reduced motion and standing use the static shadow. No gameplay/save changes.
+- Exact anchor and 4MB full-file length checks passed; verified main tree blob and commit. Browser rendering/iPhone playback not tested. Eight-direction original art still unfinished; visual gate OPEN. Next: authentic diagonal hero and creature sprite art and real browser visual QA.
