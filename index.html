@@ -8500,8 +8500,7 @@ class WorldScene extends phaser_1.default.Scene {
             // The resident atlas is roughly 96px tall at .86 scale; 84px clears the silhouette.
             const t = this.add.text(npc.x, npc.y - 84, n?.name ?? id, { fontSize: 9, color: '#f0dfb1', stroke: '#18372e', strokeThickness: 3 }).setOrigin(.5).setDepth(npc.depth + 1);
             this.buildings.push(t);
-            if (!runtime_1.runtime.state.settings.reducedMotion)
-                // Reduced-motion is a complete visual stillness preference: keep the
+            // Reduced-motion is a complete visual stillness preference: keep the
             // resident, its nameplate and contact shadow together at the doorway.
             // Previously the sprite animation stopped, but the endless walk tween
             // continued moving all three elements across the porch.
