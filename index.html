@@ -9052,7 +9052,23 @@ class WorldScene extends phaser_1.default.Scene {
             // and allow only a small vertical hover for the winged species.
             w.sprite.setScale(.78).setAngle(0);
             const hover = !still && w.speciesId === 'hushwing' ? Math.sin(this.elapsed * 3 + i * .73) * 2 : 0;
-            w.sprite.play('v2-' + w.speciesId + (motion.moving ? '-move' : '-idle'), true);
+            // Keep painted frames proportional and preserve gait phase as a creature
+            // changes between its authored idle/move strips. Never animate a creature
+            // when reduced-motion is enabled; use its original first frame instead.
+            const creatureAnimation = 'v2-' + w.speciesId + (motion.moving ? '-move' : '-idle');
+            if (still) {
+                w.sprite.anims.stop();
+                w.sprite.setFrame(0);
+            }
+            else if (this.anims.exists(creatureAnimation)) {
+                const previous = w.sprite.anims.currentAnim;
+                const previousFrame = w.sprite.anims.currentFrame;
+                const switching = w.sprite.anims.isPlaying && previous && previous.key !== creatureAnimation;
+                const phase = switching && previousFrame ? Math.max(0, previousFrame.index - 1) : 0;
+                w.sprite.play(creatureAnimation, true);
+                if (switching && w.sprite.anims.currentAnim && w.sprite.anims.currentAnim.frames[phase])
+                    w.sprite.anims.setCurrentFrame(w.sprite.anims.currentAnim.frames[phase]);
+            }
             if (c) {
                 const b = runtime_1.runtime.state.buildings.find(b => b.id === c.habitatId);
                 if (b) {
