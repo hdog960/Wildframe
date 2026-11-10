@@ -8380,6 +8380,22 @@ class WorldScene extends phaser_1.default.Scene {
                 for (const j of [-38, 0, 38])
                     roofline.lineBetween(roofX + j, roofY - 17, roofX + j, roofY + 28);
                 roofline.lineBetween(roofX - 60, roofY + 4, roofX + 60, roofY + 4);
+                // Leaded panes and reflected sky break up the solid glass dome.
+                // The staggered highlights sit inside the arch and keep the
+                // greenhouse recognizable at the iPhone's world zoom.
+                for (let pane = -2; pane <= 2; pane++) {
+                    const px = roofX + pane * 21;
+                    const inset = Math.abs(pane) * 5;
+                    roofline.lineStyle(1, 0x285e58, .65);
+                    roofline.lineBetween(px, roofY - 17 + inset, px, roofY + 17);
+                    roofline.lineStyle(2, 0xd9eee0, .53);
+                    roofline.lineBetween(px + 4, roofY - 12 + inset, px + 11, roofY - 19 + inset);
+                    roofline.fillStyle(0xc5e8d8, .27).fillRect(px + 3, roofY - 2, 9, 3);
+                }
+                roofline.lineStyle(2, 0xe8edc9, .75);
+                roofline.lineBetween(roofX - 43, roofY - 10, roofX - 25, roofY - 23);
+                roofline.lineBetween(roofX + 25, roofY - 23, roofX + 43, roofY - 10);
+                roofline.fillStyle(0x2e6656, .95).fillRect(roofX - 63, roofY + 24, 126, 5);
             } else if (roofStyle === 3) {
                 // Tall lodge roof, twin beams and a small masonry chimney.
                 roofline.fillStyle(0x655047, 1).fillRect(roofX + 29, roofY - 45, 19, 44);
