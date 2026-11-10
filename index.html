@@ -8501,9 +8501,14 @@ class WorldScene extends phaser_1.default.Scene {
             const t = this.add.text(npc.x, npc.y - 84, n?.name ?? id, { fontSize: 9, color: '#f0dfb1', stroke: '#18372e', strokeThickness: 3 }).setOrigin(.5).setDepth(npc.depth + 1);
             this.buildings.push(t);
             if (!runtime_1.runtime.state.settings.reducedMotion)
+                // Reduced-motion is a complete visual stillness preference: keep the
+            // resident, its nameplate and contact shadow together at the doorway.
+            // Previously the sprite animation stopped, but the endless walk tween
+            // continued moving all three elements across the porch.
+            if (!runtime_1.runtime.state.settings.reducedMotion) {
                 this.tweens.add({ targets: [npc, t, footShadow], x: '+=30', duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut', onYoyo: () => npc.setFlipX(true), onRepeat: () => npc.setFlipX(false) });
-            if (!runtime_1.runtime.state.settings.reducedMotion)
                 npc.play('v2-npc-' + id + '-move');
+            }
         });
         for (const c of runtime_1.runtime.state.creatures) {
             const existing = this.wild.find(w => w.id === c.id);
