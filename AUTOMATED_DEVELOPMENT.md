@@ -172,3 +172,7 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 - Gameplay commit `66208cfd3e54e08981fb7edcb8104cdf33f10973` changes only `index.html`: adds leaded pane divisions, staggered sky reflections and a dark lower sill to the Haven conservatory arch, retaining the existing silhouette and collision. Source length increased from 4,116,349 to 4,117,461 characters. New blob `f954ef4646eedaf976e98595c113fe20c650cfba` verified on main.
 - Exact-anchor and full-source size assertions passed. Browser visuals and iPhone runtime were not tested; deployment success is not established by a commit alone.
 - Visual checkpoint OPEN: authentic eight-direction hero and creature sprite sheets and gameplay visual QA still needed. No new gameplay phase or save changes.
+
+## 2026-11-10 — Lodge cedar-shake roof artwork
+- Gameplay commit `6213be537a2099804e38e5728bcb28087e2d67ba` adds five pitched, staggered cedar-shake courses and end-grain seams to the Haven lodge roof, retaining original roof silhouette, ridge, chimney, collisions and saves. Full 4.1 MB HTML preserved; new index blob `dc6b2bc2d18f817005bce25442c947b0e862784f`.
+- Source-size and unique-anchor assertions passed; main fast-forward lease succeeded. No browser rendering, screenshot or physical iPhone test claimed. Eight-direction original sprite art and runtime visual QA remain unfinished; creator visual gate OPEN.
