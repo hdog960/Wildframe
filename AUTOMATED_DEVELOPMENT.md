@@ -167,3 +167,8 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 - Gameplay commit `d0b1e20e16dd837f806fa85508ab68c49565fc64` changes `index.html`: four hand-laid slate courses and staggered seam lines now follow the triangular cottage roof silhouette rather than being rectangular ornaments. Existing roof style selection, collisions, NPCs, saves and gameplay remain unchanged.
 - Full 4.1 MB HTML read by current Git blob, exact single-anchor assertion and complete-source length guard; committed blob `bb2baf589fbf9fa6a25e9f23ed776d6635f9e8ca` via fast-forward lease. This is procedural roof artwork, not new hero/creature directional sprite art.
 - Source-level checks only; browser visual review and iPhone testing not performed. Artwork approval remains OPEN; prioritize genuine eight-direction sprite artwork and runtime visual testing.
+
+## 2026-11-10 — Conservatory glazing artwork
+- Gameplay commit `66208cfd3e54e08981fb7edcb8104cdf33f10973` changes only `index.html`: adds leaded pane divisions, staggered sky reflections and a dark lower sill to the Haven conservatory arch, retaining the existing silhouette and collision. Source length increased from 4,116,349 to 4,117,461 characters. New blob `f954ef4646eedaf976e98595c113fe20c650cfba` verified on main.
+- Exact-anchor and full-source size assertions passed. Browser visuals and iPhone runtime were not tested; deployment success is not established by a commit alone.
+- Visual checkpoint OPEN: authentic eight-direction hero and creature sprite sheets and gameplay visual QA still needed. No new gameplay phase or save changes.
