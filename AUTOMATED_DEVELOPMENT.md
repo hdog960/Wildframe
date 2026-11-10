@@ -137,3 +137,9 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-09 — Creature animation phase and reduced-motion correctness
 - Gameplay commit `dcbaa56bbdc9d6e53cd072e384f4b887d2a51a7a` updates only `index.html` (blob `a4b03549e0fac5d5091825578f3f4d76fd96bee9`); switches between creature idle/move animations preserve painted frame phase, while reduced-motion uses original static frame 0. No intended save, creature economy or gameplay changes.
 - Full source preserved and main fast-forward verified. No browser execution, screenshot, iPhone test or live Pages publication confirmed. This is NOT new eight-direction sprite artwork. Visual gate OPEN; next: actual directional painted art and live visual QA.
+
+
+## 2026-11-09 — Reduced-motion resident porch walk integrity
+- Gameplay commits `4433fc0edb3e1954654e4b1a49231eb5f9bb7b81` and cleanup `5f082b3e12406b9e5562dc2135a3e487fc912526` modify only `index.html` (final blob `a209d0a9a4de04307e0db3b903baa8e45654bbaf`). Resident NPCs previously continued an endless 30px porch walk tween even when reduced-motion disabled their sprite animation. The tween now starts only when reduced-motion is off, keeping resident, nameplate and foot shadow stationary together for reduced-motion users; normal walk animation remains unchanged.
+- Full 4.1 MB source read through Git blob API, exact anchor/size checks and expected-head fast-forward performed. Git diff and updated main blob checked. Source assertions only: no browser rendering, animation playback, screenshot or physical iPhone testing. Initial Pages workflow `42732695670` queued when checked; final publication not yet verified.
+- Visual gate remains OPEN: authentic eight-direction painted hero/creature art, distinct house silhouettes and live visual QA remain outstanding. Do not unlock future gameplay phases before creator review.
