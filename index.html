@@ -8344,6 +8344,67 @@ class WorldScene extends phaser_1.default.Scene {
             const roofline = this.add.graphics().setDepth(b.y + 133.9);
             const roofX = b.x + 64, roofY = b.y + 12;
             const roofStyle = i % 5;
+            // Distinct inhabited house elevations: these painted facade materials
+            // extend the architecture below the roof rather than changing trim alone.
+            // The existing door, resident, collision footprint and save schema remain intact.
+            const wallTones = [0xd4aa86, 0xa9b7aa, 0xb2c4ac, 0x9e8064, 0xb7aa7a];
+            const wallShadows = [0x885d4f, 0x587c7a, 0x63806c, 0x59483b, 0x60774c];
+            roofline.fillStyle(wallShadows[roofStyle], 1);
+            roofline.fillRect(roofX - 58, roofY + 18, 116, 95);
+            roofline.fillStyle(wallTones[roofStyle], 1);
+            roofline.fillRect(roofX - 53, roofY + 22, 106, 86);
+            if (roofStyle === 0) {
+                // Cottage: broad limewashed boards and exposed corner beams.
+                for (let row = 0; row < 7; row++) {
+                    roofline.lineStyle(1, 0x966c59, .47);
+                    roofline.lineBetween(roofX - 52, roofY + 29 + row * 11, roofX + 52, roofY + 29 + row * 11);
+                }
+                roofline.fillStyle(0x765041, 1).fillRect(roofX - 53, roofY + 22, 7, 86);
+                roofline.fillRect(roofX + 46, roofY + 22, 7, 86);
+            } else if (roofStyle === 1) {
+                // Merchant's house: vertical teal panelling and warm corner posts.
+                for (let col = -4; col <= 4; col++) {
+                    roofline.lineStyle(2, 0x5b8583, .7);
+                    roofline.lineBetween(roofX + col * 11, roofY + 29, roofX + col * 11, roofY + 104);
+                }
+                roofline.fillStyle(0x9c7953, 1).fillRect(roofX - 53, roofY + 22, 6, 86);
+                roofline.fillRect(roofX + 47, roofY + 22, 6, 86);
+            } else if (roofStyle === 2) {
+                // Conservatory: tall leaded glass panels with dark mullions.
+                for (let col = -2; col <= 2; col++) {
+                    const px = roofX + col * 19;
+                    roofline.fillStyle(0x4b796d, 1).fillRect(px - 8, roofY + 31, 16, 55);
+                    roofline.fillStyle(0xb1d7b6, .65).fillRect(px - 6, roofY + 33, 12, 50);
+                    roofline.lineStyle(2, 0x38564e, .95).lineBetween(px, roofY + 32, px, roofY + 83);
+                    roofline.lineBetween(px - 7, roofY + 60, px + 7, roofY + 60);
+                    roofline.lineStyle(1, 0xe4f5d4, .65).lineBetween(px - 5, roofY + 36, px - 5, roofY + 50);
+                }
+            } else if (roofStyle === 3) {
+                // Lodge: substantial cross-braced timber framing and stone plinth.
+                roofline.fillStyle(0x716457, 1).fillRect(roofX - 53, roofY + 96, 106, 12);
+                for (let col of [-46, -16, 16, 46])
+                    roofline.fillStyle(0x614633, 1).fillRect(roofX + col - 3, roofY + 24, 6, 72);
+                roofline.lineStyle(5, 0x765139, 1);
+                roofline.lineBetween(roofX - 45, roofY + 31, roofX - 16, roofY + 82);
+                roofline.lineBetween(roofX + 45, roofY + 31, roofX + 16, roofY + 82);
+            } else {
+                // Garden house: ochre plaster, green trellis and climbing ivy.
+                for (let col = -3; col <= 3; col++) {
+                    roofline.lineStyle(2, 0x668554, .75);
+                    roofline.lineBetween(roofX + col * 14, roofY + 29, roofX + col * 14, roofY + 102);
+                }
+                for (let row = 0; row < 5; row++) {
+                    roofline.lineStyle(2, 0x668554, .65);
+                    roofline.lineBetween(roofX - 48, roofY + 34 + row * 15, roofX + 48, roofY + 34 + row * 15);
+                }
+                for (let leaf = 0; leaf < 12; leaf++) {
+                    const lx = roofX - 46 + (leaf * 17) % 93;
+                    const ly = roofY + 30 + (leaf * 23) % 66;
+                    roofline.fillStyle(leaf % 2 ? 0x4b8150 : 0x91ad65, 1).fillEllipse(lx, ly, 10, 6);
+                }
+            }
+            // A dark, continuous foundation ties each elevation to the ground.
+            roofline.fillStyle(wallShadows[roofStyle], 1).fillRect(roofX - 56, roofY + 107, 112, 6);
             roofline.fillStyle(0x1d302b, .9);
             roofline.fillRoundedRect(roofX - 56, roofY + 10, 112, 53, 4);
             if (roofStyle === 0) {
