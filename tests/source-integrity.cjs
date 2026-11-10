@@ -45,4 +45,19 @@ const contracts = [
 for (const [label, pattern] of contracts) {
   assert(pattern.test(html), 'Critical Wildframe startup/save contract missing: '+label);
 }
+
+// Animation regression contracts: protect the existing authored frames and
+// pause/resume behavior while genuine eight-direction artwork is developed.
+// These static checks do not establish visual acceptance.
+const motionContracts = [
+  ['Hero pause stops animation', /this\.hero\.anims\.stop\(\);[\s\S]{0,700}creature\.sprite\.anims\.pause\(\)/],
+  ['Hero paused pose uses painted atlas frame', /this\.hero\.setFrame\(pausedRow \* 3\)/],
+  ['Creature animation resumes after pause', /w\.sprite\.anims\.isPaused\)[\s\S]{0,100}w\.sprite\.anims\.resume\(\)/],
+  ['Hero animation uses authored frames', /this\.hero\.play\(nextAnimation, true\)/],
+  ['Hero painted proportions remain stable', /this\.hero\.setScale\(\.82\)/],
+  ['Diagonal movement deadband', /ax > ay \* 1\.18[\s\S]{0,150}ay > ax \* 1\.18/],
+];
+for (const [label, pattern] of motionContracts) {
+  assert(pattern.test(html), 'Wildframe animation contract missing: '+label);
+}
 console.log('Wildframe integrity PASS: '+bytes+' bytes; '+validated+' inline JS blocks syntax-checked. Real browser/iPhone QA still required.');
