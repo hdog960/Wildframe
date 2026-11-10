@@ -8425,6 +8425,26 @@ class WorldScene extends phaser_1.default.Scene {
                     roofline.fillStyle(0xc6a779, 1).fillRect(roofX + j * 12 - 3, roofY - 19, 6, 27);
                     roofline.fillStyle(j % 2 ? 0x4f8a58 : 0x76a85e, 1).fillEllipse(roofX + j * 12, roofY - 22 - Math.abs(j % 3) * 3, 20, 16);
                 }
+                // Climbing vines, alternating leaves and flower clusters give
+                // the garden pergola a distinct botanical silhouette.
+                for (let stem = -4; stem <= 4; stem++) {
+                    const x = roofX + stem * 14;
+                    const rise = Math.abs(stem % 3) * 3;
+                    roofline.lineStyle(2, 0x315c3b, .92);
+                    roofline.lineBetween(x - 5, roofY + 3, x - 2, roofY - 17 - rise);
+                    roofline.lineBetween(x - 2, roofY - 17 - rise, x + 4, roofY - 26 - rise);
+                    for (let leaf = 0; leaf < 2; leaf++) {
+                        const ly = roofY - 9 - leaf * 10 - rise;
+                        roofline.fillStyle((stem + leaf) % 2 ? 0x93b66a : 0x4b8150, 1);
+                        roofline.fillEllipse(x + (leaf ? 5 : -5), ly, 11, 6);
+                    }
+                    if (stem % 2 === 0) {
+                        const fy = roofY - 28 - rise;
+                        roofline.fillStyle(0xf2c18b, .96).fillCircle(x + 4, fy, 3);
+                        roofline.fillStyle(0xe7a5a0, .96).fillCircle(x + 8, fy + 2, 3);
+                        roofline.fillStyle(0xffe2a4, 1).fillCircle(x + 6, fy + 1, 1.5);
+                    }
+                }
                 roofline.lineStyle(3, 0x405f3b, 1).lineBetween(roofX - 66, roofY + 5, roofX + 66, roofY + 5);
             }
             this.buildings.push(roofline);

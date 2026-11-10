@@ -176,3 +176,7 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-10 — Lodge cedar-shake roof artwork
 - Gameplay commit `6213be537a2099804e38e5728bcb28087e2d67ba` adds five pitched, staggered cedar-shake courses and end-grain seams to the Haven lodge roof, retaining original roof silhouette, ridge, chimney, collisions and saves. Full 4.1 MB HTML preserved; new index blob `dc6b2bc2d18f817005bce25442c947b0e862784f`.
 - Source-size and unique-anchor assertions passed; main fast-forward lease succeeded. No browser rendering, screenshot or physical iPhone test claimed. Eight-direction original sprite art and runtime visual QA remain unfinished; creator visual gate OPEN.
+
+## 2026-11-10 — Garden pergola botanical art
+- Added original climbing stems, alternating foliage and small flower clusters to the garden roof in the playable scene; no intended gameplay/save/collision changes.
+- Complete oversized HTML preserved by exact prefix/suffix checks. Browser/iPhone rendering untested. Visual gate OPEN; authentic eight-direction sprite art and runtime capture remain next priorities.
