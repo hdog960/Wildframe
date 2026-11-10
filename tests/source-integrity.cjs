@@ -28,4 +28,21 @@ for(const [tag,attrs,body] of scripts){
   validated++;
 }
 assert(validated>=1,'No inline JavaScript game entry point was checked');
+// Startup/save regression contracts: fail CI if a source edit silently strips
+// the playable scene, input-safe rendering, or existing persistence fallback.
+// These are static smoke checks, not proof of successful browser boot.
+const contracts = [
+  ['Phaser scene bootstrap', /function createGame\(\)\s*\{\s*return new phaser_1\.default\.Game\(/],
+  ['Game mounts into viewport', /parent:\s*'game'/],
+  ['Pixel art renderer', /pixelArt:\s*true/],
+  ['Hero physics sprite', /this\.hero\s*=\s*this\.physics\.add\.sprite\(/],
+  ['Wild creature collection', /this\.wild\s*=\s*\[\]/],
+  ['Existing save validator', /function validateSave\(/],
+  ['Existing save function', /async function saveGame\(/],
+  ['Fallback save storage', /localStorage\.setItem\(STORAGE_KEY/],
+  ['Save backup retained', /backup:\s*previous\?\.state/],
+];
+for (const [label, pattern] of contracts) {
+  assert(pattern.test(html), 'Critical Wildframe startup/save contract missing: '+label);
+}
 console.log('Wildframe integrity PASS: '+bytes+' bytes; '+validated+' inline JS blocks syntax-checked. Real browser/iPhone QA still required.');
