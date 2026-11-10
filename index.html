@@ -9053,7 +9053,14 @@ class WorldScene extends phaser_1.default.Scene {
         // Unlike a fake sprite squash, this never alters the authored character atlas.
         this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
         if (this.hero.visible) {
-            this.heroContact.fillStyle(0x081c1b, .19).fillEllipse(this.hero.x, this.hero.y + 1, 25, 7);
+            // Anchor the contact shadow to the authored feet. A small, symmetric
+            // two-step opacity shift follows the actual atlas frame instead of
+            // stretching or moving the painted character texture.
+            const footFrame = this.hero.anims.currentFrame;
+            const gaitFrame = walking && !reducedMotion && this.hero.anims.isPlaying && footFrame
+                ? (footFrame.index - 1) % 3 : 0;
+            const planted = gaitFrame === 1;
+            this.heroContact.fillStyle(0x081c1b, planted ? .23 : .19).fillEllipse(this.hero.x, this.hero.y + 1, planted ? 27 : 25, 7);
             this.heroContact.fillStyle(0x071714, .10).fillEllipse(this.hero.x, this.hero.y + 1, 14, 4);
         }
         this.hero.setAlpha(this.elapsed < this.invincibleUntil ? .5 : 1);
