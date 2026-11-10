@@ -153,3 +153,7 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-09 — Reduced-motion creature position and contact-shadow integrity
 - Creature movement update holds each wild/housed creature at its last valid world position when reduced motion is enabled, rather than letting a static painted sprite slide through the scene. Ground-contact shadow stays aligned; normal species movement, habitat bounds, creature economy and saves unchanged. This is a motion-presentation correction, NOT original eight-direction artwork.
 - Full source read via Git blob; unique anchor and full-size prefix/suffix assertions. Browser/iPhone runtime QA still required. Artwork approval remains OPEN; next: genuine eight-direction sprite artwork and gameplay capture.
+
+## 2026-11-10 — Handheld HUD legibility pass
+- Raised quest descriptions from 10px to 12px, toolbar labels from 8px to 10px, and location subtitle from 8px to 10px with stronger contrast and subtle shadow. Three bounded edits in bundled CSS; unchanged layout coordinates, hit areas, gameplay, saves and all assets. Real iPhone landscape QA still required to validate no clipping.
+- Exact unique anchors, complete 4.1 MB source and untouched trailing 4 MB asserted. Source checks are not runtime tests. Authentic eight-direction sprite art and gameplay visual review remain outstanding; visual approval gate OPEN.
