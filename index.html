@@ -9235,8 +9235,16 @@ class WorldScene extends phaser_1.default.Scene {
             w.x = nx;
             w.y = ny;
             w.sprite.setPosition(nx, ny + hover).setDepth(ny);
-            // Ground contact remains at the actual world coordinate while winged creatures hover.
+            // Winged creatures hover above their *stationary* ground contact.
+            // Keep the shadow centered on the world feet, and let its authored
+            // ellipse become slightly softer when the body rises; no sprite
+            // squash, stretching, fake frames or world-position drift.
             w.shadow.setPosition(nx, ny + 1).setDepth(ny - .1);
+            if (w.speciesId === 'hushwing') {
+                const height = Math.abs(hover) / 2;
+                w.shadow.setAlpha(still ? .24 : .24 - height * .055);
+                w.shadow.setScale(1 - height * .09, 1 - height * .045);
+            }
         }
         this.ambience.clear();
         if (this.region === 'underdeep') {

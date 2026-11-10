@@ -189,3 +189,7 @@ The 4.1 MB page includes substantial embedded art/animation/application code; th
 ## 2026-11-10 — Creature atlas pause continuity
 - Creature sprites now pause their actual authored animation frame while a panel/pause is active, and resume on the first active simulation tick without restarting the gait. This aligns creature presentation with the previously corrected hero pause pose; no fake frames, scaling, gameplay rules, save schema or economy changes.
 - Full 4.1 MB source preserved and exact two-anchor substitution verified in-memory. Browser/iPhone visual testing still required. Visual approval gate OPEN: genuine eight-direction authored hero and creature art remains unfinished.
+
+## 2026-11-10 — Hushwing grounded hover-shadow presentation
+- The playable Haven now subtly softens and contracts Hushwing's separate ground-contact ellipse as its existing authored winged hover rises; the shadow remains anchored at world ground coordinates while the creature sprite alone hovers. Reduced-motion restores a fixed contact shadow. No new fake sprite frames, sprite deformation, gameplay/economy/save changes.
+- Full oversized HTML source preserved with unique-anchor, complete-file prefix/suffix and exact length-delta assertions. No browser render or iPhone runtime test claimed. Eight-direction authored hero/creature art and visual approval remain OPEN.
