@@ -8685,12 +8685,52 @@ class WorldScene extends phaser_1.default.Scene {
                 // authored SE/NW stride rows are used in the world, not just loaded.
                 // The nameplate and contact shadow share the exact same path.
                 // Other residents retain their established horizontal porch route.
-                this.tweens.add({ targets: [npc, t, footShadow], x: '+=30',
-                    ...(authoredNaturalist ? { y: '+=8' } : {}),
-                    duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut',
-                    onYoyo: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-up-left', true); else npc.setFlipX(true); },
-                    onRepeat: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-down-right', true); else npc.setFlipX(false); } });
-                npc.play(authoredNaturalist ? 'v3-npc-naturalist-down-right' : 'v2-npc-' + id + '-move');
+                if (authoredNaturalist) {
+                    // A small closed field-study circuit uses four genuinely painted
+                    // diagonals. All three visual elements follow one shared position;
+                    // update painter depth as the resident moves toward the viewer.
+                    const homeX = npc.x, homeY = npc.y;
+                    const route = [
+                        { dx: 24, dy: 10, facing: 'down-right', ms: 1850 },
+                        { dx: 42, dy: -4, facing: 'up-right', ms: 1650 },
+                        { dx: 18, dy: -13, facing: 'up-left', ms: 1850 },
+                        { dx: 0, dy: 0, facing: 'down-left', ms: 1650 }
+                    ];
+                    let leg = 0;
+                    const walkLeg = () => {
+                        if (!npc.active || !t.active || !footShadow.active) return;
+                        const stop = route[leg];
+                        npc.play('v3-npc-naturalist-' + stop.facing, true);
+                        this.tweens.add({
+                            targets: [npc, t, footShadow],
+                            x: homeX + stop.dx, y: homeY + stop.dy,
+                            duration: stop.ms, ease: 'Sine.easeInOut',
+                            onUpdate: () => {
+                                npc.setDepth(npc.y);
+                                footShadow.setDepth(npc.y - .1);
+                                t.setDepth(npc.y + 1);
+                            },
+                            onComplete: () => {
+                                if (!npc.active) return;
+                                leg = (leg + 1) % route.length;
+                                // Pause briefly to examine the surroundings; use
+                                // an authored stationary stride frame, not foot sliding.
+                                npc.anims.stop();
+                                npc.setFrame((({ 'down': 0, 'down-left': 1, 'left': 2,
+                                    'up-left': 3, 'up': 4, 'up-right': 5, 'right': 6,
+                                    'down-right': 7 })[stop.facing]) * 3 + 1);
+                                this.time.delayedCall(420, walkLeg);
+                            }
+                        });
+                    };
+                    walkLeg();
+                } else {
+                    this.tweens.add({ targets: [npc, t, footShadow], x: '+=30',
+                        duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut',
+                        onYoyo: () => npc.setFlipX(true),
+                        onRepeat: () => npc.setFlipX(false) });
+                    npc.play('v2-npc-' + id + '-move');
+                }
             }
         });
         for (const c of runtime_1.runtime.state.creatures) {

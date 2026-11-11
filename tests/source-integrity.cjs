@@ -73,8 +73,12 @@ for (const [label, pattern] of motionContracts) {
 }
 assert(html.includes("assets/v3/naturalist-eightway.png"), 'Naturalist atlas load missing');
 assert(html.includes("v3-npc-naturalist-\u0024{dir}"), 'Naturalist eight-way animation missing');
-assert(html.includes("npc.play(authoredNaturalist ? 'v3-npc-naturalist-down-right' : 'v2-npc-' + id + '-move')"), 'Naturalist diagonal outbound animation or legacy fallback missing');
-assert(html.includes("npc.play('v3-npc-naturalist-up-left', true)"), 'Naturalist diagonal return animation missing');
-assert(html.includes("npc.play('v3-npc-naturalist-down-right', true)"), 'Naturalist diagonal outbound loop animation missing');
-assert(html.includes("...(authoredNaturalist ? { y: '+=8' } : {})"), 'Naturalist diagonal walking path missing');
+assert(html.includes("const route = ["), 'Naturalist field-study route missing');
+for (const dir of ['down-right','up-right','up-left','down-left']) {
+  assert(html.includes("facing: '"+dir+"'"), 'Naturalist missing authored circuit leg: '+dir);
+}
+assert(html.includes("npc.play('v3-npc-naturalist-' + stop.facing, true)"), 'Naturalist route animation missing');
+assert(html.includes("npc.setDepth(npc.y)"), 'Naturalist painter depth tracking missing');
+assert(html.includes("this.time.delayedCall(420, walkLeg)"), 'Naturalist field observation pause missing');
+assert(html.includes("npc.play('v2-npc-' + id + '-move')"), 'Other resident fallback missing');
 console.log('Wildframe integrity PASS: '+bytes+' bytes; '+validated+' inline JS blocks syntax-checked. Real browser/iPhone QA still required.');
