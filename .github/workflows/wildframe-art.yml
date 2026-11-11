@@ -57,7 +57,7 @@ jobs:
       - name: Render authored Thornroller artwork when available
         run: |
           if test -f assets/v3/thornroller-eightway.svg; then
-            node tools/render-sprite-atlas.cjs assets/v3/thornroller-eightway.svg assets/v3/thornroller-eightway.png assets/v3/naturalist-eightway.png
+            node tools/render-sprite-atlas.cjs assets/v3/thornroller-eightway.svg assets/v3/thornroller-eightway.png
           else
             echo "No Thornroller source committed yet."
           fi
