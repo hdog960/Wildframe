@@ -8144,13 +8144,14 @@ class WorldScene extends phaser_1.default.Scene {
         this.beam = this.add.graphics().setDepth(9000);
         this.ghost = this.add.graphics().setDepth(8000);
         this.ambience = this.add.graphics().setDepth(7000);
-        this.hero = this.physics.add.sprite(1024, 800, 'v2-hero', 0).setOrigin(.5, .9).setScale(.82).setDepth(800);
+        this.hasV3Hero = this.textures.exists('v3-hero') && this.textures.get('v3-hero').frameTotal >= 25;
+        this.hero = this.physics.add.sprite(1024, 800, this.hasV3Hero ? 'v3-hero' : 'v2-hero', 0).setOrigin(.5, .9).setScale(.82).setDepth(800);
         // A quiet foot-contact shadow anchors the tall painted hero to the ground.
         // Graphics are scene-owned and automatically cleaned up on shutdown.
         this.heroContact = this.add.graphics().setDepth(799);
         // This is the old player's foot collision, not a 64x96 torso-sized obstacle.
         this.hero.body.setSize(20, 13);
-        this.hero.body.setOffset(22, 77);
+        this.hero.body.setOffset(this.hasV3Hero ? 30 : 22, 77);
         this.physics.add.collider(this.hero, this.solids);
         this.physics.world.setBounds(32, 32, 1984, 1472);
         this.hero.setCollideWorldBounds(true);
@@ -9093,7 +9094,7 @@ class WorldScene extends phaser_1.default.Scene {
                 if (creature.sprite.anims.isPlaying)
                     creature.sprite.anims.pause();
             }
-            const pausedRow = { down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0;
+            const pausedRow = (this.hasV3Hero ? { down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 } : { down: 0, left: 1, right: 2, up: 3 })[this.facing] ?? 0;
             this.hero.setFrame(pausedRow * 3);
             this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
             if (this.hero.visible) {
@@ -9133,30 +9134,34 @@ class WorldScene extends phaser_1.default.Scene {
         if (walking) {
             this.lastMove = this.elapsed;
             const ax = Math.abs(mx), ay = Math.abs(my);
-            if (ax > ay * 1.18)
-                this.facing = mx > 0 ? 'right' : 'left';
-            else if (ay > ax * 1.18)
-                this.facing = my > 0 ? 'down' : 'up';
-            // Keep the painted cardinal atlas while steering diagonally, but
-            // never show a character facing *against* the direction of travel.
-            // A diagonal starting from rest or reversing direction previously
-            // retained an unrelated pose indefinitely (e.g. facing down while
-            // walking north-east). Choose the nearer cardinal only when the
-            // current facing is incompatible; otherwise keep it for stability.
-            else {
-                const compatible = (this.facing === 'right' && mx > 0) ||
-                    (this.facing === 'left' && mx < 0) ||
-                    (this.facing === 'down' && my > 0) ||
-                    (this.facing === 'up' && my < 0);
-                if (!compatible)
-                    this.facing = ax >= ay
-                        ? (mx > 0 ? 'right' : 'left')
-                        : (my > 0 ? 'down' : 'up');
+            if (this.hasV3Hero) {
+                // Real eight-way artwork; stabilize cardinal transitions near touch axes.
+                if (ax > ay * 2.15)
+                    this.facing = mx > 0 ? 'right' : 'left';
+                else if (ay > ax * 2.15)
+                    this.facing = my > 0 ? 'down' : 'up';
+                else
+                    this.facing = (my > 0 ? 'down-' : 'up-') + (mx > 0 ? 'right' : 'left');
             }
-            // Do not synthesize diagonal sprite frames: retain the original
-            // proportional artwork until genuine eight-direction art exists.
-            if (!reducedMotion && this.anims.exists('v2-hero-' + this.facing)) {
-                const nextAnimation = 'v2-hero-' + this.facing;
+            else {
+                // Existing v2 cardinal logic remains the fallback.
+                if (ax > ay * 1.18)
+                    this.facing = mx > 0 ? 'right' : 'left';
+                else if (ay > ax * 1.18)
+                    this.facing = my > 0 ? 'down' : 'up';
+                else {
+                    const compatible = (this.facing === 'right' && mx > 0) ||
+                        (this.facing === 'left' && mx < 0) ||
+                        (this.facing === 'down' && my > 0) ||
+                        (this.facing === 'up' && my < 0);
+                    if (!compatible)
+                        this.facing = ax >= ay
+                            ? (mx > 0 ? 'right' : 'left')
+                            : (my > 0 ? 'down' : 'up');
+                }
+            }
+            if (!reducedMotion && this.anims.exists((this.hasV3Hero ? 'v3-hero-' : 'v2-hero-') + this.facing)) {
+                const nextAnimation = (this.hasV3Hero ? 'v3-hero-' : 'v2-hero-') + this.facing;
                 // Keep the actual painted walk-cycle phase when changing cardinal
                 // directions. Resetting to frame zero on every turn makes feet
                 // visibly snap, especially while steering diagonally on touch.
@@ -9174,12 +9179,12 @@ class WorldScene extends phaser_1.default.Scene {
             }
             else {
                 this.hero.anims.stop();
-                this.hero.setFrame(({ down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0) * 3);
+                this.hero.setFrame(((this.hasV3Hero ? { down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 } : { down: 0, left: 1, right: 2, up: 3 })[this.facing] ?? 0) * 3);
             }
         }
         else {
             this.hero.anims.stop();
-            const row = { down: 0, left: 1, right: 2, up: 3 }[this.facing] ?? 0;
+            const row = (this.hasV3Hero ? { down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 } : { down: 0, left: 1, right: 2, up: 3 })[this.facing] ?? 0;
             this.hero.setFrame(row * 3);
         }
         // Never deform a painted 64x96 character to fake a walk cycle.
@@ -9452,6 +9457,7 @@ function preloadArt(scene) {
     (0, art_v2_1.preloadArtV2)(scene);
     (0, terrain_v2_1.preloadTerrainV2)(scene);
     scene.load.spritesheet('v2-hero', 'assets/v2/hero.png', { frameWidth: 64, frameHeight: 96 });
+    scene.load.spritesheet('v3-hero', 'assets/v3/hero-eightway.png', { frameWidth: 80, frameHeight: 96 });
     for (const id of exports.creatureTextures)
         scene.load.spritesheet(`v2-${id}`, `assets/v2/${id}.png`, { frameWidth: 96, frameHeight: 96 });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant'])
@@ -9482,6 +9488,9 @@ function createAnimations(scene) {
     ['down', 'left', 'right', 'up'].forEach((dir, row) => {
         create(`hero-${dir}`, 'hero', row * 3, row * 3 + 2, 8);
         create(`v2-hero-${dir}`, 'v2-hero', row * 3, row * 3 + 2, 9);
+    });
+    ['down', 'down-left', 'left', 'up-left', 'up', 'up-right', 'right', 'down-right'].forEach((dir, row) => {
+        create(`v3-hero-${dir}`, 'v3-hero', row * 3, row * 3 + 2, 9);
     });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant']) {
         create(`npc-${id}-idle`, `npc-${id}`, 0, 2, 2);
