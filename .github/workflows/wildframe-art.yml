@@ -6,6 +6,7 @@ on:
       - 'assets/v3/hero-eightway.svg'
       - 'assets/v3/mossmunch-eightway.svg'
       - 'assets/v3/puddlewink-eightway.svg'
+      - 'assets/v3/thornroller-eightway.svg'
       - 'tools/render-sprite-atlas.cjs'
       - '.github/workflows/wildframe-art.yml'
   workflow_dispatch:
@@ -48,20 +49,27 @@ jobs:
       - name: Render authored Puddlewink artwork when available
         run: |
           if test -f assets/v3/puddlewink-eightway.svg; then
-            node tools/render-sprite-atlas.cjs assets/v3/puddlewink-eightway.svg assets/v3/puddlewink-eightway.png
+            node tools/render-sprite-atlas.cjs assets/v3/puddlewink-eightway.svg assets/v3/puddlewink-eightway.png assets/v3/thornroller-eightway.png
           else
             echo "No Puddlewink source committed yet."
           fi
-      - name: Commit the verified generated image without user upload
-        if: ${{ hashFiles('assets/v3/hero-eightway.svg', 'assets/v3/mossmunch-eightway.svg', 'assets/v3/puddlewink-eightway.svg') != '' }}
+      - name: Render authored Thornroller artwork when available
         run: |
-          if [ -z "$(git status --porcelain -- assets/v3/hero-eightway.png assets/v3/mossmunch-eightway.png assets/v3/puddlewink-eightway.png)" ]; then
+          if test -f assets/v3/thornroller-eightway.svg; then
+            node tools/render-sprite-atlas.cjs assets/v3/thornroller-eightway.svg assets/v3/thornroller-eightway.png
+          else
+            echo "No Thornroller source committed yet."
+          fi
+      - name: Commit the verified generated image without user upload
+        if: ${{ hashFiles('assets/v3/hero-eightway.svg', 'assets/v3/mossmunch-eightway.svg', 'assets/v3/puddlewink-eightway.svg', 'assets/v3/thornroller-eightway.svg') != '' }}
+        run: |
+          if [ -z "$(git status --porcelain -- assets/v3/hero-eightway.png assets/v3/mossmunch-eightway.png assets/v3/puddlewink-eightway.png assets/v3/thornroller-eightway.png)" ]; then
             echo "Generated PNG unchanged."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/v3/hero-eightway.png assets/v3/mossmunch-eightway.png assets/v3/puddlewink-eightway.png
+          git add assets/v3/hero-eightway.png assets/v3/mossmunch-eightway.png assets/v3/puddlewink-eightway.png assets/v3/thornroller-eightway.png
           git commit -m "art: rasterize authored eight-way hero atlas"
           if git push origin HEAD:main; then exit 0; fi
           git fetch origin main
