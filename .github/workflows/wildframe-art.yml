@@ -70,10 +70,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/v3/hero-eightway.png assets/v3/mossmunch-eightway.png assets/v3/puddlewink-eightway.png assets/v3/thornroller-eightway.png
-          git commit -m "art: rasterize authored eight-way hero atlas"
+          git commit -m "art: rasterize authored eight-way creature atlases"
           if git push origin HEAD:main; then exit 0; fi
           git fetch origin main
-          if ! git diff --quiet HEAD origin/main -- assets/v3/hero-eightway.svg assets/v3/mossmunch-eightway.svg assets/v3/puddlewink-eightway.svg; then
+          if ! git diff --quiet HEAD origin/main -- assets/v3/hero-eightway.svg assets/v3/mossmunch-eightway.svg assets/v3/puddlewink-eightway.svg assets/v3/thornroller-eightway.svg; then
             echo "::error::A newer hero source is on main; do not deploy stale generated art."
             exit 1
           fi
