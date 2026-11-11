@@ -1,0 +1,456 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="768" viewBox="0 0 240 768"><title>Wildframe naturalist resident — 24 authored walking views</title><desc>Three distinct gait poses for each of eight compass-facing directions. Field hat, amber scarf, teal jacket, boots and expedition pack are continuous in all views.</desc><g transform="translate(40 94.575)">
+<!-- south gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 95)">
+<!-- south gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 95.425)">
+<!-- south gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 190.575)">
+<!-- southwest gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 191)">
+<!-- southwest gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 191.425)">
+<!-- southwest gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 286.575)">
+<!-- west gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 287)">
+<!-- west gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 287.425)">
+<!-- west gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -17 42 q -6 8 0 21 l 8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M 4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 382.575)">
+<!-- northwest gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 383)">
+<!-- northwest gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 383.425)">
+<!-- northwest gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 478.575)">
+<!-- north gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 479)">
+<!-- north gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 479.425)">
+<!-- north gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 574.575)">
+<!-- northeast gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 575)">
+<!-- northeast gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 575.425)">
+<!-- northeast gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -14 40 Q -18 38 -17 55 L -13 68 Q 0 72 13 68 L 17 54 Q 17 40 13 40Z" fill="#75543b" stroke="#342d2b" stroke-width="2"/><path d="M -12 48 H 12 V 59 Q 0 63 -12 59Z" fill="#b18752" stroke="#4a352b"/><path d="M 0 48 V 61" stroke="#dfbc73" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#37675f" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -7 41 V 64 M 7 41 V 64" stroke="#a3a07b" stroke-width="2"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 18 Q 0 10 12 18 L 13 35 Q 0 41 -13 35Z" fill="#5b4136"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 670.575)">
+<!-- east gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 671)">
+<!-- east gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 671.425)">
+<!-- east gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(40 766.575)">
+<!-- southeast gait 1: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -18.5 42 Q -26.5 48 -23.5 62 L -17.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 17.5 42 Q 26.5 48 22.5 63 L 16.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -23.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 17.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(120 767)">
+<!-- southeast gait 2: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -15 42 Q -23 48 -20 62 L -14 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 14 42 Q 23 48 19 63 L 13 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -20 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 14 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g>
+<g transform="translate(200 767.425)">
+<!-- southeast gait 3: individually authored limbs and viewing geometry -->
+<path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
+<path d="M -11.5 42 Q -19.5 48 -16.5 62 L -10.5 65 L -10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M 12 42 q 6 8 0 21 l -8 1Z" fill="#79583b" stroke="#3c3029" stroke-width="2"/>
+<path d="M -13 39 Q 0 35 13 39 L 16 65 Q 0 71 -16 65Z" fill="#4c8476" stroke="#244c48" stroke-width="2"/>
+<path d="M -12 49 Q 0 53 12 49" fill="none" stroke="#8bb4a0" stroke-width="1.5"/>
+<path d="M -4 42 V 66" stroke="#d7bd7b" stroke-width="2"/><circle cx="-4" cy="55" r="2" fill="#edcc78"/>
+<path d="M 10.5 42 Q 19.5 48 15.5 63 L 9.5 64 L 10 49Z" fill="#47766b" stroke="#263f3b" stroke-width="2"/>
+<path d="M -16.5 60 l 1 6 q 4 3 6 -2 l -1 -5Z M 10.5 61 l -1 5 q 5 4 7 -2 l -1 -4Z" fill="#b9846c" stroke="#775345"/>
+<path d="M -11 21 Q -13 14 0 13 Q 13 14 11 22 L 12 33 Q 7 42 0 42 Q -9 41 -12 33Z" fill="#c99172" stroke="#795747" stroke-width="1.5"/>
+<path d="M -12 22 Q -12 11 0 12 Q 13 11 13 24 L 9 22 Q 3 18 -3 22 L -11 25Z" fill="#64473a"/>
+<path d="M -15 19 Q -10 5 0 7 Q 12 6 15 19 L 14 23 Q 0 19 -14 23Z" fill="#a9814c" stroke="#554331" stroke-width="2"/>
+<path d="M -16 22 Q 0 19 16 22 L 12 26 Q 0 24 -12 26Z" fill="#d1aa68" stroke="#6e523b" stroke-width="1.5"/>
+<path d="M -5 12 L 5 12 L 7 17 L -7 17Z" fill="#d6b879"/>
+<ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
+<path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
+</g></svg>
