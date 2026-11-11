@@ -1,0 +1,57 @@
+name: Wildframe authored sprite delivery
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/v3/hero-eightway.svg'
+      - 'tools/render-sprite-atlas.cjs'
+      - '.github/workflows/wildframe-art.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wildframe-art-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  rasterize-and-publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install free Chromium rasterizer
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Validate transparent PNG transport
+        run: node tools/render-sprite-atlas.cjs --self-test
+      - name: Render authored hero artwork when available
+        run: |
+          if test -f assets/v3/hero-eightway.svg; then
+            node tools/render-sprite-atlas.cjs assets/v3/hero-eightway.svg assets/v3/hero-eightway.png
+          else
+            echo "No authored hero atlas source committed yet; transport self-test completed."
+          fi
+      - name: Commit the verified generated image without user upload
+        if: ${{ hashFiles('assets/v3/hero-eightway.svg') != '' }}
+        run: |
+          if [ -z "$(git status --porcelain -- assets/v3/hero-eightway.png)" ]; then
+            echo "Generated PNG unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/v3/hero-eightway.png
+          git commit -m "art: rasterize authored eight-way hero atlas"
+          if git push origin HEAD:main; then exit 0; fi
+          git fetch origin main
+          if ! git diff --quiet HEAD origin/main -- assets/v3/hero-eightway.svg; then
+            echo "::error::A newer hero source is on main; do not deploy stale generated art."
+            exit 1
+          fi
+          git rebase origin/main
+          git push origin HEAD:main
