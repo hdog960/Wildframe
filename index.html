@@ -9135,10 +9135,18 @@ class WorldScene extends phaser_1.default.Scene {
             this.lastMove = this.elapsed;
             const ax = Math.abs(mx), ay = Math.abs(my);
             if (this.hasV3Hero) {
-                // Real eight-way artwork; stabilize cardinal transitions near touch axes.
-                if (ax > ay * 2.15)
+                // Direction hysteresis keeps the 24 painted poses stable when a
+                // thumb drifts near a cardinal/diagonal boundary. A diagonal
+                // requires a decisive angle to enter; once there it persists
+                // until the stick is clearly nearer a cardinal axis.
+                const previous = this.facing;
+                const sameX = mx > 0 ? previous.endsWith('right') : previous.endsWith('left');
+                const sameY = my > 0 ? previous.startsWith('down') : previous.startsWith('up');
+                const wasDiagonal = previous.includes('-') && sameX && sameY;
+                const cardinalLimit = wasDiagonal ? 2.55 : 1.85;
+                if (ax > ay * cardinalLimit)
                     this.facing = mx > 0 ? 'right' : 'left';
-                else if (ay > ax * 2.15)
+                else if (ay > ax * cardinalLimit)
                     this.facing = my > 0 ? 'down' : 'up';
                 else
                     this.facing = (my > 0 ? 'down-' : 'up-') + (mx > 0 ? 'right' : 'left');
