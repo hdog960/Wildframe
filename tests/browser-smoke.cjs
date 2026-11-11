@@ -16,10 +16,10 @@ const server = http.createServer((req, res) => {
   if (req.url === '/' || req.url === '/index.html') {
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
     res.end(html);
-  } else if (req.url === '/assets/v3/hero-eightway.png') {
+  } else if (req.url === '/assets/v3/hero-eightway.png' || req.url === '/assets/v3/mossmunch-eightway.png') {
     // Serve the actual committed atlas. Previously every asset request got 404,
     // so green browser smoke silently exercised the fallback instead of v3.
-    const atlas = path.join(__dirname, '..', 'assets', 'v3', 'hero-eightway.png');
+    const atlas = path.join(__dirname, '..', 'assets', 'v3', req.url.endsWith('mossmunch-eightway.png') ? 'mossmunch-eightway.png' : 'hero-eightway.png');
     const bytes = fs.readFileSync(atlas);
     res.writeHead(200, { 'Content-Type': 'image/png', 'Content-Length': bytes.length });
     res.end(bytes);
@@ -62,7 +62,9 @@ async function run() {
       const errors = [];
       let v3Requests = 0;
       let v3Loaded = false;
+      let mossLoaded = false;
       page.on('response', response => {
+        if (response.url().endsWith('/assets/v3/mossmunch-eightway.png') && response.status() === 200) mossLoaded = true;
         if (response.url().endsWith('/assets/v3/hero-eightway.png')) {
           v3Requests++;
           if (response.status() === 200) v3Loaded = true;
@@ -99,6 +101,7 @@ async function run() {
       });
       assert(gameBounds.width > 100 && gameBounds.height > 100, 'Game canvas has invalid layout');
       assert(v3Requests > 0 && v3Loaded, 'Actual v3 eight-way hero PNG must be fetched successfully');
+      assert(mossLoaded, 'Actual eight-way Mossmunch PNG must be fetched successfully');
       assert(errors.length === 0, 'Browser JS exceptions: ' + errors.slice(0, 5).join(' | '));
       console.log('VISUAL SMOKE PASS ' + size.name + ': ' + JSON.stringify({ titleInfo, gameInfo, gameBounds }));
       await context.close();
