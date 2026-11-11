@@ -50,6 +50,7 @@ for (const [label, pattern] of contracts) {
 // pause/resume behavior while genuine eight-direction artwork is developed.
 // These static checks do not establish visual acceptance.
 const motionContracts = [
+  ['Pause holds actual hero stride pose', /const heldHeroFrame = this\.hero\.frame\?\.name;[\s\S]{0,180}this\.hero\.anims\.stop\(\)/],
   ['Hero pause stops animation', /this\.hero\.anims\.stop\(\);[\s\S]{0,700}creature\.sprite\.anims\.pause\(\)/],
   ['Hero paused pose uses painted atlas frame', /this\.hero\.setFrame\(pausedRow \* 3\)/],
   ['Creature animation resumes after pause', /w\.sprite\.anims\.isPaused\)[\s\S]{0,100}w\.sprite\.anims\.resume\(\)/],

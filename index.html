@@ -9086,6 +9086,8 @@ class WorldScene extends phaser_1.default.Scene {
             // A frozen game must also freeze the painted walking pose. Phaser
             // animations otherwise keep advancing even after physics stops.
             this.hero.setVelocity(0);
+            // Retain the exact stride pose when a panel or pause interrupts motion.
+            const heldHeroFrame = this.hero.frame?.name;
             this.hero.anims.stop();
             // Phaser advances creature atlases even while gameplay update is paused.
             // Hold each creature on its current painted frame, then resume its
@@ -9095,7 +9097,9 @@ class WorldScene extends phaser_1.default.Scene {
                     creature.sprite.anims.pause();
             }
             const pausedRow = (this.hasV3Hero ? { down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 } : { down: 0, left: 1, right: 2, up: 3 })[this.facing] ?? 0;
-            this.hero.setFrame(pausedRow * 3);
+            // Avoid a visual snap to frame zero when opening the inventory.
+            if (heldHeroFrame === undefined || heldHeroFrame === null)
+                this.hero.setFrame(pausedRow * 3);
             this.heroContact.clear().setVisible(this.hero.visible).setDepth(this.hero.y - .1);
             if (this.hero.visible) {
                 this.heroContact.fillStyle(0x081c1b, .19).fillEllipse(this.hero.x, this.hero.y + 1, 25, 7);
