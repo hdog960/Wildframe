@@ -30,7 +30,9 @@ jobs:
       - name: Install free Chromium rasterizer
         run: |
           npm install --no-save --no-audit --no-fund playwright@1.56.1
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
+          # GitHub-hosted Ubuntu includes Chromium runtime libraries; avoid
+          # apt font downloads that fail during transient Ubuntu DNS outages.
       - name: Validate transparent PNG transport
         run: node tools/render-sprite-atlas.cjs --self-test
       - name: Render authored hero artwork when available
@@ -56,7 +58,7 @@ jobs:
           fi
       - name: Render authored Thornroller artwork when available
         run: |
-          if test -f assets/v3/thornroller-eightway.svg; then
+          if test -f assets/v3/thornroller-eightway.svg assets/v3/naturalist-eightway.svg; then
             node tools/render-sprite-atlas.cjs assets/v3/thornroller-eightway.svg assets/v3/thornroller-eightway.png
           else
             echo "No Thornroller source committed yet."
