@@ -8700,11 +8700,12 @@ class WorldScene extends phaser_1.default.Scene {
             this.spawnWild(c.speciesId, c.x, c.y, c.id);
         }
     }
-    spawnWild(speciesId, x, y, id) { const shadowWidths = { mossmunch: 34, puddlewink: 29, thornroller: 31, fungloam: 36, glimmergut: 27, hushwing: 23 }; const shadowWidth = shadowWidths[speciesId] || 30; const shadow = this.add.ellipse(x, y + 1, shadowWidth, speciesId === 'hushwing' ? 7 : 10, 0x10291e, speciesId === 'hushwing' ? .16 : .24).setDepth(y - .1); const useV3Moss = speciesId === 'mossmunch' && this.textures.exists('v3-mossmunch') && this.textures.get('v3-mossmunch').frameTotal >= 25;
-    const sprite = this.add.sprite(x, y, useV3Moss ? 'v3-mossmunch' : 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y);
-    if (useV3Moss) sprite.play('v3-mossmunch-down');
+    spawnWild(speciesId, x, y, id) { const shadowWidths = { mossmunch: 34, puddlewink: 29, thornroller: 31, fungloam: 36, glimmergut: 27, hushwing: 23 }; const shadowWidth = shadowWidths[speciesId] || 30; const shadow = this.add.ellipse(x, y + 1, shadowWidth, speciesId === 'hushwing' ? 7 : 10, 0x10291e, speciesId === 'hushwing' ? .16 : .24).setDepth(y - .1); const v3Texture = (speciesId === 'mossmunch' || speciesId === 'puddlewink') ? 'v3-' + speciesId : null;
+    const hasV3Atlas = !!(v3Texture && this.textures.exists(v3Texture) && this.textures.get(v3Texture).frameTotal >= 25);
+    const sprite = this.add.sprite(x, y, hasV3Atlas ? v3Texture : 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y);
+    if (hasV3Atlas) sprite.play(v3Texture + '-down');
     else if (this.anims.exists('v2-' + speciesId + '-idle')) sprite.play('v2-' + speciesId + '-idle');
-    this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, shadow, facingAnchorX: x, facingAnchorY: y, facing: 'down', hasV3Moss: useV3Moss, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
+    this.wild.push({ id, speciesId, x, y, homeX: x, homeY: y, sprite, shadow, facingAnchorX: x, facingAnchorY: y, facing: 'down', hasV3Atlas, v3Texture, calm: 0, stabilized: false, naturalStable: false, behavior: 'observing' }); }
     nearest() { let min = 160; this.target = null; for (const w of this.wild) {
         const d = phaser_1.default.Math.Distance.Between(this.hero.x, this.hero.y, w.x, w.y);
         if (d < min) {
@@ -9281,7 +9282,7 @@ class WorldScene extends phaser_1.default.Scene {
             // Eight independently authored directions for Mossmunch. Use actual
             // world displacement (after habitat bounds), not procedural motion intent.
             // A two-pixel vector deadband prevents tiny idle movements from jittering.
-            if (w.hasV3Moss && !still) {
+            if (w.hasV3Atlas && !still) {
                 const dx = nx - w.facingAnchorX, dy = ny - w.facingAnchorY;
                 if (Math.hypot(dx, dy) >= 2) {
                     const ax = Math.abs(dx), ay = Math.abs(dy);
@@ -9292,11 +9293,11 @@ class WorldScene extends phaser_1.default.Scene {
                     w.facingAnchorY = ny;
                 }
             }
-            const creatureAnimation = w.hasV3Moss ? 'v3-mossmunch-' + w.facing
+            const creatureAnimation = w.hasV3Atlas ? w.v3Texture + '-' + w.facing
                 : 'v2-' + w.speciesId + (motion.moving ? '-move' : '-idle');
             if (still) {
                 w.sprite.anims.stop();
-                w.sprite.setFrame(w.hasV3Moss ? ({ down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 }[w.facing] ?? 0) * 3 : 0);
+                w.sprite.setFrame(w.hasV3Atlas ? ({ down: 0, 'down-left': 1, left: 2, 'up-left': 3, up: 4, 'up-right': 5, right: 6, 'down-right': 7 }[w.facing] ?? 0) * 3 : 0);
             }
             else if (this.anims.exists(creatureAnimation)) {
                 // Resume the exact authored frame held by a pause/menu rather
@@ -9325,7 +9326,7 @@ class WorldScene extends phaser_1.default.Scene {
             // threshold: a slow wander should eventually face its destination at
             // 30, 60 or 120 FPS, without jittering on subpixel motion.
             const facingTravel = nx - w.facingAnchorX;
-            if (!w.hasV3Moss && Math.abs(facingTravel) >= 2) {
+            if (!w.hasV3Atlas && Math.abs(facingTravel) >= 2) {
                 w.sprite.setFlipX(facingTravel < 0);
                 w.facingAnchorX = nx;
             }
@@ -9490,6 +9491,7 @@ function preloadArt(scene) {
     scene.load.spritesheet('v2-hero', 'assets/v2/hero.png', { frameWidth: 64, frameHeight: 96 });
     scene.load.spritesheet('v3-hero', 'assets/v3/hero-eightway.png', { frameWidth: 80, frameHeight: 96 });
     scene.load.spritesheet('v3-mossmunch', 'assets/v3/mossmunch-eightway.png', { frameWidth: 80, frameHeight: 96 });
+    scene.load.spritesheet('v3-puddlewink', 'assets/v3/puddlewink-eightway.png', { frameWidth: 80, frameHeight: 96 });
     for (const id of exports.creatureTextures)
         scene.load.spritesheet(`v2-${id}`, `assets/v2/${id}.png`, { frameWidth: 96, frameHeight: 96 });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant'])
@@ -9526,6 +9528,7 @@ function createAnimations(scene) {
     });
     ['down', 'down-left', 'left', 'up-left', 'up', 'up-right', 'right', 'down-right'].forEach((dir, row) => {
         create(`v3-mossmunch-${dir}`, 'v3-mossmunch', row * 3, row * 3 + 2, 7);
+        create(`v3-puddlewink-${dir}`, 'v3-puddlewink', row * 3, row * 3 + 2, 8);
     });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant']) {
         create(`npc-${id}-idle`, `npc-${id}`, 0, 2, 2);
