@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="768" viewBox="0 0 240 768"><title>Wildframe naturalist resident — 24 authored walking views</title><desc>Three distinct gait poses for each of eight compass-facing directions. Field hat, amber scarf, teal jacket, boots and expedition pack are continuous in all views.</desc><g transform="translate(40 94.575)">
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="768" viewBox="0 0 240 768"><title>Wildframe naturalist resident — 24 authored walking views</title><desc>Three distinct gait poses for each of eight compass-facing directions. Field hat, amber scarf, teal jacket, boots and expedition pack are continuous in all views.</desc><g transform="translate(40 -1.425)">
 <!-- south gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -17,7 +17,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 95)">
+<g transform="translate(120 -1)">
 <!-- south gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -36,7 +36,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 95.425)">
+<g transform="translate(200 -0.575)">
 <!-- south gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -55,7 +55,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 190.575)">
+<g transform="translate(40 94.575)">
 <!-- southwest gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -74,7 +74,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 191)">
+<g transform="translate(120 95)">
 <!-- southwest gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -93,7 +93,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 191.425)">
+<g transform="translate(200 95.425)">
 <!-- southwest gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -112,7 +112,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 286.575)">
+<g transform="translate(40 190.575)">
 <!-- west gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -131,7 +131,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 287)">
+<g transform="translate(120 191)">
 <!-- west gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -150,7 +150,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 287.425)">
+<g transform="translate(200 191.425)">
 <!-- west gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -169,7 +169,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -7 40 l -5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 382.575)">
+<g transform="translate(40 286.575)">
 <!-- northwest gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -188,7 +188,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 383)">
+<g transform="translate(120 287)">
 <!-- northwest gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -207,7 +207,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 383.425)">
+<g transform="translate(200 287.425)">
 <!-- northwest gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -226,7 +226,7 @@
 <ellipse cx="5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M 9 31 l 2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 478.575)">
+<g transform="translate(40 382.575)">
 <!-- north gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -245,7 +245,7 @@
 <path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 479)">
+<g transform="translate(120 383)">
 <!-- north gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -264,7 +264,7 @@
 <path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 479.425)">
+<g transform="translate(200 383.425)">
 <!-- north gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -283,7 +283,7 @@
 <path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 574.575)">
+<g transform="translate(40 478.575)">
 <!-- northeast gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -302,7 +302,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 575)">
+<g transform="translate(120 479)">
 <!-- northeast gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -321,7 +321,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 575.425)">
+<g transform="translate(200 479.425)">
 <!-- northeast gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -340,7 +340,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M -9 40 Q 0 43 10 40" fill="none" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 670.575)">
+<g transform="translate(40 574.575)">
 <!-- east gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -359,7 +359,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 671)">
+<g transform="translate(120 575)">
 <!-- east gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -378,7 +378,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 671.425)">
+<g transform="translate(200 575.425)">
 <!-- east gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -397,7 +397,7 @@
 <ellipse cx="-5" cy="28" rx="1.5" ry="2" fill="#27312e"/><path d="M -9 31 l -2 2" stroke="#ad755b" fill="none"/><path d="M 7 40 l 5 9" stroke="#e7b56a" stroke-width="4"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(40 766.575)">
+<g transform="translate(40 670.575)">
 <!-- southeast gait 1: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -13 83 L -17 88 L -7 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 13 83 L 8 88 L 18 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -416,7 +416,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(120 767)">
+<g transform="translate(120 671)">
 <!-- southeast gait 2: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -9 83 L -13 88 L -3 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 9 83 L 4 88 L 14 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
@@ -435,7 +435,7 @@
 <ellipse cx="-5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><ellipse cx="5" cy="27" rx="1.5" ry="2" fill="#2c3432"/><path d="M -2 34 Q 0 36 3 33" stroke="#9e6652" stroke-width="1.2" fill="none"/><path d="M -10 39 Q 0 44 10 39 L 7 47 Q -1 44 -8 48Z" fill="#dca85b" stroke="#644c42" stroke-width="1.2"/>
 <path d="M -10 68 Q 0 71 10 68" stroke="#e4bb70" stroke-width="1.5" fill="none"/>
 </g>
-<g transform="translate(200 767.425)">
+<g transform="translate(200 671.425)">
 <!-- southeast gait 3: individually authored limbs and viewing geometry -->
 <path d="M -10 64 L -5 83 L -9 88 L 1 88 L -1 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>
 <path d="M 3 64 L 5 83 L 0 88 L 10 88 L 11 65Z" fill="#3b4650" stroke="#202b32" stroke-width="2"/>

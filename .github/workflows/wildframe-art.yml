@@ -58,7 +58,7 @@ jobs:
           fi
       - name: Render authored Thornroller artwork when available
         run: |
-          if test -f assets/v3/thornroller-eightway.svg assets/v3/naturalist-eightway.svg; then
+          if test -f assets/v3/thornroller-eightway.svg; then
             node tools/render-sprite-atlas.cjs assets/v3/thornroller-eightway.svg assets/v3/thornroller-eightway.png
           else
             echo "No Thornroller source committed yet."
@@ -81,7 +81,7 @@ jobs:
           git commit -m "art: rasterize authored eight-way creature atlases"
           if git push origin HEAD:main; then exit 0; fi
           git fetch origin main
-          if ! git diff --quiet HEAD origin/main -- assets/v3/hero-eightway.svg assets/v3/mossmunch-eightway.svg assets/v3/puddlewink-eightway.svg assets/v3/thornroller-eightway.svg; then
+          if ! git diff --quiet HEAD origin/main -- assets/v3/hero-eightway.svg assets/v3/mossmunch-eightway.svg assets/v3/puddlewink-eightway.svg assets/v3/thornroller-eightway.svg assets/v3/naturalist-eightway.svg; then
             echo "::error::A newer hero source is on main; do not deploy stale generated art."
             exit 1
           fi
