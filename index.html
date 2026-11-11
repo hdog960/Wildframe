@@ -8700,7 +8700,7 @@ class WorldScene extends phaser_1.default.Scene {
             this.spawnWild(c.speciesId, c.x, c.y, c.id);
         }
     }
-    spawnWild(speciesId, x, y, id) { const shadowWidths = { mossmunch: 34, puddlewink: 29, thornroller: 31, fungloam: 36, glimmergut: 27, hushwing: 23 }; const shadowWidth = shadowWidths[speciesId] || 30; const shadow = this.add.ellipse(x, y + 1, shadowWidth, speciesId === 'hushwing' ? 7 : 10, 0x10291e, speciesId === 'hushwing' ? .16 : .24).setDepth(y - .1); const v3Texture = (speciesId === 'mossmunch' || speciesId === 'puddlewink') ? 'v3-' + speciesId : null;
+    spawnWild(speciesId, x, y, id) { const shadowWidths = { mossmunch: 34, puddlewink: 29, thornroller: 31, fungloam: 36, glimmergut: 27, hushwing: 23 }; const shadowWidth = shadowWidths[speciesId] || 30; const shadow = this.add.ellipse(x, y + 1, shadowWidth, speciesId === 'hushwing' ? 7 : 10, 0x10291e, speciesId === 'hushwing' ? .16 : .24).setDepth(y - .1); const v3Texture = (speciesId === 'mossmunch' || speciesId === 'puddlewink' || speciesId === 'thornroller') ? 'v3-' + speciesId : null;
     const hasV3Atlas = !!(v3Texture && this.textures.exists(v3Texture) && this.textures.get(v3Texture).frameTotal >= 25);
     const sprite = this.add.sprite(x, y, hasV3Atlas ? v3Texture : 'v2-' + speciesId).setOrigin(.5, .9).setScale(.78).setDepth(y);
     if (hasV3Atlas) sprite.play(v3Texture + '-down');
@@ -9492,6 +9492,7 @@ function preloadArt(scene) {
     scene.load.spritesheet('v3-hero', 'assets/v3/hero-eightway.png', { frameWidth: 80, frameHeight: 96 });
     scene.load.spritesheet('v3-mossmunch', 'assets/v3/mossmunch-eightway.png', { frameWidth: 80, frameHeight: 96 });
     scene.load.spritesheet('v3-puddlewink', 'assets/v3/puddlewink-eightway.png', { frameWidth: 80, frameHeight: 96 });
+    scene.load.spritesheet('v3-thornroller', 'assets/v3/thornroller-eightway.png', { frameWidth: 80, frameHeight: 96 });
     for (const id of exports.creatureTextures)
         scene.load.spritesheet(`v2-${id}`, `assets/v2/${id}.png`, { frameWidth: 96, frameHeight: 96 });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant'])
@@ -9529,6 +9530,7 @@ function createAnimations(scene) {
     ['down', 'down-left', 'left', 'up-left', 'up', 'up-right', 'right', 'down-right'].forEach((dir, row) => {
         create(`v3-mossmunch-${dir}`, 'v3-mossmunch', row * 3, row * 3 + 2, 7);
         create(`v3-puddlewink-${dir}`, 'v3-puddlewink', row * 3, row * 3 + 2, 8);
+        create(`v3-thornroller-${dir}`, 'v3-thornroller', row * 3, row * 3 + 2, 9);
     });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant']) {
         create(`npc-${id}-idle`, `npc-${id}`, 0, 2, 2);

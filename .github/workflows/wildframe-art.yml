@@ -49,7 +49,7 @@ jobs:
       - name: Render authored Puddlewink artwork when available
         run: |
           if test -f assets/v3/puddlewink-eightway.svg; then
-            node tools/render-sprite-atlas.cjs assets/v3/puddlewink-eightway.svg assets/v3/puddlewink-eightway.png assets/v3/thornroller-eightway.png
+            node tools/render-sprite-atlas.cjs assets/v3/puddlewink-eightway.svg assets/v3/puddlewink-eightway.png
           else
             echo "No Puddlewink source committed yet."
           fi
