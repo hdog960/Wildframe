@@ -71,4 +71,8 @@ const motionContracts = [
 for (const [label, pattern] of motionContracts) {
   assert(pattern.test(html), 'Wildframe animation contract missing: '+label);
 }
+assert(html.includes("assets/v3/naturalist-eightway.png"), 'Naturalist atlas load missing');
+assert(html.includes("v3-npc-naturalist-\u0024{dir}"), 'Naturalist eight-way animation missing');
+assert(html.includes("authoredNaturalist ? 'v3-npc-naturalist-right'"), 'Naturalist movement artwork missing');
+assert(html.includes("npc.play('v3-npc-naturalist-left', true)"), 'Naturalist return facing missing');
 console.log('Wildframe integrity PASS: '+bytes+' bytes; '+validated+' inline JS blocks syntax-checked. Real browser/iPhone QA still required.');

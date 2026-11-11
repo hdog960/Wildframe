@@ -8326,7 +8326,11 @@ class WorldScene extends phaser_1.default.Scene {
             const b = runtime_1.runtime.state.buildings.filter(b => b.kind === 'house')[i];
             if (!b)
                 return;
-            const npc = this.add.sprite(b.x + 64, b.y + 135, 'v2-npc-' + id).setOrigin(.5, 1).setScale(.86).setDepth(b.y + 135).play('v2-npc-' + id + '-idle');
+            const authoredNaturalist = id === 'naturalist' && this.textures.exists('v3-npc-naturalist');
+            const npcTexture = authoredNaturalist ? 'v3-npc-naturalist' : 'v2-npc-' + id;
+            const npc = this.add.sprite(b.x + 64, b.y + 135, npcTexture).setOrigin(.5, 1).setScale(.86).setDepth(b.y + 135);
+            if (authoredNaturalist) npc.setFrame(1);
+            else npc.play('v2-npc-' + id + '-idle');
             this.buildings.push(npc);
             // Each settled resident personalizes their doorway with a distinct painted
             // pennant and paired flower pots. These are scenery only: no collision or saves.
@@ -8677,8 +8681,10 @@ class WorldScene extends phaser_1.default.Scene {
             // Previously the sprite animation stopped, but the endless walk tween
             // continued moving all three elements across the porch.
             if (!runtime_1.runtime.state.settings.reducedMotion) {
-                this.tweens.add({ targets: [npc, t, footShadow], x: '+=30', duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut', onYoyo: () => npc.setFlipX(true), onRepeat: () => npc.setFlipX(false) });
-                npc.play('v2-npc-' + id + '-move');
+                this.tweens.add({ targets: [npc, t, footShadow], x: '+=30', duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut',
+                    onYoyo: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-left', true); else npc.setFlipX(true); },
+                    onRepeat: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-right', true); else npc.setFlipX(false); } });
+                npc.play(authoredNaturalist ? 'v3-npc-naturalist-right' : 'v2-npc-' + id + '-move');
             }
         });
         for (const c of runtime_1.runtime.state.creatures) {
@@ -9493,6 +9499,7 @@ function preloadArt(scene) {
     scene.load.spritesheet('v3-mossmunch', 'assets/v3/mossmunch-eightway.png', { frameWidth: 80, frameHeight: 96 });
     scene.load.spritesheet('v3-puddlewink', 'assets/v3/puddlewink-eightway.png', { frameWidth: 80, frameHeight: 96 });
     scene.load.spritesheet('v3-thornroller', 'assets/v3/thornroller-eightway.png', { frameWidth: 80, frameHeight: 96 });
+    scene.load.spritesheet('v3-npc-naturalist', 'assets/v3/naturalist-eightway.png', { frameWidth: 80, frameHeight: 96 });
     for (const id of exports.creatureTextures)
         scene.load.spritesheet(`v2-${id}`, `assets/v2/${id}.png`, { frameWidth: 96, frameHeight: 96 });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant'])
@@ -9531,6 +9538,7 @@ function createAnimations(scene) {
         create(`v3-mossmunch-${dir}`, 'v3-mossmunch', row * 3, row * 3 + 2, 7);
         create(`v3-puddlewink-${dir}`, 'v3-puddlewink', row * 3, row * 3 + 2, 8);
         create(`v3-thornroller-${dir}`, 'v3-thornroller', row * 3, row * 3 + 2, 9);
+        create(`v3-npc-naturalist-${dir}`, 'v3-npc-naturalist', row * 3, row * 3 + 2, 7);
     });
     for (const id of ['carpenter', 'naturalist', 'tinkerer', 'merchant']) {
         create(`npc-${id}-idle`, `npc-${id}`, 0, 2, 2);
