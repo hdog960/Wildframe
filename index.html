@@ -8702,13 +8702,16 @@ class WorldScene extends phaser_1.default.Scene {
                         const stop = route[leg];
                         npc.play('v3-npc-naturalist-' + stop.facing, true);
                         this.tweens.add({
-                            targets: [npc, t, footShadow],
+                            // Tween the ground anchor only. Moving all three objects to
+                            // identical x/y previously collapsed the nameplate onto the
+                            // Naturalist's feet and displaced its contact shadow.
+                            targets: npc,
                             x: homeX + stop.dx, y: homeY + stop.dy,
                             duration: stop.ms, ease: 'Sine.easeInOut',
                             onUpdate: () => {
+                                footShadow.setPosition(npc.x, npc.y + 1).setDepth(npc.y - .1);
+                                t.setPosition(npc.x, npc.y - 84).setDepth(npc.y + 1);
                                 npc.setDepth(npc.y);
-                                footShadow.setDepth(npc.y - .1);
-                                t.setDepth(npc.y + 1);
                             },
                             onComplete: () => {
                                 if (!npc.active) return;
