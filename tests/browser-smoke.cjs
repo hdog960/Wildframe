@@ -71,6 +71,12 @@ async function run() {
       const gameFile = path.join(shots, size.name + '-gameplay.png');
       await page.screenshot({ path: gameFile, animations: 'disabled', timeout: 30000 });
       const gameInfo = inspectScreenshot(gameFile);
+      // Make a compact real-game image accessible through the text CI log as well
+      // as the PNG artifact. This lets unattended agents inspect actual pixels.
+      if (size.name === 'iphone-landscape') {
+        const preview = await page.screenshot({ type: 'jpeg', quality: 34, animations: 'disabled' });
+        console.log('WILDFRAME_VISUAL_PREVIEW_JPEG_BASE64=' + preview.toString('base64'));
+      }
       const gameBounds = await page.evaluate(() => {
         const c = document.querySelector('#game canvas');
         const r = c.getBoundingClientRect();
