@@ -8681,10 +8681,16 @@ class WorldScene extends phaser_1.default.Scene {
             // Previously the sprite animation stopped, but the endless walk tween
             // continued moving all three elements across the porch.
             if (!runtime_1.runtime.state.settings.reducedMotion) {
-                this.tweens.add({ targets: [npc, t, footShadow], x: '+=30', duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut',
-                    onYoyo: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-left', true); else npc.setFlipX(true); },
-                    onRepeat: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-right', true); else npc.setFlipX(false); } });
-                npc.play(authoredNaturalist ? 'v3-npc-naturalist-right' : 'v2-npc-' + id + '-move');
+                // The Naturalist follows a shallow diagonal survey path, so the
+                // authored SE/NW stride rows are used in the world, not just loaded.
+                // The nameplate and contact shadow share the exact same path.
+                // Other residents retain their established horizontal porch route.
+                this.tweens.add({ targets: [npc, t, footShadow], x: '+=30',
+                    ...(authoredNaturalist ? { y: '+=8' } : {}),
+                    duration: 3500 + i * 500, yoyo: true, repeat: -1, ease: 'Sine.easeInOut',
+                    onYoyo: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-up-left', true); else npc.setFlipX(true); },
+                    onRepeat: () => { if (authoredNaturalist) npc.play('v3-npc-naturalist-down-right', true); else npc.setFlipX(false); } });
+                npc.play(authoredNaturalist ? 'v3-npc-naturalist-down-right' : 'v2-npc-' + id + '-move');
             }
         });
         for (const c of runtime_1.runtime.state.creatures) {
