@@ -80,7 +80,11 @@ for (const dir of ['down-right','up-right','up-left','down-left']) {
 assert(html.includes("npc.play('v3-npc-naturalist-' + stop.facing, true)"), 'Naturalist route animation missing');
 assert(html.includes("npc.setDepth(npc.y)"), 'Naturalist painter depth tracking missing');
 assert(html.includes("targets: npc,") && html.includes("footShadow.setPosition(npc.x, npc.y + 1)") && html.includes("t.setPosition(npc.x, npc.y - 84)"), 'Naturalist walking must preserve ground-shadow and floating nameplate offsets');
-assert(!html.includes("targets: [npc, t, footShadow]"), 'Naturalist tween must not collapse three visual anchors to the same position');
+// Only the Naturalist's authored route must tween its sprite alone. Other
+// residents still intentionally use the legacy three-target porch sway.
+const naturalistRoute = html.slice(html.indexOf("const route = ["), html.indexOf("} else {\n                    this.tweens.add({ targets: [npc, t, footShadow]"));
+assert(naturalistRoute.includes("targets: npc,"), 'Naturalist route must tween only its sprite');
+assert(!naturalistRoute.includes("targets: [npc, t, footShadow]"), 'Naturalist route must not collapse visual anchors');
 assert(html.includes("this.time.delayedCall(420, walkLeg)"), 'Naturalist field observation pause missing');
 assert(html.includes("npc.play('v2-npc-' + id + '-move')"), 'Other resident fallback missing');
 console.log('Wildframe integrity PASS: '+bytes+' bytes; '+validated+' inline JS blocks syntax-checked. Real browser/iPhone QA still required.');
