@@ -5,6 +5,8 @@ on:
     paths:
       - 'index.html'
       - 'tests/browser-smoke.cjs'
+      - 'assets/v3/**.png'
+      - 'assets/v3/**.svg'
       - '.github/workflows/wildframe-browser.yml'
   workflow_dispatch:
 
