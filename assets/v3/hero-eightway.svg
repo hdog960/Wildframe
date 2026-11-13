@@ -346,12 +346,12 @@
 <path d="M49 39 Q55 44 54 58 L53 65 Q49 68 47 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M26 60 Q24 67 30 67 L33 63 L31 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M50 59 L48 64 Q51 69 56 64 L55 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northwest stride 1 individually drafted torso" d="M28.2 39 Q33.2 35 43.2 37 Q49.2 39 50.2 46 L51.2 59 Q49.2 68 44.2 72 Q36.2 76 27.2 69 L22.2 61 Q21.2 48 28.2 39Z" fill="#365d59" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M29.2 41 Q36.2 43 44.2 40 L48.2 58 Q43.2 65 34.2 67 L24.2 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M27.2 43 Q32.2 48 33.2 56 M44.2 43 Q47.2 51 46.2 59 M28.2 62 Q36.2 67 44.2 63" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -380,12 +380,12 @@
 <path d="M49 39 Q58 44 57 58 L56 65 Q52 68 50 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M23 60 Q21 67 27 67 L30 63 L28 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M53 59 L51 64 Q54 69 59 64 L58 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northwest stride 2 individually drafted torso" d="M30 39 Q35 35 45 37 Q51 39 52 46 L53 59 Q51 68 46 72 Q38 76 29 69 L24 61 Q23 48 30 39Z" fill="#365d59" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M31 41 Q38 43 46 40 L50 58 Q45 65 36 67 L26 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M29 43 Q34 48 35 56 M46 43 Q49 51 48 59 M30 62 Q38 67 46 63" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -414,12 +414,12 @@
 <path d="M49 39 Q61 44 60 58 L59 65 Q55 68 53 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M20 60 Q18 67 24 67 L27 63 L25 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M56 59 L54 64 Q57 69 62 64 L61 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northwest stride 3 individually drafted torso" d="M31.7 39 Q36.7 35 46.7 37 Q52.7 39 53.7 46 L54.7 59 Q52.7 68 47.7 72 Q39.7 76 30.7 69 L25.7 61 Q24.7 48 31.7 39Z" fill="#365d59" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M32.7 41 Q39.7 43 47.7 40 L51.7 58 Q46.7 65 37.7 67 L27.7 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M30.7 43 Q35.7 48 36.7 56 M47.7 43 Q50.7 51 49.7 59 M31.7 62 Q39.7 67 47.7 63" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -448,12 +448,12 @@
 <path d="M49 39 Q55 44 54 58 L53 65 Q49 68 47 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M26 60 Q24 67 30 67 L33 63 L31 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M50 59 L48 64 Q51 69 56 64 L55 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="north stride 1 individually drafted torso" d="M27.2 39 Q38.2 33 49.2 39 L53.2 62 Q51.2 70 46.2 73 Q38.2 77 29.2 72 Q24.2 69 23.2 62Z" fill="#3d655e" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M29.2 40 Q38.2 44 47.2 40 L50.2 61 Q44.2 67 38.2 68 Q31.2 67 26.2 61Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M38.2 43 Q36.2 51 38.2 62 M28.2 46 Q26.2 53 28.2 59 M48.2 46 Q50.2 54 48.2 60" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -495,12 +495,12 @@
 <path d="M49 39 Q58 44 57 58 L56 65 Q52 68 50 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M23 60 Q21 67 27 67 L30 63 L28 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M53 59 L51 64 Q54 69 59 64 L58 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="north stride 2 individually drafted torso" d="M29 39 Q40 33 51 39 L55 62 Q53 70 48 73 Q40 77 31 72 Q26 69 25 62Z" fill="#3d655e" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M31 40 Q40 44 49 40 L52 61 Q46 67 40 68 Q33 67 28 61Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M40 43 Q39 51 40 62 M30 46 Q28 53 30 59 M50 46 Q52 54 50 60" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -542,12 +542,12 @@
 <path d="M49 39 Q61 44 60 58 L59 65 Q55 68 53 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M20 60 Q18 67 24 67 L27 63 L25 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M56 59 L54 64 Q57 69 62 64 L61 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="north stride 3 individually drafted torso" d="M30.7 39 Q41.7 33 52.7 39 L56.7 62 Q54.7 70 49.7 73 Q41.7 77 32.7 72 Q27.7 69 26.7 62Z" fill="#3d655e" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M32.7 40 Q41.7 44 50.7 40 L53.7 61 Q47.7 67 41.7 68 Q34.7 67 29.7 61Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M41.7 43 Q41.7 51 41.7 62 M31.7 46 Q29.7 53 31.7 59 M51.7 46 Q53.7 54 51.7 60" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -589,12 +589,12 @@
 <path d="M49 39 Q55 44 54 58 L53 65 Q49 68 47 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M26 60 Q24 67 30 67 L33 63 L31 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M50 59 L48 64 Q51 69 56 64 L55 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northeast stride 1 individually drafted torso" d="M32.2 38 Q42.2 34 49.2 40 Q55.2 48 54.2 60 L51.2 67 Q47.2 75 38.2 73 L26.2 67 Q24.2 58 28.2 47Z" fill="#47736b" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M34.2 40 Q43.2 43 49.2 43 L52.2 61 Q47.2 68 40.2 67 L29.2 60Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M44.2 43 Q49.2 50 49.2 57 M33.2 43 Q30.2 51 32.2 58 M32.2 62 Q40.2 66 48.2 62" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -632,12 +632,12 @@
 <path d="M49 39 Q58 44 57 58 L56 65 Q52 68 50 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M23 60 Q21 67 27 67 L30 63 L28 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M53 59 L51 64 Q54 69 59 64 L58 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northeast stride 2 individually drafted torso" d="M34 38 Q44 34 51 40 Q57 48 56 60 L53 67 Q49 75 40 73 L28 67 Q26 58 30 47Z" fill="#47736b" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M36 40 Q45 43 51 43 L54 61 Q49 68 42 67 L31 60Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M46 43 Q51 50 51 57 M35 43 Q32 51 34 58 M34 62 Q42 66 50 62" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
@@ -675,12 +675,12 @@
 <path d="M49 39 Q61 44 60 58 L59 65 Q55 68 53 63 L45 48Z" fill="#315957" stroke="#193b43" stroke-width="1.6"/>
 <path d="M20 60 Q18 67 24 67 L27 63 L25 59Z" fill="#b78563" stroke="#714a46" stroke-width="1.1"/>
 <path d="M56 59 L54 64 Q57 69 62 64 L61 59Z" fill="#bc8b67" stroke="#714a46" stroke-width="1.1"/>
-<path d="M31 39 Q39 35 49 40 L53 64 L48 72 Q40 76 31 70 L27 63Z" fill="#42625d" stroke="#193b43" stroke-width="2"/>
+<path class="hero-authored-rear-tunic" aria-label="northeast stride 3 individually drafted torso" d="M35.7 38 Q45.7 34 52.7 40 Q58.7 48 57.7 60 L54.7 67 Q50.7 75 41.7 73 L29.7 67 Q27.7 58 31.7 47Z" fill="#47736b" stroke="#193b43" stroke-width="2"/>
 <path d="M31 41 Q40 44 49 40 L48 48 Q40 52 31 47Z" fill="#71978a" opacity=".8"/>
 <path d="M29 59 Q40 63 52 59 L51 65 Q40 69 29 65Z" fill="#6b4d3b" stroke="#332f34" stroke-width="1.4"/>
 <path d="M38 60 L44 60 L44 65 L38 65Z" fill="#c5a361" stroke="#6c563b" stroke-width="1"/>
 <path d="M34 68 L34 73 M47 68 L47 73" stroke="#a4b4a0" opacity=".7"/>
-<path d="M34 40 Q40 44 47 40 L52 61 L46 67 L33 65 L28 59Z" fill="#77564a" stroke="#4a393a" stroke-width="1.2"/>
+<path class="hero-authored-rear-jerkin" d="M37.7 40 Q46.7 43 52.7 43 L55.7 61 Q50.7 68 43.7 67 L32.7 60Z" fill="#77564a" stroke="#4a393a" stroke-width="1.5"/><path class="hero-authored-rear-tailoring" d="M47.7 43 Q52.7 50 52.7 57 M36.7 43 Q33.7 51 35.7 58 M35.7 62 Q43.7 66 51.7 62" fill="none" stroke="#b98d69" stroke-width="1.15" opacity=".8"/>
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
