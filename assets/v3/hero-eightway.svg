@@ -156,17 +156,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 2 stride 1" transform="translate(-1.1 0)"><path d="M26 20 Q27 10 37 8 Q48 5 54 15 L53 31 Q49 39 39 40 Q29 36 26 28Z" fill="#302d39" stroke="#1b2731" stroke-width="1.8"/>
- <path d="M28 21 Q30 16 39 16 Q46 17 48 24 L46 33 Q41 38 34 35 L29 31Z" fill="#c3906e" stroke="#714e48" stroke-width="1.2"/>
- <path d="M30 26 L25 28 L29 31 L32 29" fill="#ba8163" stroke="#714e48" stroke-width="1"/>
- <path d="M31 21 Q34 20 37 22 M40 22 L43 23" stroke="#46383d" stroke-width="1.2" fill="none"/>
- <path d="M34 25 h2 v2 h-2Z M41 26 h1.5 v2 h-1.5Z" fill="#25383e"/>
- <path d="M31 33 L36 34 L40 32" stroke="#915f52" fill="none" stroke-width="1"/>
- <path d="M46 25 Q49 23 49 28 Q48 31 45 31" fill="#b77c60" stroke="#754d46" stroke-width="1"/>
- <path d="M27 20 L27 14 Q32 6 42 7 Q53 9 54 18 L50 20 L43 15 L34 17Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M29 16 Q38 11 49 16" stroke="#9aafa1" stroke-width="1.4" fill="none"/>
- <path d="M35 9 L39 5 L43 9 L40 14Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 20 Q39 17 51 20 L50 23 Q38 21 27 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 1">
+<g class="hero-authored-directional-head" aria-label="hand-authored southwest three-quarter stride 1" transform="translate(0 -0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M29 19 Q33 13 43 15 Q49 18 49 25 L47 32 Q42 38 35 36 L28 31 L24 28 L29 25Z" fill="#c28e6c" stroke="#754b43" stroke-width="1.4"/><path d="M28 26 L22 28 L27 31 L31 30Z" fill="#b77d60" stroke="#754b43" stroke-width="1"/><path d="M31 31 Q34 34 39 33" stroke="#875a4d" stroke-width="1.2" fill="none"/><path d="M30 22 Q33 20 37 22 M41 23 L44 23" stroke="#44363b" stroke-width="1.4" fill="none"/><ellipse cx="33" cy="26" rx="1.3" ry="1.8" fill="#24373c"/><path d="M42 26 l1.4 .2" stroke="#24373c" stroke-width="1.4"/><path d="M27 18 Q30 12 39 12 Q47 13 50 20 L45 22 Q42 17 35 19 L29 24 L27 30 L24 27Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 21 Q51 24 48 32 L45 35 L44 27Z" fill="#49363d"/><path d="M46 26 Q50 24 50 28 Q49 32 46 31" fill="#ad765d" stroke="#774f48" stroke-width="1"/><path d="M25 18 Q27 7 39 7 Q50 8 53 17 L47 19 Q38 14 29 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M29 15 Q38 11 49 16" stroke="#a6b9a2" stroke-width="1.5" fill="none"/><path d="M24 19 Q35 16 49 19 L47 23 Q35 20 23 24Z" fill="#496f6a" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 1">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 48 37 47 Q43 49 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -199,17 +189,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 2 stride 2" transform="translate(0 0)"><path d="M26 20 Q27 10 37 8 Q48 5 54 15 L53 31 Q49 39 39 40 Q29 36 26 28Z" fill="#302d39" stroke="#1b2731" stroke-width="1.8"/>
- <path d="M28 21 Q30 16 39 16 Q46 17 48 24 L46 33 Q41 38 34 35 L29 31Z" fill="#c3906e" stroke="#714e48" stroke-width="1.2"/>
- <path d="M30 26 L25 28 L29 31 L32 29" fill="#ba8163" stroke="#714e48" stroke-width="1"/>
- <path d="M31 21 Q34 20 37 22 M40 22 L43 23" stroke="#46383d" stroke-width="1.2" fill="none"/>
- <path d="M34 25 h2 v2 h-2Z M41 26 h1.5 v2 h-1.5Z" fill="#25383e"/>
- <path d="M31 33 L36 34 L40 32" stroke="#915f52" fill="none" stroke-width="1"/>
- <path d="M46 25 Q49 23 49 28 Q48 31 45 31" fill="#b77c60" stroke="#754d46" stroke-width="1"/>
- <path d="M27 20 L27 14 Q32 6 42 7 Q53 9 54 18 L50 20 L43 15 L34 17Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M29 16 Q38 11 49 16" stroke="#9aafa1" stroke-width="1.4" fill="none"/>
- <path d="M35 9 L39 5 L43 9 L40 14Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 20 Q39 17 51 20 L50 23 Q38 21 27 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 2">
+<g class="hero-authored-directional-head" aria-label="hand-authored southwest three-quarter stride 2" transform="translate(-0.65 0)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M29 19 Q33 13 43 15 Q49 18 49 25 L47 32 Q42 38 35 36 L28 31 L24 28 L29 25Z" fill="#c28e6c" stroke="#754b43" stroke-width="1.4"/><path d="M28 26 L22 28 L27 31 L31 30Z" fill="#b77d60" stroke="#754b43" stroke-width="1"/><path d="M31 31 Q34 34 39 33" stroke="#875a4d" stroke-width="1.2" fill="none"/><path d="M30 22 Q33 20 37 22 M41 23 L44 23" stroke="#44363b" stroke-width="1.4" fill="none"/><ellipse cx="33" cy="26" rx="1.3" ry="1.8" fill="#24373c"/><path d="M42 26 l1.4 .2" stroke="#24373c" stroke-width="1.4"/><path d="M27 18 Q30 12 39 12 Q47 13 50 20 L45 22 Q42 17 35 19 L29 24 L27 30 L24 27Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 21 Q51 24 48 32 L45 35 L44 27Z" fill="#49363d"/><path d="M46 26 Q50 24 50 28 Q49 32 46 31" fill="#ad765d" stroke="#774f48" stroke-width="1"/><path d="M25 18 Q27 7 39 7 Q50 8 53 17 L47 19 Q38 14 29 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M29 15 Q38 11 49 16" stroke="#a6b9a2" stroke-width="1.5" fill="none"/><path d="M24 19 Q35 16 49 19 L47 23 Q35 20 23 24Z" fill="#496f6a" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 2">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 49 37 47 Q43 48 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -242,17 +222,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 2 stride 3" transform="translate(1.2 0)"><path d="M26 20 Q27 10 37 8 Q48 5 54 15 L53 31 Q49 39 39 40 Q29 36 26 28Z" fill="#302d39" stroke="#1b2731" stroke-width="1.8"/>
- <path d="M28 21 Q30 16 39 16 Q46 17 48 24 L46 33 Q41 38 34 35 L29 31Z" fill="#c3906e" stroke="#714e48" stroke-width="1.2"/>
- <path d="M30 26 L25 28 L29 31 L32 29" fill="#ba8163" stroke="#714e48" stroke-width="1"/>
- <path d="M31 21 Q34 20 37 22 M40 22 L43 23" stroke="#46383d" stroke-width="1.2" fill="none"/>
- <path d="M34 25 h2 v2 h-2Z M41 26 h1.5 v2 h-1.5Z" fill="#25383e"/>
- <path d="M31 33 L36 34 L40 32" stroke="#915f52" fill="none" stroke-width="1"/>
- <path d="M46 25 Q49 23 49 28 Q48 31 45 31" fill="#b77c60" stroke="#754d46" stroke-width="1"/>
- <path d="M27 20 L27 14 Q32 6 42 7 Q53 9 54 18 L50 20 L43 15 L34 17Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M29 16 Q38 11 49 16" stroke="#9aafa1" stroke-width="1.4" fill="none"/>
- <path d="M35 9 L39 5 L43 9 L40 14Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 20 Q39 17 51 20 L50 23 Q38 21 27 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 3">
+<g class="hero-authored-directional-head" aria-label="hand-authored southwest three-quarter stride 3" transform="translate(0.65 0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M29 19 Q33 13 43 15 Q49 18 49 25 L47 32 Q42 38 35 36 L28 31 L24 28 L29 25Z" fill="#c28e6c" stroke="#754b43" stroke-width="1.4"/><path d="M28 26 L22 28 L27 31 L31 30Z" fill="#b77d60" stroke="#754b43" stroke-width="1"/><path d="M31 31 Q34 34 39 33" stroke="#875a4d" stroke-width="1.2" fill="none"/><path d="M30 22 Q33 20 37 22 M41 23 L44 23" stroke="#44363b" stroke-width="1.4" fill="none"/><ellipse cx="33" cy="26" rx="1.3" ry="1.8" fill="#24373c"/><path d="M42 26 l1.4 .2" stroke="#24373c" stroke-width="1.4"/><path d="M27 18 Q30 12 39 12 Q47 13 50 20 L45 22 Q42 17 35 19 L29 24 L27 30 L24 27Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 21 Q51 24 48 32 L45 35 L44 27Z" fill="#49363d"/><path d="M46 26 Q50 24 50 28 Q49 32 46 31" fill="#ad765d" stroke="#774f48" stroke-width="1"/><path d="M25 18 Q27 7 39 7 Q50 8 53 17 L47 19 Q38 14 29 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M29 15 Q38 11 49 16" stroke="#a6b9a2" stroke-width="1.5" fill="none"/><path d="M24 19 Q35 16 49 19 L47 23 Q35 20 23 24Z" fill="#496f6a" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted southwest stride 3">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 50 37 47 Q43 47 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -285,16 +255,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 3 stride 1" transform="translate(-1.1 0)"><path d="M28 19 Q29 8 41 7 Q52 8 54 19 L53 33 Q48 40 38 39 L30 34Z" fill="#352e3a" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 20 Q35 17 40 19 L41 31 Q39 36 33 35 L29 30Z" fill="#c18b69" stroke="#704b45" stroke-width="1.2"/>
- <path d="M30 25 L24 28 L30 30Z" fill="#bb8160" stroke="#704b45" stroke-width="1"/>
- <path d="M31 24 L36 23" stroke="#43373d" stroke-width="1.3"/>
- <path d="M32 26 h2.2 v2 h-2.2Z" fill="#26363c"/>
- <path d="M29 33 L35 33" stroke="#925e51" stroke-width="1.1"/>
- <path d="M28 18 Q31 8 41 7 Q52 9 54 18 L51 21 Q42 15 33 19Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 15 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 19 Q39 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 1">
+<g class="hero-authored-directional-head" aria-label="hand-authored west side profile stride 1" transform="translate(0 -0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M33 18 Q39 15 47 19 L48 28 Q47 34 41 36 L33 34 L28 31 L23 29 L29 26 L29 23Z" fill="#c28e6c" stroke="#744b43" stroke-width="1.4"/><path d="M30 25 L20 28 L28 31 L32 30Z" fill="#b98163" stroke="#744b43" stroke-width="1.1"/><path d="M27 32 Q31 34 36 33" fill="none" stroke="#895c50" stroke-width="1.2"/><path d="M31 22 L36 21" stroke="#48363c" stroke-width="1.4"/><ellipse cx="32" cy="25" rx="1.15" ry="1.65" fill="#26383e"/><path d="M29 19 Q35 12 44 13 L51 19 L49 31 L45 36 L43 27 L39 22 L33 22 L30 28 L26 25Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 23 L50 29 L47 34" fill="none" stroke="#66504c" stroke-width="1.3"/><path d="M43 26 Q47 24 47 28 Q46 31 43 31" fill="#b47c60" stroke="#754d45" stroke-width="1"/><path d="M28 18 Q29 8 40 7 Q50 8 53 17 L50 20 Q40 16 30 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.6"/><path d="M31 15 Q40 12 49 16" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M24 19 Q37 17 51 20 L49 23 Q36 21 22 24Z" fill="#476c66" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M46 35 Q42 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 1">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 48 37 47 Q43 49 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -327,16 +288,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 3 stride 2" transform="translate(0 0)"><path d="M28 19 Q29 8 41 7 Q52 8 54 19 L53 33 Q48 40 38 39 L30 34Z" fill="#352e3a" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 20 Q35 17 40 19 L41 31 Q39 36 33 35 L29 30Z" fill="#c18b69" stroke="#704b45" stroke-width="1.2"/>
- <path d="M30 25 L24 28 L30 30Z" fill="#bb8160" stroke="#704b45" stroke-width="1"/>
- <path d="M31 24 L36 23" stroke="#43373d" stroke-width="1.3"/>
- <path d="M32 26 h2.2 v2 h-2.2Z" fill="#26363c"/>
- <path d="M29 33 L35 33" stroke="#925e51" stroke-width="1.1"/>
- <path d="M28 18 Q31 8 41 7 Q52 9 54 18 L51 21 Q42 15 33 19Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 15 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 19 Q39 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 2">
+<g class="hero-authored-directional-head" aria-label="hand-authored west side profile stride 2" transform="translate(-0.65 0)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M33 18 Q39 15 47 19 L48 28 Q47 34 41 36 L33 34 L28 31 L23 29 L29 26 L29 23Z" fill="#c28e6c" stroke="#744b43" stroke-width="1.4"/><path d="M30 25 L20 28 L28 31 L32 30Z" fill="#b98163" stroke="#744b43" stroke-width="1.1"/><path d="M27 32 Q31 34 36 33" fill="none" stroke="#895c50" stroke-width="1.2"/><path d="M31 22 L36 21" stroke="#48363c" stroke-width="1.4"/><ellipse cx="32" cy="25" rx="1.15" ry="1.65" fill="#26383e"/><path d="M29 19 Q35 12 44 13 L51 19 L49 31 L45 36 L43 27 L39 22 L33 22 L30 28 L26 25Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 23 L50 29 L47 34" fill="none" stroke="#66504c" stroke-width="1.3"/><path d="M43 26 Q47 24 47 28 Q46 31 43 31" fill="#b47c60" stroke="#754d45" stroke-width="1"/><path d="M28 18 Q29 8 40 7 Q50 8 53 17 L50 20 Q40 16 30 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.6"/><path d="M31 15 Q40 12 49 16" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M24 19 Q37 17 51 20 L49 23 Q36 21 22 24Z" fill="#476c66" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M46 35 Q42 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 2">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 49 37 47 Q43 48 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -369,16 +321,7 @@
 <path d="M34 41 L38 54 L40 48 L43 54 L47 41" fill="#e4d5ac" stroke="#29515a" stroke-width="1.1"/>
 <path d="M39 52 L41 52 L43 61 L38 61Z" fill="#bba46e"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 3 stride 3" transform="translate(1.2 0)"><path d="M28 19 Q29 8 41 7 Q52 8 54 19 L53 33 Q48 40 38 39 L30 34Z" fill="#352e3a" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 20 Q35 17 40 19 L41 31 Q39 36 33 35 L29 30Z" fill="#c18b69" stroke="#704b45" stroke-width="1.2"/>
- <path d="M30 25 L24 28 L30 30Z" fill="#bb8160" stroke="#704b45" stroke-width="1"/>
- <path d="M31 24 L36 23" stroke="#43373d" stroke-width="1.3"/>
- <path d="M32 26 h2.2 v2 h-2.2Z" fill="#26363c"/>
- <path d="M29 33 L35 33" stroke="#925e51" stroke-width="1.1"/>
- <path d="M28 18 Q31 8 41 7 Q52 9 54 18 L51 21 Q42 15 33 19Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 15 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M27 19 Q39 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 3">
+<g class="hero-authored-directional-head" aria-label="hand-authored west side profile stride 3" transform="translate(0.65 0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M33 18 Q39 15 47 19 L48 28 Q47 34 41 36 L33 34 L28 31 L23 29 L29 26 L29 23Z" fill="#c28e6c" stroke="#744b43" stroke-width="1.4"/><path d="M30 25 L20 28 L28 31 L32 30Z" fill="#b98163" stroke="#744b43" stroke-width="1.1"/><path d="M27 32 Q31 34 36 33" fill="none" stroke="#895c50" stroke-width="1.2"/><path d="M31 22 L36 21" stroke="#48363c" stroke-width="1.4"/><ellipse cx="32" cy="25" rx="1.15" ry="1.65" fill="#26383e"/><path d="M29 19 Q35 12 44 13 L51 19 L49 31 L45 36 L43 27 L39 22 L33 22 L30 28 L26 25Z" fill="#352f39" stroke="#242c36" stroke-width="1.2"/><path d="M47 23 L50 29 L47 34" fill="none" stroke="#66504c" stroke-width="1.3"/><path d="M43 26 Q47 24 47 28 Q46 31 43 31" fill="#b47c60" stroke="#754d45" stroke-width="1"/><path d="M28 18 Q29 8 40 7 Q50 8 53 17 L50 20 Q40 16 30 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.6"/><path d="M31 15 Q40 12 49 16" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M24 19 Q37 17 51 20 L49 23 Q36 21 22 24Z" fill="#476c66" stroke="#243d44" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M46 35 Q42 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted west stride 3">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#234752" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 50 37 47 Q43 47 47 44" stroke="#a7c7ae" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -412,13 +355,7 @@
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 4 stride 1" transform="translate(-1.1 0)"><path d="M27 20 Q28 9 39 7 Q52 7 55 18 L53 34 Q46 41 36 39 Q28 34 27 27Z" fill="#3e343e" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 21 Q37 17 47 20 L48 33 Q42 39 34 34Z" fill="#55414a"/>
- <path d="M28 29 Q33 34 38 34 M33 24 Q40 28 46 25" fill="none" stroke="#816064" stroke-width="1.3"/>
- <path d="M29 18 Q31 8 42 7 Q53 8 55 18 L51 21 Q40 16 31 20Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 16 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M28 20 Q40 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 1">
+<g class="hero-authored-directional-head" aria-label="hand-authored northwest rear three-quarter stride 1" transform="translate(0 -0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M32 17 Q41 13 49 20 L49 30 Q46 37 37 37 L30 31 L27 25Z" fill="#4c3941" stroke="#242c36" stroke-width="1.5"/><path d="M27 24 L24 27 L28 30 L32 30 L34 23Z" fill="#a9745e" stroke="#704b46" stroke-width="1.1"/><path d="M26 27 L23 28 L27 30" fill="#c18a6c"/><path d="M34 19 Q42 16 48 23 L46 34 Q40 39 34 34Z" fill="#352f39" stroke="#282c36" stroke-width="1.1"/><path d="M38 20 Q42 24 40 33" fill="none" stroke="#71514b" stroke-width="1.4"/><path d="M30 18 Q39 12 49 18 L52 27 Q51 35 44 38 L36 35 Q42 29 38 23Z" fill="#493840" stroke="#242c36" stroke-width="1.3"/><path d="M43 20 Q49 26 46 34" stroke="#6b4e4b" stroke-width="1.4" fill="none"/><path d="M29 26 Q33 23 34 28 Q32 31 29 30" fill="#b98165" stroke="#764e46" stroke-width="1"/><path d="M26 19 Q28 8 40 7 Q52 9 54 20 L49 22 Q42 17 32 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M31 15 Q42 12 51 18" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M25 20 Q39 17 54 22 L52 25 Q39 21 25 24Z" fill="#466b66" stroke="#243c43" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 1">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#183d46" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 48 37 47 Q43 49 47 44" stroke="#7caa9b" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -452,13 +389,7 @@
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 4 stride 2" transform="translate(0 0)"><path d="M27 20 Q28 9 39 7 Q52 7 55 18 L53 34 Q46 41 36 39 Q28 34 27 27Z" fill="#3e343e" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 21 Q37 17 47 20 L48 33 Q42 39 34 34Z" fill="#55414a"/>
- <path d="M28 29 Q33 34 38 34 M33 24 Q40 28 46 25" fill="none" stroke="#816064" stroke-width="1.3"/>
- <path d="M29 18 Q31 8 42 7 Q53 8 55 18 L51 21 Q40 16 31 20Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 16 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M28 20 Q40 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 2">
+<g class="hero-authored-directional-head" aria-label="hand-authored northwest rear three-quarter stride 2" transform="translate(-0.65 0)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M32 17 Q41 13 49 20 L49 30 Q46 37 37 37 L30 31 L27 25Z" fill="#4c3941" stroke="#242c36" stroke-width="1.5"/><path d="M27 24 L24 27 L28 30 L32 30 L34 23Z" fill="#a9745e" stroke="#704b46" stroke-width="1.1"/><path d="M26 27 L23 28 L27 30" fill="#c18a6c"/><path d="M34 19 Q42 16 48 23 L46 34 Q40 39 34 34Z" fill="#352f39" stroke="#282c36" stroke-width="1.1"/><path d="M38 20 Q42 24 40 33" fill="none" stroke="#71514b" stroke-width="1.4"/><path d="M30 18 Q39 12 49 18 L52 27 Q51 35 44 38 L36 35 Q42 29 38 23Z" fill="#493840" stroke="#242c36" stroke-width="1.3"/><path d="M43 20 Q49 26 46 34" stroke="#6b4e4b" stroke-width="1.4" fill="none"/><path d="M29 26 Q33 23 34 28 Q32 31 29 30" fill="#b98165" stroke="#764e46" stroke-width="1"/><path d="M26 19 Q28 8 40 7 Q52 9 54 20 L49 22 Q42 17 32 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M31 15 Q42 12 51 18" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M25 20 Q39 17 54 22 L52 25 Q39 21 25 24Z" fill="#466b66" stroke="#243c43" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 2">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#183d46" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 49 37 47 Q43 48 47 44" stroke="#7caa9b" stroke-width="1.6" opacity=".6" fill="none"/>
@@ -492,13 +423,7 @@
 <path d="M34 45 L47 44 M32 50 L49 49 M32 56 L49 55" stroke="#b98d69" stroke-width="1.2"/>
 <path d="M34 39 Q40 42 46 39" fill="none" stroke="#d1b37d" stroke-width="2"/>
 <path d="M34 33 L35 43 Q40 46 46 42 L46 33Z" fill="#ad785b" stroke="#6d4a44" stroke-width="1.4"/>
-<g class="hero-authored-directional-head" aria-label="individually authored left-facing head row 4 stride 3" transform="translate(1.2 0)"><path d="M27 20 Q28 9 39 7 Q52 7 55 18 L53 34 Q46 41 36 39 Q28 34 27 27Z" fill="#3e343e" stroke="#202b34" stroke-width="1.8"/>
- <path d="M30 21 Q37 17 47 20 L48 33 Q42 39 34 34Z" fill="#55414a"/>
- <path d="M28 29 Q33 34 38 34 M33 24 Q40 28 46 25" fill="none" stroke="#816064" stroke-width="1.3"/>
- <path d="M29 18 Q31 8 42 7 Q53 8 55 18 L51 21 Q40 16 31 20Z" fill="#34565a" stroke="#1b343c" stroke-width="1.5"/>
- <path d="M31 16 Q40 12 50 17" stroke="#a0b2a0" stroke-width="1.4" fill="none"/>
- <path d="M36 9 L40 5 L44 9 L41 13Z" fill="#d4ae65" stroke="#66563e" stroke-width="1"/>
- <path d="M28 20 Q40 17 53 20 L52 23 Q40 21 28 24Z" fill="#466d69" stroke="#263c44" stroke-width="1"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 3">
+<g class="hero-authored-directional-head" aria-label="hand-authored northwest rear three-quarter stride 3" transform="translate(0.65 0.6)"><path d="M26 21 Q26 9 39 7 Q51 7 54 19 L52 32 Q46 40 35 39 L27 31Z" fill="#2d303b" stroke="#242c36" stroke-width="1.8"/><path d="M32 17 Q41 13 49 20 L49 30 Q46 37 37 37 L30 31 L27 25Z" fill="#4c3941" stroke="#242c36" stroke-width="1.5"/><path d="M27 24 L24 27 L28 30 L32 30 L34 23Z" fill="#a9745e" stroke="#704b46" stroke-width="1.1"/><path d="M26 27 L23 28 L27 30" fill="#c18a6c"/><path d="M34 19 Q42 16 48 23 L46 34 Q40 39 34 34Z" fill="#352f39" stroke="#282c36" stroke-width="1.1"/><path d="M38 20 Q42 24 40 33" fill="none" stroke="#71514b" stroke-width="1.4"/><path d="M30 18 Q39 12 49 18 L52 27 Q51 35 44 38 L36 35 Q42 29 38 23Z" fill="#493840" stroke="#242c36" stroke-width="1.3"/><path d="M43 20 Q49 26 46 34" stroke="#6b4e4b" stroke-width="1.4" fill="none"/><path d="M29 26 Q33 23 34 28 Q32 31 29 30" fill="#b98165" stroke="#764e46" stroke-width="1"/><path d="M26 19 Q28 8 40 7 Q52 9 54 20 L49 22 Q42 17 32 21Z" fill="#34585b" stroke="#242c36" stroke-width="1.7"/><path d="M31 15 Q42 12 51 18" stroke="#a6b9a2" stroke-width="1.4" fill="none"/><path d="M25 20 Q39 17 54 22 L52 25 Q39 21 25 24Z" fill="#466b66" stroke="#243c43" stroke-width="1.2"/><path d="M36 9 L40 5 L44 9 L40 13Z" fill="#d2ad6a" stroke="#6d5b40" stroke-width="1"/><path d="M38 9 L40 7 L42 9" stroke="#f4d89b" stroke-width=".7" fill="none"/><path d="M45 35 Q41 39 36 37" fill="none" stroke="#232d37" stroke-width="1.1"/><path d="M29 17 Q35 13 42 14" fill="none" stroke="#b9c8a5" stroke-width=".65" opacity=".75"/></g><g class="hero-directional-anatomy" aria-label="individually sculpted northwest stride 3">
 <path d="M25 43 Q20 50 21 58 Q22 62 25 65 L31 59 Q29 49 32 43Z" fill="#183d46" opacity=".53"/>
 <path d="M51 43 Q52 51 51 58 L50 63 Q47 65 45 60 Q46 48 44 42Z" fill="#173741" opacity=".45"/>
 <path d="M28 45 Q33 50 37 47 Q43 47 47 44" stroke="#7caa9b" stroke-width="1.6" opacity=".6" fill="none"/>
