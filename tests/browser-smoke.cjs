@@ -64,6 +64,7 @@ function renderAtlasReview(name) {
     sheet.data[i + 2] = shade; sheet.data[i + 3] = 255;
   }
   const metrics = [];
+  const edgeFailures = [];
   for (let direction = 0; direction < 8; direction++) {
     const poses = [];
     for (let pose = 0; pose < 3; pose++) {
@@ -87,8 +88,9 @@ function renderAtlasReview(name) {
       }
       assert(count >= 20, name + ' empty frame ' + direction + ':' + pose);
       if (name === 'thornroller' || name === 'puddlewink') {
-        assert(minX > 0 && maxX < 79 && minY > 0 && maxY < 95,
-          name + ' painted artwork clips its frame at ' + direction + ':' + pose + ' bounds=' + [minX,minY,maxX,maxY]);
+        if (!(minX > 0 && maxX < 79 && minY > 0 && maxY < 95)) {
+          edgeFailures.push(name + ' direction=' + direction + ' pose=' + pose + ' bounds=' + [minX,minY,maxX,maxY]);
+        }
       }
       poses.push({ pose, painted: count, bounds: [minX, minY, maxX, maxY],
         touchesEdge: minX === 0 || maxX === 79 || minY === 0 || maxY === 95 });
@@ -99,6 +101,7 @@ function renderAtlasReview(name) {
   fs.writeFileSync(output, PNG.sync.write(sheet));
   fs.writeFileSync(path.join(shots, name + '-eightway-frame-metrics.json'), JSON.stringify(metrics, null, 2));
   console.log('ATLAS REVIEW ' + name + ': ' + JSON.stringify(metrics));
+  assert.equal(edgeFailures.length, 0, 'Sprite frame clipping: ' + edgeFailures.join(' | '));
   return output;
 }
 async function run() {
