@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wildframe | Directional Art Review</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui;background:#111d22;color:#e4ebdc}
+*{box-sizing:border-box}body{margin:0;padding:24px;max-width:1250px;margin-inline:auto}
+h1{font-size:1.5rem}p{color:#b9c8c0;line-height:1.5}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:22px 0}
+label{display:grid;gap:5px;font-size:.85rem}select,input,button{font:inherit;color:inherit;background:#24353b;border:1px solid #66827e;border-radius:5px;padding:8px}
+button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #b8c78b}
+main{display:grid;grid-template-columns:minmax(250px,1fr) minmax(250px,1fr);gap:20px}
+.panel{background:#1d2c31;border:1px solid #4d6866;border-radius:10px;padding:15px;min-width:0}
+canvas{image-rendering:pixelated;max-width:100%;background-color:#879f9a;background-image:linear-gradient(45deg,#526d6b 25%,transparent 25%),linear-gradient(-45deg,#526d6b 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#526d6b 75%),linear-gradient(-45deg,transparent 75%,#526d6b 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}
+#pose{width:320px;height:384px;display:block;margin:auto}#sheet{width:240px;height:768px;display:block;margin:auto}
+#status{color:#e8c58a}small{color:#afc3ba}.note{font-size:.85rem}
+@media(max-width:750px){body{padding:12px}main{grid-template-columns:1fr}}
+</style>
+<h1>Wildframe — eight-way sprite inspection</h1>
+<p>Inspect the actual repository PNG, not an artist's mockup. Each atlas must be 240 × 768 pixels: three 80 × 96 walk poses in each of eight directional rows. This is an art-production tool, not creator approval.</p>
+<div class="controls">
+<label>Character <select id="subject"><option value="hero">Hero</option><option value="mossmunch">Mossmunch</option><option value="puddlewink">Puddlewink</option><option value="thornroller">Thornroller</option><option value="naturalist">Naturalist</option></select></label>
+<label>Facing <select id="direction"><option value="0">South</option><option value="1">Southwest</option><option value="2">West</option><option value="3">Northwest</option><option value="4">North</option><option value="5">Northeast</option><option value="6">East</option><option value="7">Southeast</option></select></label>
+<label>Pose <select id="frame"><option value="0">Stride A</option><option value="1">Passing</option><option value="2">Stride B</option></select></label>
+<label>Playback speed (ms) <input id="speed" type="number" min="100" max="1000" step="50" value="240"></label>
+<button id="play" type="button" aria-pressed="false">Play walk</button>
+<button id="baseline" type="button" aria-pressed="true">Hide foot guide</button>
+</div>
+<p id="status" role="status">Loading PNG…</p>
+<main>
+<section class="panel"><h2>Walking pose · 4×</h2><canvas id="pose" width="320" height="384" aria-label="Selected sprite frame enlarged four times"></canvas><p class="note">The horizontal guide at local y = 88 exposes changes in the foot anchor across stride poses. Switch direction while playing to inspect turning continuity.</p></section>
+<section class="panel"><h2>Full atlas · native pixels</h2><canvas id="sheet" width="240" height="768" aria-label="Full eight-direction sprite atlas"></canvas><p class="note">Outline indicates the selected source frame. Transparent checkerboard remains visible through alpha pixels.</p></section>
+</main>
+<script>
+'use strict';
+const names=['hero','mossmunch','puddlewink','thornroller','naturalist'];
+const dirs=['South','Southwest','West','Northwest','North','Northeast','East','Southeast'];
+const els=Object.fromEntries(['subject','direction','frame','speed','play','baseline','status','pose','sheet'].map(id=>[id,document.getElementById(id)]));
+let image=null,playing=false,guide=true,last=0,handle=0,serial=0;
+function render(){
+  if(!image)return;
+  const d=Number(els.direction.value),f=Number(els.frame.value);
+  const p=els.pose.getContext('2d'),s=els.sheet.getContext('2d');
+  p.clearRect(0,0,320,384);s.clearRect(0,0,240,768);
+  p.imageSmoothingEnabled=false;s.imageSmoothingEnabled=false;
+  p.drawImage(image,f*80,d*96,80,96,0,0,320,384);
+  s.drawImage(image,0,0);
+  if(guide){p.strokeStyle='#ffe29b';p.lineWidth=1;p.beginPath();p.moveTo(0,88*4+.5);p.lineTo(320,88*4+.5);p.stroke();}
+  s.strokeStyle='#ffdc80';s.lineWidth=2;s.strokeRect(f*80+1,d*96+1,78,94);
+  els.status.textContent=els.subject.value+' · '+dirs[d]+' · pose '+(f+1)+' of 3 · original PNG '+image.naturalWidth+'×'+image.naturalHeight;
+}
+function tick(t){
+  if(!playing)return;
+  const speed=Math.max(100,Math.min(1000,Number(els.speed.value)||240));
+  if(t-last>=speed){els.frame.value=String((Number(els.frame.value)+1)%3);last=t;render();}
+  handle=requestAnimationFrame(tick);
+}
+function setPlay(on){
+  playing=on;els.play.textContent=on?'Pause walk':'Play walk';els.play.setAttribute('aria-pressed',String(on));
+  cancelAnimationFrame(handle);if(on){last=performance.now();handle=requestAnimationFrame(tick);}
+}
+async function load(){
+  const id=++serial,subject=els.subject.value;
+  if(!names.includes(subject))return;
+  setPlay(false);image=null;els.status.textContent='Loading '+subject+' PNG…';
+  const img=new Image();img.decoding='async';
+  img.onload=()=>{
+    if(id!==serial)return;
+    if(img.naturalWidth!==240||img.naturalHeight!==768){els.status.textContent='ERROR: expected 240×768 PNG, received '+img.naturalWidth+'×'+img.naturalHeight;return;}
+    image=img;render();
+  };
+  img.onerror=()=>{if(id===serial)els.status.textContent='ERROR: PNG unavailable. Open this tool through GitHub Pages or a local HTTP server with repository assets.';};
+  img.src='../assets/v3/'+subject+'-eightway.png';
+}
+els.subject.addEventListener('change',load);
+els.direction.addEventListener('change',render);
+els.frame.addEventListener('change',render);
+els.play.addEventListener('click',()=>setPlay(!playing));
+els.baseline.addEventListener('click',()=>{guide=!guide;els.baseline.textContent=guide?'Hide foot guide':'Show foot guide';els.baseline.setAttribute('aria-pressed',String(guide));render();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)setPlay(false);});
+load();
+</script></html>
