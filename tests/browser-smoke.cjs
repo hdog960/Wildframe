@@ -86,6 +86,10 @@ function renderAtlasReview(name) {
         }
       }
       assert(count >= 20, name + ' empty frame ' + direction + ':' + pose);
+      if (name === 'thornroller' || name === 'puddlewink') {
+        assert(minX > 0 && maxX < 79 && minY > 0 && maxY < 95,
+          name + ' painted artwork clips its frame at ' + direction + ':' + pose + ' bounds=' + [minX,minY,maxX,maxY]);
+      }
       poses.push({ pose, painted: count, bounds: [minX, minY, maxX, maxY],
         touchesEdge: minX === 0 || maxX === 79 || minY === 0 || maxY === 95 });
     }
