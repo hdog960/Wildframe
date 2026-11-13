@@ -44,7 +44,61 @@ function inspectScreenshot(filename) {
   assert(buckets.size >= 35, 'Screenshot looks blank or single-color: ' + filename + ' (' + buckets.size + ' color groups)');
   return { width: shot.width, height: shot.height, colorGroups: buckets.size };
 }
+// Produce reviewable 8-direction / 3-pose contact sheets from the *committed PNGs*.
+// Each sheet preserves the original pixels, magnified 3x with nearest-neighbor
+// sampling. A green gameplay smoke check alone cannot establish visual quality.
+function renderAtlasReview(name) {
+  const source = path.join(__dirname, '..', 'assets', 'v3', name + '-eightway.png');
+  const atlas = PNG.sync.read(fs.readFileSync(source));
+  assert.equal(atlas.width, 240, name + ' atlas width');
+  assert.equal(atlas.height, 768, name + ' atlas height');
+  const scale = 3, cellW = 80 * scale, cellH = 96 * scale;
+  const margin = 12, gutter = 8;
+  const sheet = new PNG({ width: margin * 2 + 3 * cellW + 2 * gutter,
+    height: margin * 2 + 8 * cellH + 7 * gutter, colorType: 6 });
+  // Checkerboard makes missing transparency and accidental edge clipping visible.
+  for (let y = 0; y < sheet.height; y++) for (let x = 0; x < sheet.width; x++) {
+    const i = (y * sheet.width + x) * 4;
+    const shade = (Math.floor(x / 12) + Math.floor(y / 12)) % 2 ? 194 : 222;
+    sheet.data[i] = shade; sheet.data[i + 1] = shade;
+    sheet.data[i + 2] = shade; sheet.data[i + 3] = 255;
+  }
+  const metrics = [];
+  for (let direction = 0; direction < 8; direction++) {
+    const poses = [];
+    for (let pose = 0; pose < 3; pose++) {
+      let count = 0, minX = 80, maxX = -1, minY = 96, maxY = -1;
+      for (let fy = 0; fy < 96; fy++) for (let fx = 0; fx < 80; fx++) {
+        const src = ((direction * 96 + fy) * atlas.width + pose * 80 + fx) * 4;
+        const alpha = atlas.data[src + 3];
+        if (alpha > 24) {
+          count++; minX = Math.min(minX, fx); maxX = Math.max(maxX, fx);
+          minY = Math.min(minY, fy); maxY = Math.max(maxY, fy);
+        }
+        const ox = margin + pose * (cellW + gutter) + fx * scale;
+        const oy = margin + direction * (cellH + gutter) + fy * scale;
+        for (let dy = 0; dy < scale; dy++) for (let dx = 0; dx < scale; dx++) {
+          const dst = ((oy + dy) * sheet.width + ox + dx) * 4;
+          const opacity = alpha / 255;
+          for (let c = 0; c < 3; c++) {
+            sheet.data[dst + c] = Math.round(atlas.data[src + c] * opacity + sheet.data[dst + c] * (1 - opacity));
+          }
+        }
+      }
+      assert(count >= 20, name + ' empty frame ' + direction + ':' + pose);
+      poses.push({ pose, painted: count, bounds: [minX, minY, maxX, maxY],
+        touchesEdge: minX === 0 || maxX === 79 || minY === 0 || maxY === 95 });
+    }
+    metrics.push({ direction: ['down','down-left','left','up-left','up','up-right','right','down-right'][direction], poses });
+  }
+  const output = path.join(shots, name + '-eightway-contact-sheet.png');
+  fs.writeFileSync(output, PNG.sync.write(sheet));
+  fs.writeFileSync(path.join(shots, name + '-eightway-frame-metrics.json'), JSON.stringify(metrics, null, 2));
+  console.log('ATLAS REVIEW ' + name + ': ' + JSON.stringify(metrics));
+  return output;
+}
 async function run() {
+  for (const name of ['hero', 'mossmunch', 'puddlewink', 'thornroller', 'naturalist']) renderAtlasReview(name);
   await listen();
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-dev-shm-usage'] });
   try {
