@@ -492,6 +492,18 @@
 <path d="M34 61 Q42 64 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="northeast stride 1 independently drawn arm and gait volumes">
+<path d="M46 43 Q51 45 51 52 L47 61 Q43 66 42 61 L43 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M48 58 Q51 60 49 65 Q45 68 45 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M30 43 Q28.333333333333332 49 30 55 L34 61 Q37 63 35 58 L34 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M32 57 Q31 63 35 65 L36 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M32 68 Q31 75 30 81 L36 83 Q37 75 37 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M43 68 Q43 75 44 81 L50 83 Q51 74 48 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M30 82 Q35 80 39 84 L39 87 Q32 90 28 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M43 82 Q49 80 52 84 L53 87 Q46 90 42 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M46 48 Q47 52 46 56 M32 48 Q33 53 35 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 38 Q40 33 53.4 38 L53.5 57 Q42 62 26.5 57Z" fill="#2b5554" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 41 Q41 39 51.4 41" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 43 Q41 51 45 64 L42 62 Q37 50 38 43Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 45 Q40 52 44 61" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 43 L35 46 L37 43 M47 43 L49 46 L51 43" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 6-1"><path d="M33 40 Q42 44 49.23 48.49" fill="none" stroke="#392f32" stroke-width="4"/><path d="M33 40 Q42 44 49.23 48.49" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M43.98 47.24 Q49.23 43.24 54.48 47.24 L55.18 57.49 Q49.23 60.49 43.48 57.49Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M44.48 47.24 Q49.23 49.24 53.98 47.24 L53.48 52.49 Q49.23 55.49 44.98 52.49Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M45.48 56.49 Q49.23 58.49 52.98 56.49" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M45.779999999999994 49.24 L46.18 54.49" stroke="#c8a16b" stroke-width="1.1"/><rect x="48.629999999999995" y="50.79" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M50.23 51.49 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(80 480)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -536,6 +548,18 @@
 <path d="M34 61 Q42 65 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="northeast stride 2 independently drawn arm and gait volumes">
+<path d="M46 43 Q53 45 53 52 L51 61 Q47 66 44 61 L43 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M50 58 Q55 60 53 65 Q49 68 47 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M30 43 Q27 49 28 55 L30 61 Q33 63 35 58 L34 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M30 57 Q27 63 31 65 L34 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M32 68 Q28 75 27 81 L33 83 Q37 75 37 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M43 68 Q46 75 47 81 L53 83 Q51 74 48 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M27 82 Q32 80 36 84 L36 87 Q29 90 25 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M46 82 Q52 80 55 84 L56 87 Q49 90 45 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M48 48 Q51 52 50 56 M30 48 Q29 53 31 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 38 Q40 33 53.4 38 L54.4 59 Q42 62 27.4 57Z" fill="#2b5554" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 41 Q41 39 51.4 41" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 43 Q44 51 47 64 L44 62 Q40 50 38 43Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 45 Q43 52 46 61" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 43 L35 46 L37 43 M47 43 L49 46 L51 43" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 6-2"><path d="M33 40 Q42.5 44.3 50 48" fill="none" stroke="#392f32" stroke-width="4"/><path d="M33 40 Q42.5 44.3 50 48" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M44.75 46.75 Q50 42.75 55.25 46.75 L55.95 57 Q50 60 44.25 57Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M45.25 46.75 Q50 49 54.75 46.75 L54.25 52 Q50 55 45.75 52Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M46.25 56 Q50 58 53.75 56" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M46.55 48.75 L46.95 54" stroke="#c8a16b" stroke-width="1.1"/><rect x="49.4" y="50.3" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M51 51 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(160 480)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -580,6 +604,18 @@
 <path d="M34 61 Q42 66 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="northeast stride 3 independently drawn arm and gait volumes">
+<path d="M46 43 Q55 45 55 52 L55 61 Q51 66 46 61 L43 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M52 58 Q59 60 57 65 Q53 68 49 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M30 43 Q25.666666666666668 49 26 55 L26 61 Q29 63 35 58 L34 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M28 57 Q23 63 27 65 L32 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M32 68 Q25 75 24 81 L30 83 Q37 75 37 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M43 68 Q49 75 50 81 L56 83 Q51 74 48 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M24 82 Q29 80 33 84 L33 87 Q26 90 22 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M49 82 Q55 80 58 84 L59 87 Q52 90 48 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M50 48 Q55 52 54 56 M28 48 Q25 53 27 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 38 Q40 33 53.4 38 L55.3 57 Q42 62 28.299999999999997 57Z" fill="#2b5554" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 41 Q41 39 51.4 41" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 43 Q47 51 49 64 L46 62 Q43 50 38 43Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 45 Q46 52 48 61" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 43 L35 46 L37 43 M47 43 L49 46 L51 43" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 6-3"><path d="M33 40 Q43 44.6 50.825 48.525" fill="none" stroke="#392f32" stroke-width="4"/><path d="M33 40 Q43 44.6 50.825 48.525" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M45.575 47.275 Q50.825 43.275 56.075 47.275 L56.775000000000006 57.525 Q50.825 60.525 45.075 57.525Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M46.075 47.275 Q50.825 49.775 55.575 47.275 L55.075 52.525 Q50.825 55.525 46.575 52.525Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M47.075 56.525 Q50.825 58.525 54.575 56.525" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M47.375 49.275 L47.775000000000006 54.525" stroke="#c8a16b" stroke-width="1.1"/><rect x="50.225" y="50.824999999999996" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M51.825 51.525 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(0 576)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -625,6 +661,18 @@
 <path d="M34 61 Q42 64 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="east stride 1 independently drawn arm and gait volumes">
+<path d="M48 43 Q53 45 53 52 L49 61 Q45 66 44 61 L45 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M50 58 Q53 60 51 65 Q47 68 47 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M32 43 Q30.333333333333332 49 32 55 L36 61 Q39 63 37 58 L36 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M34 57 Q33 63 37 65 L38 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M34 68 Q33 75 32 81 L38 83 Q39 75 39 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M45 68 Q45 75 46 81 L52 83 Q53 74 50 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M32 82 Q37 80 41 84 L41 87 Q34 90 30 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M45 82 Q51 80 54 84 L55 87 Q48 90 44 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M48 48 Q49 52 48 56 M34 48 Q35 53 37 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M30.8 39 Q41 34 54.8 39 L54.9 52 Q43 57 27.900000000000002 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M32.8 42 Q42 40 52.8 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M42 44 Q42 52 46 59 L43 57 Q38 51 39 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M42 46 Q41 53 45 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M34 44 L36 47 L38 44 M48 44 L50 47 L52 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 7-1"><path d="M32 40 Q42 44 50.23 50.49" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q42 44 50.23 50.49" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M46.48 49.24 Q50.23 45.24 53.98 49.24 L54.68 59.49 Q50.23 62.49 45.98 59.49Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M46.98 49.24 Q50.23 51.24 53.48 49.24 L52.98 54.49 Q50.23 57.49 47.48 54.49Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M47.98 58.49 Q50.23 60.49 52.48 58.49" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M48.279999999999994 51.24 L48.68 56.49" stroke="#c8a16b" stroke-width="1.1"/><rect x="49.629999999999995" y="52.79" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M51.23 53.49 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(80 576)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -670,6 +718,18 @@
 <path d="M34 61 Q42 65 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="east stride 2 independently drawn arm and gait volumes">
+<path d="M48 43 Q55 45 55 52 L53 61 Q49 66 46 61 L45 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M52 58 Q57 60 55 65 Q51 68 49 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M32 43 Q29 49 30 55 L32 61 Q35 63 37 58 L36 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M32 57 Q29 63 33 65 L36 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M34 68 Q30 75 29 81 L35 83 Q39 75 39 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M45 68 Q48 75 49 81 L55 83 Q53 74 50 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M29 82 Q34 80 38 84 L38 87 Q31 90 27 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M48 82 Q54 80 57 84 L58 87 Q51 90 47 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M50 48 Q53 52 52 56 M32 48 Q31 53 33 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M30.8 39 Q41 34 54.8 39 L55.8 54 Q43 57 28.8 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M32.8 42 Q42 40 52.8 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M42 44 Q45 52 48 59 L45 57 Q41 51 39 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M42 46 Q44 53 47 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M34 44 L36 47 L38 44 M48 44 L50 47 L52 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 7-2"><path d="M32 40 Q42.5 44.3 51 50" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q42.5 44.3 51 50" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M47.25 48.75 Q51 44.75 54.75 48.75 L55.45 59 Q51 62 46.75 59Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M47.75 48.75 Q51 51 54.25 48.75 L53.75 54 Q51 57 48.25 54Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M48.75 58 Q51 60 53.25 58" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M49.05 50.75 L49.45 56" stroke="#c8a16b" stroke-width="1.1"/><rect x="50.4" y="52.3" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M52 53 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(160 576)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -715,6 +775,18 @@
 <path d="M34 61 Q42 66 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="east stride 3 independently drawn arm and gait volumes">
+<path d="M48 43 Q57 45 57 52 L57 61 Q53 66 48 61 L45 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M54 58 Q61 60 59 65 Q55 68 51 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M32 43 Q27.666666666666668 49 28 55 L28 61 Q31 63 37 58 L36 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M30 57 Q25 63 29 65 L34 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M34 68 Q27 75 26 81 L32 83 Q39 75 39 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M45 68 Q51 75 52 81 L58 83 Q53 74 50 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M26 82 Q31 80 35 84 L35 87 Q28 90 24 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M51 82 Q57 80 60 84 L61 87 Q54 90 50 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M52 48 Q57 52 56 56 M30 48 Q27 53 29 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M30.8 39 Q41 34 54.8 39 L56.699999999999996 52 Q43 57 29.7 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M32.8 42 Q42 40 52.8 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M42 44 Q48 52 50 59 L47 57 Q44 51 39 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M42 46 Q47 53 49 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M34 44 L36 47 L38 44 M48 44 L50 47 L52 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 7-3"><path d="M32 40 Q43 44.6 51.825 50.525" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q43 44.6 51.825 50.525" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M48.075 49.275 Q51.825 45.275 55.575 49.275 L56.275000000000006 59.525 Q51.825 62.525 47.575 59.525Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M48.575 49.275 Q51.825 51.775 55.075 49.275 L54.575 54.525 Q51.825 57.525 49.075 54.525Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M49.575 58.525 Q51.825 60.525 54.075 58.525" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M49.875 51.275 L50.275000000000006 56.525" stroke="#c8a16b" stroke-width="1.1"/><rect x="51.225" y="52.824999999999996" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M52.825 53.525 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(0 672)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -760,6 +832,18 @@
 <path d="M34 61 Q42 64 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="southeast stride 1 independently drawn arm and gait volumes">
+<path d="M50 43 Q55 45 55 52 L51 61 Q47 66 46 61 L47 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M52 58 Q55 60 53 65 Q49 68 49 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M34 43 Q32.333333333333336 49 34 55 L38 61 Q41 63 39 58 L38 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M36 57 Q35 63 39 65 L40 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M36 68 Q35 75 34 81 L40 83 Q41 75 41 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M47 68 Q47 75 48 81 L54 83 Q55 74 52 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M34 82 Q39 80 43 84 L43 87 Q36 90 32 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M47 82 Q53 80 56 84 L57 87 Q50 90 46 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M50 48 Q51 52 50 56 M36 48 Q37 53 39 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 39 Q40 34 53.4 39 L53.5 52 Q42 57 26.5 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 42 Q41 40 51.4 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 44 Q41 52 45 59 L42 57 Q37 51 38 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 46 Q40 53 44 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 44 L35 47 L37 44 M47 44 L49 47 L51 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 8-1"><path d="M32 40 Q42 44 51.23 51.49" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q42 44 51.23 51.49" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M45.98 50.24 Q51.23 46.24 56.48 50.24 L57.18 60.49 Q51.23 63.49 45.48 60.49Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M46.48 50.24 Q51.23 52.24 55.98 50.24 L55.48 55.49 Q51.23 58.49 46.98 55.49Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M47.48 59.49 Q51.23 61.49 54.98 59.49" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M47.779999999999994 52.24 L48.18 57.49" stroke="#c8a16b" stroke-width="1.1"/><rect x="50.629999999999995" y="53.79" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M52.23 54.49 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(80 672)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -805,6 +889,18 @@
 <path d="M34 61 Q42 65 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="southeast stride 2 independently drawn arm and gait volumes">
+<path d="M50 43 Q57 45 57 52 L55 61 Q51 66 48 61 L47 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M54 58 Q59 60 57 65 Q53 68 51 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M34 43 Q31 49 32 55 L34 61 Q37 63 39 58 L38 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M34 57 Q31 63 35 65 L38 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M36 68 Q32 75 31 81 L37 83 Q41 75 41 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M47 68 Q50 75 51 81 L57 83 Q55 74 52 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M31 82 Q36 80 40 84 L40 87 Q33 90 29 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M50 82 Q56 80 59 84 L60 87 Q53 90 49 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M52 48 Q55 52 54 56 M34 48 Q33 53 35 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 39 Q40 34 53.4 39 L54.4 54 Q42 57 27.4 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 42 Q41 40 51.4 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 44 Q44 52 47 59 L44 57 Q40 51 38 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 46 Q43 53 46 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 44 L35 47 L37 44 M47 44 L49 47 L51 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 8-2"><path d="M32 40 Q42.5 44.3 52 51" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q42.5 44.3 52 51" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M46.75 49.75 Q52 45.75 57.25 49.75 L57.95 60 Q52 63 46.25 60Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M47.25 49.75 Q52 52 56.75 49.75 L56.25 55 Q52 58 47.75 55Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M48.25 59 Q52 61 55.75 59" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M48.55 51.75 L48.95 57" stroke="#c8a16b" stroke-width="1.1"/><rect x="51.4" y="53.3" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M53 54 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 <g transform="translate(160 672)" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="40" cy="88" rx="15" ry="3.2" fill="#112b2b" opacity=".23"/>
@@ -850,5 +946,17 @@
 <path d="M34 61 Q42 66 51 61" fill="none" stroke="#d0b17e" stroke-width="1" opacity=".55"/>
 <path d="M49 47 Q51 52 50 57" stroke="#a6c7ad" stroke-width="1.2" opacity=".62" fill="none"/>
 <path d="M29 49 Q27 55 30 60" stroke="#112e3a" stroke-width="1.5" opacity=".55" fill="none"/>
+
+<g class="hero-rightward-authored-limbs" aria-label="southeast stride 3 independently drawn arm and gait volumes">
+<path d="M50 43 Q59 45 59 52 L59 61 Q55 66 50 61 L47 49Z" fill="#274e53" stroke="#193b43" stroke-width="1.25"/>
+<path d="M56 58 Q63 60 61 65 Q57 68 53 63Z" fill="#b88a67" stroke="#754e48" stroke-width="1.1"/>
+<path d="M34 43 Q29.666666666666668 49 30 55 L30 61 Q33 63 39 58 L38 46Z" fill="#315d5b" stroke="#1b3e46" stroke-width="1.15"/>
+<path d="M32 57 Q27 63 31 65 L36 62Z" fill="#aa7b5e" stroke="#714b44" stroke-width="1"/>
+<path d="M36 68 Q29 75 28 81 L34 83 Q41 75 41 69Z" fill="#263e4b" stroke="#172d3b" stroke-width="1.1" opacity=".85"/>
+<path d="M47 68 Q53 75 54 81 L60 83 Q55 74 52 68Z" fill="#324d58" stroke="#182f3d" stroke-width="1.1" opacity=".85"/>
+<path d="M28 82 Q33 80 37 84 L37 87 Q30 90 26 87Z" fill="#56443a" stroke="#29252c" stroke-width="1.2"/>
+<path d="M53 82 Q59 80 62 84 L63 87 Q56 90 52 87Z" fill="#493d39" stroke="#29252c" stroke-width="1.2"/>
+<path d="M54 48 Q59 52 58 56 M32 48 Q29 53 31 57" fill="none" stroke="#9cb5a1" stroke-width="1.15" opacity=".8"/>
+</g>
 </g><g class="hero-wayfinder-mantle" aria-label="authored directional travel mantle"><path d="M29.4 39 Q40 34 53.4 39 L55.3 52 Q42 57 28.299999999999997 52Z" fill="#325d5b" stroke="#1b3e46" stroke-width="1.5"/><path d="M31.4 42 Q41 40 51.4 42" fill="none" stroke="#86a899" stroke-width="1.6"/><path d="M41 44 Q47 52 49 59 L46 57 Q43 51 38 44Z" fill="#467f74" stroke="#204d50" stroke-width="1"/><path d="M41 46 Q46 53 48 56" fill="none" stroke="#b6c8a1" stroke-width=".9"/><path d="M33 44 L35 47 L37 44 M47 44 L49 47 L51 44" fill="none" stroke="#d2b77c" stroke-width="1.2"/></g><g class="hero-wayfinder-satchel" aria-label="direction-specific field satchel pose 8-3"><path d="M32 40 Q43 44.6 52.825 51.525" fill="none" stroke="#392f32" stroke-width="4"/><path d="M32 40 Q43 44.6 52.825 51.525" fill="none" stroke="#c6a06b" stroke-width="2"/><path d="M47.575 50.275 Q52.825 46.275 58.075 50.275 L58.775000000000006 60.525 Q52.825 63.525 47.075 60.525Z" fill="#6d4c38" stroke="#292d32" stroke-width="1.6"/><path d="M48.075 50.275 Q52.825 52.775 57.575 50.275 L57.075 55.525 Q52.825 58.525 48.575 55.525Z" fill="#98724b" stroke="#3c3330" stroke-width="1.1"/><path d="M49.075 59.525 Q52.825 61.525 56.575 59.525" fill="none" stroke="#d7ae70" stroke-width=".9" stroke-dasharray="1.8 1.2"/><path d="M49.375 52.275 L49.775000000000006 57.525" stroke="#c8a16b" stroke-width="1.1"/><rect x="52.225" y="53.824999999999996" width="3.2" height="3.2" rx=".55" fill="#d2b471" stroke="#5e4834" stroke-width=".75"/><path d="M53.825 54.525 l.6 .7 l-.6 .7 l-.6 -.7Z" fill="#527f79"/></g></g>
 </svg>
